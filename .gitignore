@@ -5,16 +5,16 @@
 
 # LaTeX build artifacts
 *.aux
-*.fls
-*.fdb_latexmk
-*.synctex.gz
-*.toc
-*.out
 *.bbl
 *.blg
+*.fdb_latexmk
+*.fls
 *.lof
-*.lot
 *.log
+*.lot
+*.out
+*.synctex.gz
+*.toc
 
 # =========================
 # System Files
