@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Teaser: Divisibility by 3}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Context}
+Divisibility by 3: An integer is divisible by 3 if and only if the sum of its digits is divisible by 3.
+
+\section*{Problems}
+\begin{enumerate}
+  \item Is $3471$ divisible by 3?
+  \item Find the smallest positive integer $n$ such that $52n$ (digits $5,2,n$) is divisible by 3.
+  \item Replace the blank with a single digit to make the number divisible by 3: $8{\,}4{\,}5{\,}\square{\,}2$.
+  \item Among the numbers $10{,}204$, $10{,}207$, $10{,}212$, and $10{,}218$, which are divisible by 3?
+  \item A five-digit number has digits that sum to $21$. What can you say about its divisibility by 3? Give an example of one such number and state whether it is divisible by 9.
+\end{enumerate}
+
+\newpage
+\section*{Solutions}
+\begin{enumerate}
+  \item $3+4+7+1=15$, which is divisible by 3, so $3471$ is divisible by 3.
+  \item Sum of digits $5+2+n = 7+n$ must be divisible by 3. The smallest $n \in \{0,\dots,9\}$ that works is $n=2$ (sum $9$). So $522$ is divisible by 3.
+  \item Sum $8+4+5+\square+2 = 19+\square$ must be divisible by 3. The valid digits are $2,5,8$ (making sums $21,24,27$). Any of those works; e.g., $84582$ is divisible by 3.
+  \item Sums: $1+0+2+0+4=7$ (no), $1+0+2+0+7=10$ (no), $1+0+2+1+2=6$ (yes), $1+0+2+1+8=12$ (yes). So $10{,}212$ and $10{,}218$ are divisible by 3.
+  \item Sum $21$ is divisible by 3, so any five-digit number with digit-sum $21$ is divisible by 3. Example: $65235$ ($6+5+2+3+5=21$) is divisible by 3 but not by 9 (since $21$ is not a multiple of 9). No five-digit number with digit-sum $21$ is divisible by 9.
+\end{enumerate}
+
+\end{document}
