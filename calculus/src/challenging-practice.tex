@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Calculus 1 Practice: Limits and Derivatives}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Select the best answer for each. Use exact values when possible. Unless stated otherwise, assume functions are real-valued.
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1.1em, topsep=0.8em]
+  \item Piecewise limit: $f(x) = \begin{cases} x^2 - 4, & x < 2 \\ \dfrac{\sin(ax)}{x-2}, & x \ge 2 \end{cases}$. Choose $a$ so $\displaystyle \lim_{x \to 2} f(x)$ exists, and the limit value.\\[4pt]
+  (A) $a=0$, limit $0$\\
+  (B) $a=\tfrac{\pi}{4}$, limit $0$\\
+  (C) $a=\tfrac{\pi}{2}$, limit $-1$\\
+  (D) $a=\tfrac{\pi}{4}$, limit $-2$
+
+  \item Piecewise continuity/differentiability: $g(x) = \begin{cases} bx + 1, & x \le 0 \\ x^2 + cx, & x > 0 \end{cases}$.\\[4pt]
+  (A) $b=1,c=0$\\
+  (B) $b=0,c=1$\\
+  (C) $b=1,c=-1$\\
+  (D) No real $b,c$ give both continuity and differentiability at $0$
+
+  \item Differentiability at $0$ for $h(x) = \dfrac{x}{1 + |x|}$.\\[4pt]
+  (A) Continuous and differentiable; $h'(0)=1$\\
+  (B) Continuous but not differentiable\\
+  (C) Not continuous at $0$\\
+  (D) Differentiable with $h'(0)=0$
+
+  \item Evaluate $\displaystyle \lim_{x \to 0} \frac{1 - \cos(3x)}{x^2}$.\\[4pt]
+  (A) $0$\\
+  (B) $\tfrac{9}{2}$\\
+  (C) $\tfrac{3}{2}$\\
+  (D) $9$
+
+  \item For $x^2 + xy + y^2 = 7$, find $\dfrac{dy}{dx}$ at $(1,2)$.\\[4pt]
+  (A) $-\tfrac{5}{4}$\\
+  (B) $-\tfrac{4}{5}$\\
+  (C) $-\tfrac{1}{2}$\\
+  (D) $-\tfrac{2}{5}$
+
+  \item Related rates (cone): $r = \tfrac{1}{3}h$, $\dfrac{dV}{dt}=10$ at $h=12$. Find $\dfrac{dh}{dt}$.\\[4pt]
+  (A) $\tfrac{15}{\pi}$ cm/s\\
+  (B) $\tfrac{5}{3\pi}$ cm/s\\
+  (C) $\tfrac{15}{2\pi}$ cm/s\\
+  (D) $\tfrac{5}{\pi}$ cm/s
+
+  \item Related rates (ladder): 15 ft ladder, bottom sliding at $2$ ft/s when $x=9$. Rate of top sliding down?\\[4pt]
+  (A) $-\tfrac{6}{5}$ ft/s\\
+  (B) $-\tfrac{9}{5}$ ft/s\\
+  (C) $-\tfrac{4}{3}$ ft/s\\
+  (D) $-\tfrac{10}{3}$ ft/s
+
+  \item Optimization (open cylinder): Express $S(r)$ for fixed $V$, minimize. What is optimal $r$?\\[4pt]
+  (A) $r = \left(\dfrac{V}{2\pi}\right)^{1/3}$\\
+  (B) $r = \left(\dfrac{V}{\pi}\right)^{1/3}$\\
+  (C) $r = \left(\dfrac{V}{4\pi}\right)^{1/3}$\\
+  (D) $r = \left(\dfrac{3V}{2\pi}\right)^{1/3}$
+
+  \item Optimization (cone in cylinder): Cone in cylinder radius $R$, height $H$. Height maximizing cone volume?\\[4pt]
+  (A) $h = \dfrac{H}{3}$\\
+  (B) $h = \dfrac{H}{2}$\\
+  (C) $h = \dfrac{2H}{3}$\\
+  (D) $h = H$
+
+  \item For $f(x) = x^{4} - 4x^{3} + 6x^{2}$, critical points and classifications?\\[4pt]
+  (A) $x=0$ (min), $x=2$ (min)\\
+  (B) $x=0$ (max), $x=2$ (min)\\
+  (C) $x=0$ (inflection), $x=2$ (min)\\
+  (D) $x=2$ only (min)
+
+  \item MVT for $p(x) = x + \dfrac{1}{x}$ on $[1,4]$: choose a valid $c$.\\[4pt]
+  (A) $c=\sqrt{2}$\\
+  (B) $c=\sqrt{3}$\\
+  (C) $c=\sqrt{5}$\\
+  (D) $c=2$
+
+  \item Evaluate $\displaystyle \lim_{x \to 0^+} \left( \frac{\ln x}{x} \right)^{x}$.\\[4pt]
+  (A) $1$\\
+  (B) $0$\\
+  (C) $\tfrac{1}{e}$\\
+  (D) $e$
+
+  \item Chain rule: $\dfrac{d}{dx}\left[\sin\!\left((3x^2 - 1)^4\right)\right]$ at $x=1$.\\[4pt]
+  (A) $96\cos(4)$\\
+  (B) $48\cos(4)$\\
+  (C) $96\sin(4)$\\
+  (D) $48\sin(4)$
+
+  \item Implicit second derivative for $x^2 + xy + y^2 = 7$ at $(1,2)$.\\[4pt]
+  (A) $-\tfrac{41}{50}$\\
+  (B) $-\tfrac{9}{25}$\\
+  (C) $-\tfrac{23}{50}$\\
+  (D) $-\tfrac{7}{10}$
+
+  \item Linearization of $\sqrt{1+3x}$ at $0$; approximation for $\sqrt{1.06}$.\\[4pt]
+  (A) $\sqrt{1.06} \approx 1.03$\\
+  (B) $\approx 1.09$\\
+  (C) $\approx 1.06$\\
+  (D) $\approx 1.01$
+
+  \item MVT for $f(x)=x^{3/2}$ on $[1,4]$: which $c$ works?\\[4pt]
+  (A) $c=\dfrac{4}{\sqrt{3}}$\\
+  (B) $c=\dfrac{9}{4}$\\
+  (C) $c=\dfrac{25}{9}$\\
+  (D) $c=\dfrac{7}{3}$
+
+  \item Log differentiation: Find $\dfrac{dy}{dx}$ if $y = x^{x^2} (\sin x)^3$.\\[4pt]
+  (A) $x^{x^2}(\sin x)^3\left(2x\ln x + x + 3\cot x\right)$\\
+  (B) $x^{x^2}(\sin x)^3\left(2x\ln x + 3\tan x\right)$\\
+  (C) $x^{x^2}(\sin x)^3\left(2x\ln x + \dfrac{3}{\sin x}\right)$\\
+  (D) $x^{x^2}(\sin x)^3\left(2x + 3\cos x\right)$
+
+  \item Rectangle under $y=9 - x^2$ in first quadrant; dimensions maximizing area.\\[4pt]
+  (A) $x=2$, $y=5$\\
+  (B) $x=3$, $y=0$\\
+  (C) $x=3$, $y=0$\\
+  (D) $x=2$, $y=9$
+
+  \item Curve analysis for $f(x) = \dfrac{x}{x^2 + 1}$: intervals of increase/decrease.\\[4pt]
+  (A) Increasing on $(-\infty,-1)\cup(1,\infty)$\\
+  (B) Increasing on $(-1,1)$\\
+  (C) Increasing on $(-\infty,-1)$ only\\
+  (D) Increasing on $(0,\infty)$ only
+
+  \item Newton's method: one iteration for $f(x) = x^3 - 5x + 2$ from $x_0=1$.\\[4pt]
+  (A) $x_1 = \tfrac{7}{2}$\\
+  (B) $x_1 = 0$\\
+  (C) $x_1 = \tfrac{1}{2}$\\
+  (D) $x_1 = 1$
+\end{enumerate}
+
+\end{document}
