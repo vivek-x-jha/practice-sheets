@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{tikz}
+\geometry{margin=1in}
+
+\title{Calculus 1 Practice: Mixed Review}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Work without a calculator unless otherwise stated. Complete within 60 minutes. Unless a decimal is requested, give exact values (e.g., $\pi$, radicals, fractions). For free-response items, show setup and key steps.
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1.1em, topsep=0.8em]
+  \item A particle moves on the $x$-axis with velocity $v(t)$ shown below. At which times does the particle change direction?\\[-0.5em]
+  \begin{center}
+    \begin{tikzpicture}[scale=0.7]
+      \draw[->] (-0.5,0) -- (8.2,0) node[right] {$t$};
+      \draw[->] (0,-3) -- (0,4) node[above] {$v(t)$};
+      \draw (-0.2,2) node[left]{2}; \draw (-0.2,-2) node[left]{-2};
+      \foreach \x/\lab in {0/0,2/2,4/4,6/6,8/8}{\draw (\x,-0.15) -- (\x,0.15) node[below=6pt]{\lab};}
+      \draw[thick] (0,2) -- (2,-2) -- (4,2) -- (6,-1) -- (8,3);
+    \end{tikzpicture}
+  \end{center}
+  (A) $t=1,3$ \quad (B) $t=1,3,\tfrac{16}{3}$ \quad (C) $t=1,3,\tfrac{16}{3},\tfrac{13}{2}$ \quad (D) $t=3,\tfrac{16}{3}$ \quad (E) never
+
+  \item If $f(x)=\ln(x^2+1)$ and $g(x)=\sin(e^{x})$, find $\dfrac{d}{dx}\big(g(f(x))\big)$ at $x=1$.\\
+  (A) $\cos(2)$ \quad (B) $2\cos(2)$ \quad (C) $2\sin(2)$ \quad (D) $e\cos(2)$ \quad (E) $2e\cos(2)$
+
+  \item The graph of $y=f(x)$ passes through $(1,-2)$ with $f'(1)=5$. Find the tangent line to $y = x^2f(x)$ at $x=1$.\\
+  (A) $y=-x-1$ \quad (B) $y=x-3$ \quad (C) $y=3x-7$ \quad (D) $y=5x-13$ \quad (E) $y=7x-17$
+
+  \item For $x^2 + xy + y^2 = 7$, find $\dfrac{d^2y}{dx^2}$ at the point $(1,2)$.\\
+  (A) $-\dfrac{6}{25}$ \quad (B) $-\dfrac{42}{125}$ \quad (C) $-\dfrac{4}{25}$ \quad (D) $\dfrac{6}{25}$ \quad (E) $\dfrac{42}{125}$
+
+  \item If $f(1)=4$, $f'(1)=\dfrac{1}{2}$, and $f^{-1}(4)=1$, find $\left(f^{-1}\right)'(4)$.\\
+  (A) $-\dfrac{1}{4}$ \quad (B) $\dfrac{1}{8}$ \quad (C) $\dfrac{1}{2}$ \quad (D) $2$ \quad (E) $8$
+
+  \item For $h(x)=x^{4}-4x^{2}$, at what $x$ does the graph have a point of inflection?\\
+  (A) $x=0$ \quad (B) $x=\pm 1$ \quad (C) $x=\pm \sqrt{\tfrac{2}{3}}$ \quad (D) $x=\pm \sqrt{2}$ \quad (E) None
+
+  \item Consider the piecewise function $p(x) = \begin{cases} -x+1, & x<1 \\ \dfrac{x^2-1}{x-1}, & x>1 \end{cases}$. What is the right-hand derivative at $x=1$?\\
+  (A) $0$ \quad (B) $1$ \quad (C) $2$ \quad (D) $3$ \quad (E) Does not exist
+
+  \item The graph of $f$ has $f(2)=1$, $f'(2)=-3$, $g(2)=-2$, and $g'(2)=4$. Find $\dfrac{d}{dx}\left(\dfrac{f(x)}{g(x)}\right)$ at $x=2$.\\
+  (A) $-\dfrac{3}{2}$ \quad (B) $-\dfrac{1}{2}$ \quad (C) $\dfrac{1}{2}$ \quad (D) $1$ \quad (E) $\dfrac{3}{2}$
+
+  \item Evaluate $\displaystyle \lim_{x\to 0} \frac{e^{3x}-1-3x}{x^2}$.\\
+  (A) $\dfrac{9}{2}$ \quad (B) $3$ \quad (C) $\dfrac{3}{2}$ \quad (D) $0$ \quad (E) Diverges
+
+  \item Find $\dfrac{d}{dx}\left[\arccos\!\left(\dfrac{1}{x^{2}}\right)\right]$ for $x>1$.\\
+  (A) $-\dfrac{2}{x^{3}\sqrt{1-\tfrac{1}{x^{4}}}}$ \quad (B) $\dfrac{2}{x^{3}\sqrt{1-\tfrac{1}{x^{4}}}}$ \quad (C) $\dfrac{1}{x^{2}\sqrt{1-\tfrac{1}{x^{4}}}}$ \quad (D) $-\dfrac{1}{x^{2}\sqrt{1-\tfrac{1}{x^{4}}}}$ \quad (E) $\dfrac{1}{\sqrt{1-\tfrac{1}{x^{4}}}}$
+
+  \item In a right triangle with hypotenuse $13$, side $x$ is opposite angle $\theta$. If $\theta$ increases at $0.02$ rad/min when $x=5$, what is $\dfrac{dx}{dt}$?\\
+  (A) $\dfrac{3}{25}$ \quad (B) $\dfrac{6}{25}$ \quad (C) $\dfrac{12}{25}$ \quad (D) $\dfrac{18}{25}$ \quad (E) $\dfrac{24}{25}$
+
+  \item A conical tank has radius $r=\dfrac{h}{3}$. If $\dfrac{dh}{dt}=2$ ft/min when $h=9$, what is $\dfrac{dV}{dt}$? (Volume $V=\tfrac{1}{3}\pi r^{2}h$.)\\
+  (A) $12\pi$ \quad (B) $18\pi$ \quad (C) $24\pi$ \quad (D) $30\pi$ \quad (E) $36\pi$
+
+  \item Solve for $x$: $\ln(x-1) + \ln(x+3) = \ln 9$.\\
+  (A) $2$ \quad (B) $3$ \quad (C) $4$ \quad (D) $5$ \quad (E) No real solution
+
+  \item A curve is defined implicitly by $x^2y + y^3 = 2$. At $(1,1)$, find $\dfrac{dy}{dx}$.\\
+  (A) $-1$ \quad (B) $-\dfrac{1}{2}$ \quad (C) $0$ \quad (D) $\dfrac{1}{2}$ \quad (E) $1$
+
+  \item Use linearization of $f(x)=\sqrt{4+x}$ at $x=0$ to approximate $\sqrt{4.09}$.\\
+  (A) $2.00$ \quad (B) $2.015$ \quad (C) $2.0225$ \quad (D) $2.045$ \quad (E) $2.09$
+
+  \item If $f(x)=x^{3}$ on $[0,2]$, which $c$ satisfies the Mean Value Theorem?\\
+  (A) $c=\dfrac{1}{\sqrt{3}}$ \quad (B) $c=\dfrac{2}{\sqrt{3}}$ \quad (C) $c=1$ \quad (D) $c=\sqrt{2}$ \quad (E) $c=\dfrac{3}{2}$
+
+  \item A rectangle is inscribed under $y=16-x^4$ in the first quadrant with one vertex at the origin and one on the curve. What $x$ gives maximum area?\\
+  (A) $x=1$ \quad (B) $x=2^{1/4}$ \quad (C) $x=\left(\dfrac{16}{3}\right)^{1/4}$ \quad (D) $x=\left(\dfrac{16}{5}\right)^{1/4}$ \quad (E) $x=3^{1/4}$
+
+  \item Given $f'(x)>0$ and $f''(x)<0$ for all $x$, which statement is true about $f$?\\
+  (A) Increasing and concave up \quad (B) Increasing and concave down \quad (C) Decreasing and concave up \quad (D) Decreasing and concave down \quad (E) Not enough information
+
+  \item One Newton iteration for $F(x)=x^3-6x+5$ starting at $x_0=2$ gives $x_1 = \,$?\\
+  (A) $\dfrac{11}{6}$ \quad (B) $2$ \quad (C) $\dfrac{7}{3}$ \quad (D) $3$ \quad (E) $\dfrac{11}{3}$
+
+  \item For $r(x)=\begin{cases}x^{3}-8,& x<2\\ 4x-8,& x\ge 2\end{cases}$, determine continuity and differentiability at $x=2$.\\
+  (A) Continuous and differentiable \quad (B) Continuous, not differentiable \quad (C) Differentiable, not continuous \quad (D) Neither \quad (E) Limit does not exist
+\end{enumerate}
+
+\newpage
+\section*{Answers}
+\begin{enumerate}[leftmargin=*, itemsep=0.6em, topsep=0.4em]
+  \item C \quad
+  \item B \quad
+  \item B \quad
+  \item B \quad
+  \item D \quad
+  \item C \quad
+  \item B \quad
+  \item C \quad
+  \item A \quad
+  \item B \quad
+  \item B \quad
+  \item B \quad
+  \item E \quad
+  \item B \quad
+  \item C \quad
+  \item B \quad
+  \item D \quad
+  \item B \quad
+  \item A \quad
+  \item B
+\end{enumerate}
+
+\end{document}
