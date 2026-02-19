@@ -20,6 +20,26 @@
 - Keep layout simple with grouped sections for each operation and total problem count aligned with the current arithmetic templates.
 - Maintain consistent LaTeX formatting with existing sheets under `arithmetic/src`, building PDFs to `arithmetic/build`.
 
+# Calculus Worksheet Guidelines
+
+- Use clear instructions with time expectations and answer-format requirements (exact forms unless approximation is requested).
+- Focus on core Calculus AB topics currently in this repo: limits, derivatives, tangent lines, definite integrals, Riemann sums, numerical integration, and particle motion.
+- Keep problem statements concise and assessment-style; include multi-part items when appropriate.
+- Maintain consistent LaTeX formatting with existing sheets under `calculus/src`, building PDFs to `calculus/build`.
+
+# Geometry Worksheet Guidelines
+
+- Use concise instructions that specify timing and rounding expectations.
+- Emphasize application problems with diagrams/contexts when relevant, including right-triangle trig, Law of Sines/Cosines, and proof/identity practice.
+- Keep the worksheet style consistent with existing geometry assessments and practice sheets.
+- Maintain LaTeX formatting with sheets under `geometry/src`, building PDFs to `geometry/build`.
+
+# Teaser Worksheet Guidelines
+
+- Keep problems short, puzzle-like, and reasoning-focused.
+- Prefer elegant number sense, divisibility, pattern, and logic prompts suitable for enrichment.
+- Maintain formatting consistent with `teasers/src`; build PDFs to `teasers/build`.
+
 # Build and Clean Commands
 
 - Build (Algebra): `latexmk -pdf -f -output-directory=algebra/build algebra/src/<file>.tex`
@@ -28,4 +48,10 @@
 - Clean (Algebra2): `latexmk -c -output-directory=algebra2/build algebra2/src/<file>.tex`
 - Build (Arithmetic): `latexmk -pdf -f -output-directory=arithmetic/build arithmetic/src/<file>.tex`
 - Clean (Arithmetic): `latexmk -c -output-directory=arithmetic/build arithmetic/src/<file>.tex`
+- Build (Calculus): `latexmk -pdf -f -output-directory=calculus/build calculus/src/<file>.tex`
+- Clean (Calculus): `latexmk -c -output-directory=calculus/build calculus/src/<file>.tex`
+- Build (Geometry): `latexmk -pdf -f -output-directory=geometry/build geometry/src/<file>.tex`
+- Clean (Geometry): `latexmk -c -output-directory=geometry/build geometry/src/<file>.tex`
+- Build (Teasers): `latexmk -pdf -f -output-directory=teasers/build teasers/src/<file>.tex`
+- Clean (Teasers): `latexmk -c -output-directory=teasers/build teasers/src/<file>.tex`
 - Prefer `latexmk -c` for cleanup; do not delete PDFs when cleaning build artifacts.
