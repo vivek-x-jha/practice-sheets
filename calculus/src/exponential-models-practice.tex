@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Exponential Models and Differential Equations Practice}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Complete within 60 minutes. Show setup and key steps. Use exact forms unless a decimal approximation is explicitly requested.
+
+\section*{Basic Formulae}
+\begin{itemize}[leftmargin=1.5em]
+  \item Exponential growth/decay: $\dfrac{dy}{dt}=ky$, so $y=Ce^{kt}$
+  \item Doubling time: $T_d=\dfrac{\ln 2}{k}$ for $k>0$
+  \item Half-life: $T_{1/2}=\dfrac{\ln 2}{|k|}$ for $k<0$
+  \item Newton's Law of Cooling: $\dfrac{dT}{dt}=k(T-T_s)$, so $T(t)=T_s+Ce^{kt}$
+  \item Logistic differential equation: $\dfrac{dP}{dt}=kP\left(1-\dfrac{P}{L}\right)$
+  \item Logistic solution form: $P(t)=\dfrac{L}{1+Ae^{-kt}}$
+\end{itemize}
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1em, topsep=0.8em]
+  \item A quantity $y$ satisfies $\dfrac{dy}{dt}=ky$. If $y(1)=12$ and $y(4)=96$, find $k$ and the explicit solution $y(t)$.
+
+  \item A bacteria culture starts with 150 cells and grows at a rate proportional to its size. After 2 hours there are 240 cells.
+  \begin{enumerate}[label=\alph*)]
+    \item Find a model for the population after $t$ hours.
+    \item Find the exact time when the population first exceeds 1000 cells.
+  \end{enumerate}
+
+  \item A radioactive substance decays according to $\dfrac{dA}{dt}=kA$. A 120-gram sample decays to 45 grams in 8 days.
+  \begin{enumerate}[label=\alph*)]
+    \item Find the exact decay model.
+    \item Find the exact half-life.
+  \end{enumerate}
+
+  \item A sample of carbon-14 has decayed to 18\% of its original amount. Assuming exponential decay, express the age of the sample exactly in terms of the half-life $H$ of carbon-14.
+
+  \item A population satisfies $\dfrac{dP}{dt}=0.12P$. If $P(0)=P_0$, find the exact time required for the population to become $7P_0$.
+
+  \item A medicine is eliminated from the bloodstream at a rate proportional to the amount present. If 240 mg is injected, 150 mg remains after 4 hours, and no additional medicine is given, find the exact amount remaining after 10 hours.
+
+  \item A cup of coffee at $92^\circ$C is placed in a room at $20^\circ$C. After 10 minutes the coffee has cooled to $68^\circ$C.
+  \begin{enumerate}[label=\alph*)]
+    \item Find a temperature model $T(t)$.
+    \item Find the exact time when the coffee reaches $45^\circ$C.
+  \end{enumerate}
+
+  \item A forensic scientist finds a body in a room kept at $16^\circ$C. The body temperature is $30^\circ$C at 2:00 PM and $28^\circ$C at 3:00 PM. Assume the normal body temperature at the time of death was $37^\circ$C. How long before 2:00 PM did the person die?
+
+  \item A fish population follows the logistic model
+  \[
+  \frac{dP}{dt}=0.35P\left(1-\frac{P}{6000}\right), \qquad P(0)=500.
+  \]
+  Find the logistic function $P(t)$.
+
+  \item For the logistic model
+  \[
+  P(t)=\frac{1500}{1+14e^{-0.25t}},
+  \]
+  find:
+  \begin{enumerate}[label=\alph*)]
+    \item the limiting population,
+    \item the initial population,
+    \item the exact time when the population reaches 900.
+  \end{enumerate}
+
+  \item A population satisfies
+  \[
+  \frac{dP}{dt}=kP\left(1-\frac{P}{1200}\right),
+  \]
+  with $P(0)=150$ and $P(3)=300$. Find $P(t)$.
+
+  \item A tank contains 500 bacteria initially and grows logistically with carrying capacity 8000. The population is 1200 after 4 hours and the growth rate is proportional to both the population and remaining capacity.
+  \begin{enumerate}[label=\alph*)]
+    \item Write the logistic model.
+    \item Find the exact time when the population reaches 6000.
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
