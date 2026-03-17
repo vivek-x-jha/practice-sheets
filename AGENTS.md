@@ -23,7 +23,7 @@
 # Calculus Worksheet Guidelines
 
 - Use clear instructions with time expectations and answer-format requirements (exact forms unless approximation is requested).
-- Focus on core Calculus AB topics currently in this repo: limits, derivatives, tangent lines, definite integrals, Riemann sums, numerical integration, and particle motion.
+- Focus on core Calculus AB topics currently in this repo: limits, derivative definitions and rules, tangent lines, definite integrals, Riemann sums, numerical integration, particle motion, and first-order differential-equation models such as exponential growth/decay, Newton's law of cooling, and logistic growth.
 - Keep problem statements concise and assessment-style; include multi-part items when appropriate.
 - Maintain consistent LaTeX formatting with existing sheets under `calculus/src`, building PDFs to `calculus/build`.
 
