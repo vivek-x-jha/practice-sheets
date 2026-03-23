@@ -6,7 +6,7 @@ Curated LaTeX worksheets for math practice by subject.
 - `algebra/`: Proportional-relationships assessments and related Algebra I material.
 - `algebra2/`: Algebra II practice (polynomials, logarithms, rational functions, conics, polar coordinates, complex numbers in polar form, series, and review sets).
 - `arithmetic/`: Arithmetic and pre-algebra practice sheets.
-- `calculus/`: Calculus AB-style practice (limits, derivative rules and definitions, integrals, particle motion, exponential/logistic/Newton models, and review sets).
+- `calculus/`: Calculus AB-style practice (limits, derivative rules and definitions, integrals, washer/shell volume problems, particle motion, exponential/logistic/Newton models, and review sets).
 - `geometry/`: Geometry and trigonometry practice (applications, Law of Sines/Cosines, and proof work).
 - `teasers/`: Short topical teaser/problem sets.
 - Builds live in each subject’s `build/` folder; sources are under `src/`.
