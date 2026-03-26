@@ -1,0 +1,39 @@
+:::writing{variant=“standard” id=“latexprompt”}
+You are generating a clean, professional LaTeX table for a math reference sheet.
+
+Requirements:
+	•	Output ONLY valid LaTeX code (no explanations)
+	•	Use a table + tabular environment
+	•	Include 4 columns: Function, a_n, S_n, S_infinity
+	•	Use proper math mode formatting
+	•	Use \frac, \sum, and cases where appropriate
+	•	Align everything cleanly
+	•	Use horizontal lines between rows
+	•	Make the table readable and well-spaced
+	•	Use \renewcommand{\arraystretch}{1.3} for spacing
+	•	Center the table
+
+Content to include:
+
+Rows:
+	1.	Identity: a_n = n, S_n = n(n+1)/2, S_inf = infinity
+	2.	Quadratic: a_n = n^2, S_n = n(n+1)(2n+1)/6, S_inf = infinity
+	3.	Cubic: a_n = n^3, S_n = (n(n+1)/2)^2, S_inf = infinity
+	4.	Linear (Arithmetic): a_n = mn + b, S_n = n(a_1 + a_n)/2, S_inf = infinity
+	5.	Exponential (Geometric): a_n = r^(n-1),
+S_n = (1 - r^n)/(1 - r) if r != 1, otherwise n,
+S_inf = 1/(1-r) for |r| < 1
+	6.	Constant: a_n = c, S_n = cn, S_inf = infinity
+	7.	Reciprocal (Harmonic): a_n = 1/n, S_n = sum from k=1 to n of 1/k, S_inf = infinity
+	8.	Rational (Telescoping): a_n = 1/(n(n+1)), S_n = n/(n+1), S_inf = 1
+	9.	Rational (p-series): a_n = 1/n^2, S_n = sum from k=1 to n of 1/k^2, S_inf = pi^2/6
+
+Additional instructions:
+	•	Use \infty symbol
+	•	Use proper cases formatting for the geometric sum
+	•	Use summation notation with limits
+	•	Keep formatting compact but readable
+	•	No unnecessary packages unless required
+
+Return only the LaTeX code.
+:::

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{array}
+\geometry{margin=1in}
+
+\title{Sequences and Series Reference Table}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[h]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{2.35in}|>{\centering\arraybackslash}p{0.85in}|>{\centering\arraybackslash}p{0.85in}|>{\centering\arraybackslash}p{1.05in}|>{\centering\arraybackslash}p{0.9in}|}
+\hline
+\textbf{Function} & \textbf{$a_n$} & \textbf{$a_\infty$} & \textbf{$S_n$} & \textbf{$S_\infty$} \\
+\hline
+Constant & $c$ & $c$ & $c n$ & $\infty$ \\
+\hline
+Identity (Consecutive Integers) & $n$ & $\infty$ & $\dfrac{n(n+1)}{2}$ & $\infty$ \\
+\hline
+Linear (Arithmetic) & $d n + b$ & $\infty$ & $\dfrac{n(a_1+a_n)}{2}$ & $\infty$ \\
+\hline
+Quadratic (Consecutive Squares) & $n^2$ & $\infty$ & $\dfrac{n(n+1)(2n+1)}{6}$ & $\infty$ \\
+\hline
+Cubic (Consecutive Cubes) & $n^3$ & $\infty$ & $\left(\dfrac{n(n+1)}{2}\right)^2$ & $\infty$ \\
+\hline
+Exponential (Geometric) & $r^n$ &
+$\begin{cases}
+\infty, & |r|\ge 1 \\
+0, & |r|<1
+\end{cases}$ &
+$\begin{cases}
+\dfrac{1-r^{n+1}}{1-r}, & r\ne 1 \\
+n, & r=1
+\end{cases}$ &
+$\dfrac{r}{1-r}$ for $|r|<1$ \\
+\hline
+Reciprocal (Harmonic) & $\dfrac{1}{n}$ & $0$ & $\displaystyle\sum_{k=1}^{n}\dfrac{1}{k}$ & $\infty$ \\
+\hline
+Rational (Telescoping) & $\dfrac{1}{n(n+1)}$ & $0$ & $\dfrac{n}{n+1}$ & $1$ \\
+\hline
+Rational ($p$-series) & $\dfrac{1}{n^2}$ & $0$ & $\displaystyle\sum_{k=1}^{n}\dfrac{1}{k^2}$ & $\dfrac{\pi^2}{6}$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
