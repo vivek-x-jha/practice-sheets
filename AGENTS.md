@@ -1,7 +1,7 @@
 # Algebra2 Worksheet Guidelines
 
 - Default to 12 problems unless otherwise specified; include an instructions section with timing and answer-format expectations.
-- Focus on challenging Algebra II topics: rational root theorem, factoring (including quartics), polynomial long/synthetic division, complex roots and conjugate pairs, complex arithmetic, polar coordinates and conversions, De Moivre's formula, vertex/maximum-minimum analysis of quadratics, logarithmic/exponential equations, rational functions, conic sections, finite/infinite series, and applied revenue/price optimization word problems.
+- Focus on challenging Algebra II topics: rational root theorem, factoring (including quartics), polynomial long/synthetic division, complex roots and conjugate pairs, complex arithmetic, polar coordinates and conversions, De Moivre's formula, unit-circle trig values, inverse trig values, graphing the six trig functions, triangle area, solving triangles with the Law of Sines and Law of Cosines, vertex/maximum-minimum analysis of quadratics, logarithmic/exponential equations, rational functions, conic sections, finite/infinite series, and applied revenue/price optimization word problems.
 - Avoid giving hints or descriptive labels in problem statements; present problems concisely and allow multi-part items when useful (e.g., list possible roots, find one, factor fully).
 - Use exact forms over decimals; state when exact form is expected.
 - Maintain formatting consistent with sheets under `algebra2/src`; build PDFs to `algebra2/build`.
