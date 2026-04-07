@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Calculus Practice: Parametric, Polar, and Vector Derivatives}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Show key derivative setup and simplification. Use exact values unless a decimal approximation is explicitly requested. Do not evaluate any integrals.
+
+\section*{Basic Formulae}
+\begin{itemize}[leftmargin=1.5em]
+  \item Parametric slope:
+  \[
+  \frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}
+  \]
+  \item Second derivative for parametric curves:
+  \[
+  \frac{d^2y}{dx^2}=\frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{\frac{dx}{dt}}
+  \]
+  \item Polar slope:
+  \[
+  \frac{dy}{dx}=\frac{\frac{dr}{d\theta}\sin\theta+r\cos\theta}{\frac{dr}{d\theta}\cos\theta-r\sin\theta}
+  \]
+  \item Polar to Cartesian:
+  \[
+  x=r\cos\theta,\qquad y=r\sin\theta
+  \]
+  \item Vector derivatives:
+  \[
+  \mathbf{v}(t)=\mathbf{r}'(t),\qquad \mathbf{a}(t)=\mathbf{r}''(t),\qquad
+  |\mathbf{v}(t)|=\sqrt{(x'(t))^2+(y'(t))^2+(z'(t))^2}
+  \]
+  \item Tangent line to a parametric or polar curve at a point:
+  \[
+  y-y_0=m(x-x_0)
+  \]
+\end{itemize}
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1em, topsep=0.8em]
+  \item Let
+  \[
+  x=t^3-3t,\qquad y=t^2+t.
+  \]
+  Find $\dfrac{dy}{dx}$ and $\dfrac{d^2y}{dx^2}$ in terms of $t$. Then determine all values of $t$ for which the tangent line is horizontal.
+
+  \item Let
+  \[
+  x=2\cos t+\cos(2t),\qquad y=2\sin t-\sin(2t).
+  \]
+  Find $\dfrac{dy}{dx}$ and the equation of the tangent line at $t=\dfrac{\pi}{3}$.
+
+  \item A particle moves in the plane with
+  \[
+  x=t^2-4t,\qquad y=t^3-3t.
+  \]
+  Find the slope of the path at $t=2$. Determine whether the curve is concave up or concave down at that instant.
+
+  \item Let
+  \[
+  x=e^t\cos t,\qquad y=e^t\sin t.
+  \]
+  Find $\dfrac{dy}{dx}$ and $\dfrac{d^2y}{dx^2}$. Then find all $t$ in $[0,2\pi]$ for which the tangent line is parallel to the line $y=x$.
+
+  \item For the polar curve
+  \[
+  r=2+3\cos\theta,
+  \]
+  find $\dfrac{dy}{dx}$ in terms of $\theta$. Then find the slope at $\theta=\dfrac{\pi}{2}$ and determine the tangent line there.
+
+  \item For the polar curve
+  \[
+  r=4\sin(2\theta),
+  \]
+  find all values of $\theta$ in $[0,\pi)$ at which the tangent line is horizontal.
+
+  \item For the polar curve
+  \[
+  r=\theta^2,\qquad \theta>0,
+  \]
+  find $\dfrac{dy}{dx}$ and the equation of the tangent line at $\theta=1$.
+
+  \item For the polar curve
+  \[
+  r=\frac{3}{1+\sin\theta},
+  \]
+  find $\dfrac{dy}{dx}$ and determine all $\theta$ in $[0,2\pi)$ for which the tangent line is vertical.
+
+  \item A particle in space has position
+  \[
+  \mathbf{r}(t)=\langle t^2-1,\ 3t-\cos t,\ \sin(2t)\rangle.
+  \]
+  Find $\mathbf{v}(t)$, $\mathbf{a}(t)$, and the speed at $t=\pi$.
+
+  \item A particle moves with position
+  \[
+  \mathbf{r}(t)=\langle e^t,\ e^{-t},\ t^2\rangle.
+  \]
+  Find the velocity and acceleration vectors. Then determine all $t$ for which the velocity vector is orthogonal to the acceleration vector.
+
+  \item A particle moves in space with
+  \[
+  \mathbf{r}(t)=\langle \cos(2t),\ \sin(2t),\ 4t\rangle.
+  \]
+  Find the angle between $\mathbf{v}\!\left(\frac{\pi}{4}\right)$ and $\mathbf{a}\!\left(\frac{\pi}{4}\right)$.
+
+  \item Let
+  \[
+  \mathbf{r}(t)=\langle t,\ t^2,\ t^3\rangle.
+  \]
+  Find the equation of the tangent line to the space curve at $t=1$ in symmetric form. Then find the point on the tangent line whose $x$-coordinate is $3$.
+\end{enumerate}
+
+\end{document}
