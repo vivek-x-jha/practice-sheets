@@ -28,6 +28,12 @@
 - Focus on core Calculus AB topics currently in this repo: limits, derivative definitions and rules, tangent lines, definite integrals, Riemann sums, numerical integration, washer/shell volume problems, particle motion, and first-order differential-equation models such as exponential growth/decay, Newton's law of cooling, and logistic growth.
 - Keep problem statements concise and assessment-style; include multi-part items when appropriate.
 
+# Cheatsheet Guidelines
+
+- Use `cheatsheets/` for compact reference sheets, formula summaries, and topic overviews rather than practice sets.
+- Organize content by concept with short labels, clean formula blocks, small tables when useful, and minimal prose.
+- Prefer exact statements of identities, conditions, and special cases over worked examples unless the user asks for examples.
+
 # Geometry Worksheet Guidelines
 
 - Emphasize application problems with diagrams/contexts when relevant, including right-triangle trig, Law of Sines/Cosines, and proof/identity practice.
@@ -48,6 +54,8 @@
 - Clean (Arithmetic): `latexmk -c -output-directory=arithmetic/build arithmetic/src/<file>.tex`
 - Build (Calculus): `latexmk -pdf -f -output-directory=calculus/build calculus/src/<file>.tex`
 - Clean (Calculus): `latexmk -c -output-directory=calculus/build calculus/src/<file>.tex`
+- Build (Cheatsheets): `latexmk -pdf -f -output-directory=cheatsheets/build cheatsheets/src/<file>.tex`
+- Clean (Cheatsheets): `latexmk -c -output-directory=cheatsheets/build cheatsheets/src/<file>.tex`
 - Build (Geometry): `latexmk -pdf -f -output-directory=geometry/build geometry/src/<file>.tex`
 - Clean (Geometry): `latexmk -c -output-directory=geometry/build geometry/src/<file>.tex`
 - Build (Teasers): `latexmk -pdf -f -output-directory=teasers/build teasers/src/<file>.tex`
