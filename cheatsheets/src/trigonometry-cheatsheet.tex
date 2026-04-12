@@ -1,0 +1,264 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+
+\begin{center}
+{\LARGE Trigonometry Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Angle Basics}
+\[
+180^\circ=\pi \text{ radians},\qquad
+360^\circ=2\pi \text{ radians},\qquad
+\theta^\circ=\theta\cdot \frac{\pi}{180},\qquad
+\theta \text{ rad}=\theta\cdot \frac{180}{\pi}^\circ
+\]
+
+\begin{center}
+\begin{tabular}{ccccccccc}
+\toprule
+Degrees & $0^\circ$ & $30^\circ$ & $45^\circ$ & $60^\circ$ & $90^\circ$ & $180^\circ$ & $270^\circ$ & $360^\circ$ \\
+Radians & $0$ & $\frac{\pi}{6}$ & $\frac{\pi}{4}$ & $\frac{\pi}{3}$ & $\frac{\pi}{2}$ & $\pi$ & $\frac{3\pi}{2}$ & $2\pi$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Unit Circle and Reference Angles}
+Special reference angles:
+\[
+\frac{\pi}{6},\qquad \frac{\pi}{4},\qquad \frac{\pi}{3}
+\]
+
+For those angles:
+\[
+\sin\theta:\ \frac12,\ \frac{\sqrt2}{2},\ \frac{\sqrt3}{2}
+\qquad
+\cos\theta:\ \frac{\sqrt3}{2},\ \frac{\sqrt2}{2},\ \frac12
+\qquad
+\tan\theta:\ \frac{\sqrt3}{3},\ 1,\ \sqrt3
+\]
+
+Quadrant positive sign rule:
+\[
+\text{QI: all},\qquad \text{QII: }\sin,\qquad \text{QIII: }\tan,\qquad \text{QIV: }\cos
+\]
+
+Reference angle formulas:
+\[
+\theta_{\text{ref}}=
+\begin{cases}
+\theta & \text{in QI}\\
+\pi-\theta & \text{in QII}\\
+\theta-\pi \text{ or } \theta+\pi & \text{in QIII}\\
+-\theta \text{ or } 2\pi-\theta & \text{in QIV}
+\end{cases}
+\]
+
+\section*{Right Triangle Trig}
+SOH-CAH-TOA:
+\[
+\sin\theta=\frac{\text{opp}}{\text{hyp}},\qquad
+\cos\theta=\frac{\text{adj}}{\text{hyp}},\qquad
+\tan\theta=\frac{\text{opp}}{\text{adj}}=\frac{\sin\theta}{\cos\theta}
+\]
+
+Reciprocal functions:
+\[
+\csc\theta=\frac{1}{\sin\theta},\qquad
+\sec\theta=\frac{1}{\cos\theta},\qquad
+\cot\theta=\frac{1}{\tan\theta}=\frac{\cos\theta}{\sin\theta}
+\]
+
+\section*{Core Identities}
+Pythagorean identities:
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+\[
+1+\tan^2\theta=\sec^2\theta
+\]
+\[
+1+\cot^2\theta=\csc^2\theta
+\]
+
+\section*{Cofunction Identities}
+\[
+\sin\left(\frac{\pi}{2}-\theta\right)=\cos\theta,\qquad
+\cos\left(\frac{\pi}{2}-\theta\right)=\sin\theta
+\]
+\[
+\tan\left(\frac{\pi}{2}-\theta\right)=\cot\theta,\qquad
+\cot\left(\frac{\pi}{2}-\theta\right)=\tan\theta
+\]
+\[
+\sec\left(\frac{\pi}{2}-\theta\right)=\csc\theta,\qquad
+\csc\left(\frac{\pi}{2}-\theta\right)=\sec\theta
+\]
+
+\section*{Even-Oddness and Symmetry}
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Function & Parity & Algebra & Symmetry \\
+\midrule
+$\sin x$ & odd & $\sin(-x)=-\sin(x)$ & origin \\
+$\cos x$ & even & $\cos(-x)=\cos(x)$ & $y$-axis \\
+$\tan x$ & odd & $\tan(-x)=-\tan(x)$ & origin \\
+$\csc x$ & odd & $\csc(-x)=-\csc(x)$ & origin \\
+$\sec x$ & even & $\sec(-x)=\sec(x)$ & $y$-axis \\
+$\cot x$ & odd & $\cot(-x)=-\cot(x)$ & origin \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Sum and Difference Formulas}
+\[
+\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+\]
+\[
+\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta
+\]
+\[
+\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta
+\]
+\[
+\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta
+\]
+\[
+\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}
+\]
+\[
+\tan(\alpha-\beta)=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}
+\]
+
+\section*{Double-Angle Formulas}
+\[
+\sin(2\theta)=2\sin\theta\cos\theta
+\]
+\[
+\cos(2\theta)=
+\begin{cases}
+\cos^2\theta-\sin^2\theta\\
+2\cos^2\theta-1\\
+1-2\sin^2\theta
+\end{cases}
+\]
+\[
+\tan(2\theta)=\frac{2\tan\theta}{1-\tan^2\theta}
+\]
+
+\section*{Half-Angle Formulas}
+\[
+\sin\left(\frac{\theta}{2}\right)=\pm\sqrt{\frac{1-\cos\theta}{2}}
+\]
+\[
+\cos\left(\frac{\theta}{2}\right)=\pm\sqrt{\frac{1+\cos\theta}{2}}
+\]
+\[
+\tan\left(\frac{\theta}{2}\right)=
+\begin{cases}
+\dfrac{\sin\theta}{1+\cos\theta}\\[0.6em]
+\dfrac{1-\cos\theta}{\sin\theta}\\[0.6em]
+\csc\theta-\cot\theta
+\end{cases}
+\]
+The sign depends on the quadrant of $\frac{\theta}{2}$.
+
+\section*{Product-to-Sum Formulas}
+\[
+\sin\alpha\sin\beta=\frac12\bigl[\cos(\alpha-\beta)-\cos(\alpha+\beta)\bigr]
+\]
+\[
+\cos\alpha\cos\beta=\frac12\bigl[\cos(\alpha-\beta)+\cos(\alpha+\beta)\bigr]
+\]
+\[
+\sin\alpha\cos\beta=\frac12\bigl[\sin(\alpha+\beta)+\sin(\alpha-\beta)\bigr]
+\]
+\[
+\cos\alpha\sin\beta=\frac12\bigl[\sin(\alpha+\beta)-\sin(\alpha-\beta)\bigr]
+\]
+
+\section*{Triangles}
+Standard labeling: side $a$ opposite angle $A$, side $b$ opposite angle $B$, side $c$ opposite angle $C$.
+
+Area with two sides and included angle:
+\[
+K=\frac12 ab\sin C=\frac12 bc\sin A=\frac12 ca\sin B
+\]
+
+Law of Sines:
+\[
+\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}
+\]
+
+SSA ambiguous case with known $A,a,b$:
+\[
+h=b\sin A
+\]
+\begin{itemize}
+  \item If $a<h$, there are $0$ triangles.
+  \item If $a=h$, there is $1$ right triangle.
+  \item If $h<a<b$, there are $2$ triangles.
+  \item If $a\ge b$, there is $1$ triangle.
+\end{itemize}
+
+Law of Cosines:
+\[
+c^2=a^2+b^2-2ab\cos C
+\]
+\[
+a^2=b^2+c^2-2bc\cos A,\qquad
+b^2=a^2+c^2-2ac\cos B
+\]
+
+Use Law of Cosines for:
+\begin{itemize}
+  \item SAS: two sides and included angle
+  \item SSS: all three sides known
+\end{itemize}
+
+Heron's Formula:
+\[
+s=\frac{a+b+c}{2},\qquad
+K=\sqrt{s(s-a)(s-b)(s-c)}
+\]
+
+Brahmagupta's Formula for a cyclic quadrilateral (inscribed in a circle) with side lengths $a,b,c,d$:
+\[
+s=\frac{a+b+c+d}{2},\qquad
+K=\sqrt{(s-a)(s-b)(s-c)(s-d)}
+\]
+
+\section*{Bearings}
+True bearings are measured clockwise from north.
+
+\[
+\text{N }35^\circ\text{ E} \Rightarrow 35^\circ \text{ east of north}
+\]
+\[
+\text{S }20^\circ\text{ W} \Rightarrow 20^\circ \text{ west of south}
+\]
+
+Common conversion idea:
+\begin{itemize}
+  \item Bearing $060^\circ$ means $60^\circ$ clockwise from north.
+  \item Bearing $210^\circ$ means $210^\circ$ clockwise from north.
+  \item Draw a north-east-south-west diagram first, then mark the angle carefully.
+\end{itemize}
+
+For triangle word problems with bearings:
+\begin{itemize}
+  \item convert each direction to a standard diagram angle
+  \item find the included angle between paths
+  \item use Law of Sines or Law of Cosines as needed
+\end{itemize}
+
+\end{document}
