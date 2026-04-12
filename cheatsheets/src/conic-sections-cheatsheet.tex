@@ -1,0 +1,101 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{booktabs}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Conic Sections Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Identification}
+\[
+Ax^2+Bxy+Cy^2+Dx+Ey+F=0
+\]
+\begin{itemize}
+  \item circle: $A=C$, $B=0$
+  \item parabola: one squared term
+  \item ellipse: same sign, unequal coefficients
+  \item hyperbola: squared terms with opposite signs
+\end{itemize}
+
+\section*{Circle}
+\[
+(x-h)^2+(y-k)^2=r^2
+\]
+Center:
+\[
+(h,k)
+\]
+Radius:
+\[
+r
+\]
+
+\section*{Parabola}
+Vertical axis:
+\[
+(x-h)^2=4p(y-k)
+\]
+Horizontal axis:
+\[
+(y-k)^2=4p(x-h)
+\]
+Vertex:
+\[
+(h,k)
+\]
+Focus:
+\[
+(h,k+p)\text{ or }(h+p,k)
+\]
+Directrix:
+\[
+y=k-p \text{ or } x=h-p
+\]
+
+\section*{Ellipse}
+Horizontal major axis:
+\[
+\frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1,\qquad a>b
+\]
+Vertical major axis:
+\[
+\frac{(x-h)^2}{b^2}+\frac{(y-k)^2}{a^2}=1,\qquad a>b
+\]
+\[
+c^2=a^2-b^2,\qquad e=\frac{c}{a}
+\]
+
+\section*{Hyperbola}
+Horizontal transverse axis:
+\[
+\frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}=1
+\]
+Vertical transverse axis:
+\[
+\frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2}=1
+\]
+\[
+c^2=a^2+b^2,\qquad e=\frac{c}{a}
+\]
+Asymptotes:
+\[
+y-k=\pm \frac{b}{a}(x-h)
+\]
+or
+\[
+y-k=\pm \frac{a}{b}(x-h)
+\]
+
+\section*{Completing the Square}
+\[
+x^2+bx=(x+\tfrac{b}{2})^2-\left(\tfrac{b}{2}\right)^2
+\]
+Do this separately for the $x$-terms and $y$-terms.
+
+\end{document}

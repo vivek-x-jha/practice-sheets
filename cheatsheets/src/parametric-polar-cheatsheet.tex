@@ -1,0 +1,66 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Parametric and Polar Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Parametric Curves}
+\[
+x=x(t),\qquad y=y(t)
+\]
+\[
+\frac{dy}{dx}=\frac{dy/dt}{dx/dt}
+\]
+\[
+\frac{d^2y}{dx^2}=\frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}
+\]
+
+\section*{Horizontal and Vertical Tangents}
+\[
+\frac{dy}{dt}=0,\ \frac{dx}{dt}\ne 0 \Rightarrow \text{horizontal tangent}
+\]
+\[
+\frac{dx}{dt}=0,\ \frac{dy}{dt}\ne 0 \Rightarrow \text{vertical tangent}
+\]
+
+\section*{Polar Basics}
+\[
+x=r\cos\theta,\qquad y=r\sin\theta
+\]
+\[
+r^2=x^2+y^2,\qquad \tan\theta=\frac{y}{x}
+\]
+
+\section*{Polar Slope}
+\[
+\frac{dy}{dx}=
+\frac{\frac{dr}{d\theta}\sin\theta+r\cos\theta}
+{\frac{dr}{d\theta}\cos\theta-r\sin\theta}
+\]
+
+\section*{Polar Symmetry Tests}
+\begin{itemize}
+  \item polar axis: replace $\theta$ with $-\theta$
+  \item line $\theta=\frac{\pi}{2}$: replace $\theta$ with $\pi-\theta$
+  \item pole: replace $r$ with $-r$ or $\theta$ with $\theta+\pi$
+\end{itemize}
+
+\section*{Common Polar Curves}
+\[
+r=a,\qquad r=a\cos\theta,\qquad r=a\sin\theta
+\]
+\[
+r=a+b\cos\theta,\qquad r=a+b\sin\theta
+\]
+\[
+r=a\cos(n\theta),\qquad r=a\sin(n\theta)
+\]
+
+\end{document}

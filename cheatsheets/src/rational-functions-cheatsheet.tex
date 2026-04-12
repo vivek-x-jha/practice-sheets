@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Rational Functions Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Definition}
+\[
+f(x)=\frac{p(x)}{q(x)},\qquad q(x)\ne 0
+\]
+
+\section*{Domain}
+Exclude values that make the denominator zero.
+
+\section*{Holes vs Vertical Asymptotes}
+\begin{itemize}
+  \item Common factor cancels $\Rightarrow$ hole
+  \item Denominator zero that does not cancel $\Rightarrow$ vertical asymptote
+\end{itemize}
+
+\section*{Intercepts}
+\[
+y\text{-intercept}: f(0)
+\]
+\[
+x\text{-intercepts}: p(x)=0 \text{ after cancellation, with denominator nonzero}
+\]
+
+\section*{Horizontal Asymptotes}
+For
+\[
+f(x)=\frac{a_nx^n+\cdots}{b_mx^m+\cdots}
+\]
+\begin{itemize}
+  \item if $n<m$, then $y=0$
+  \item if $n=m$, then $y=\dfrac{a_n}{b_m}$
+  \item if $n>m$, no horizontal asymptote
+\end{itemize}
+
+\section*{Slant Asymptote}
+If degree of numerator is exactly one more than degree of denominator, divide:
+\[
+\frac{p(x)}{q(x)}=\text{quotient}+\frac{\text{remainder}}{q(x)}
+\]
+The quotient line is the slant asymptote.
+
+\section*{Sign Chart Idea}
+Use zeros and vertical asymptotes as boundary points. Test the sign of each interval.
+
+\section*{Quick Graph Checklist}
+\begin{itemize}
+  \item factor numerator and denominator
+  \item identify domain restrictions
+  \item check for holes
+  \item find vertical and horizontal/slant asymptotes
+  \item find intercepts
+  \item use sign chart behavior between key $x$-values
+\end{itemize}
+
+\end{document}

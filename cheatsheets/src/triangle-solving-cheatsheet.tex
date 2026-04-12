@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Triangle Solving Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Right Triangles}
+\[
+\sin\theta=\frac{\text{opp}}{\text{hyp}},\qquad
+\cos\theta=\frac{\text{adj}}{\text{hyp}},\qquad
+\tan\theta=\frac{\text{opp}}{\text{adj}}
+\]
+
+\section*{Special Right Triangles}
+\[
+45^\circ\text{-}45^\circ\text{-}90^\circ:\quad x,\ x,\ x\sqrt2
+\]
+\[
+30^\circ\text{-}60^\circ\text{-}90^\circ:\quad x,\ x\sqrt3,\ 2x
+\]
+
+\section*{Law of Sines}
+\[
+\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}
+\]
+Best for:
+\begin{itemize}
+  \item AAS or ASA
+  \item SSA ambiguous case
+\end{itemize}
+
+\section*{SSA Ambiguous Case}
+Given $A,a,b$:
+\[
+h=b\sin A
+\]
+\begin{itemize}
+  \item if $a<h$, no triangle
+  \item if $a=h$, one right triangle
+  \item if $h<a<b$, two triangles
+  \item if $a\ge b$, one triangle
+\end{itemize}
+
+\section*{Law of Cosines}
+\[
+c^2=a^2+b^2-2ab\cos C
+\]
+\[
+a^2=b^2+c^2-2bc\cos A,\qquad
+b^2=a^2+c^2-2ac\cos B
+\]
+Best for:
+\begin{itemize}
+  \item SAS
+  \item SSS
+\end{itemize}
+
+\section*{Triangle Area}
+\[
+K=\frac12 ab\sin C=\frac12 bc\sin A=\frac12 ca\sin B
+\]
+
+\section*{Heron's Formula}
+\[
+s=\frac{a+b+c}{2}
+\]
+\[
+K=\sqrt{s(s-a)(s-b)(s-c)}
+\]
+
+\section*{Bearings}
+Measured clockwise from north.
+\[
+060^\circ=\text{ }60^\circ \text{ clockwise from north}
+\]
+\[
+\text{N }35^\circ\text{ E}=\text{ }35^\circ \text{ east of north}
+\]
+Draw north-south-east-west first, then mark the angle.
+
+\end{document}

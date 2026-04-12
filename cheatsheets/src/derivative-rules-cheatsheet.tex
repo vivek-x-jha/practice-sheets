@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Derivative Rules Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Definition}
+\[
+f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+\]
+
+\section*{Core Rules}
+\[
+\frac{d}{dx}(c)=0,\qquad \frac{d}{dx}(x^n)=nx^{n-1}
+\]
+\[
+\frac{d}{dx}[cf(x)]=cf'(x)
+\]
+\[
+\frac{d}{dx}[f(x)\pm g(x)]=f'(x)\pm g'(x)
+\]
+
+\section*{Product, Quotient, Chain}
+\[
+(fg)'=f'g+fg'
+\]
+\[
+\left(\frac{f}{g}\right)'=\frac{f'g-fg'}{g^2}
+\]
+\[
+\frac{d}{dx}[f(g(x))]=f'(g(x))g'(x)
+\]
+
+\section*{Trig Derivatives}
+\[
+(\sin x)'=\cos x,\qquad (\cos x)'=-\sin x
+\]
+\[
+(\tan x)'=\sec^2 x,\qquad (\cot x)'=-\csc^2 x
+\]
+\[
+(\sec x)'=\sec x\tan x,\qquad (\csc x)'=-\csc x\cot x
+\]
+
+\section*{Common Forms}
+\[
+\frac{d}{dx}(u^n)=nu^{n-1}u'
+\]
+\[
+\frac{d}{dx}[\sin(u)]=\cos(u)\,u'
+\]
+\[
+\frac{d}{dx}[\cos(u)]=-\sin(u)\,u'
+\]
+\[
+\frac{d}{dx}[\tan(u)]=\sec^2(u)\,u'
+\]
+
+\section*{Tangent Line}
+At $x=a$:
+\[
+y-f(a)=f'(a)(x-a)
+\]
+
+\section*{Useful Limits}
+\[
+\lim_{x\to 0}\frac{\sin x}{x}=1,\qquad
+\lim_{x\to 0}\frac{1-\cos x}{x}=0,\qquad
+\lim_{x\to 0}\frac{1-\cos x}{x^2}=\frac12
+\]
+
+\end{document}

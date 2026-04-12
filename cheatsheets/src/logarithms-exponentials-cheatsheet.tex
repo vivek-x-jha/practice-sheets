@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Logarithms and Exponentials Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Core Definitions}
+\[
+y=b^x \iff x=\log_b y
+\]
+\[
+\log_b b^x=x,\qquad b^{\log_b x}=x
+\]
+with
+\[
+b>0,\quad b\ne 1,\quad x>0
+\]
+
+\section*{Log Properties}
+\[
+\log_b(MN)=\log_b M+\log_b N
+\]
+\[
+\log_b\left(\frac{M}{N}\right)=\log_b M-\log_b N
+\]
+\[
+\log_b(M^p)=p\log_b M
+\]
+
+\section*{Change of Base}
+\[
+\log_b a=\frac{\log a}{\log b}=\frac{\ln a}{\ln b}
+\]
+
+\section*{Exponential Rules}
+\[
+b^m\cdot b^n=b^{m+n},\qquad \frac{b^m}{b^n}=b^{m-n},\qquad (b^m)^n=b^{mn}
+\]
+\[
+b^{-n}=\frac{1}{b^n},\qquad b^0=1
+\]
+
+\section*{Common Bases}
+\[
+2^x,\qquad 10^x,\qquad e^x
+\]
+\[
+\log x=\log_{10}x,\qquad \ln x=\log_e x
+\]
+
+\section*{Solving Templates}
+Same base:
+\[
+b^{f(x)}=b^{g(x)} \Rightarrow f(x)=g(x)
+\]
+
+Log equals log:
+\[
+\log_b(f(x))=\log_b(g(x)) \Rightarrow f(x)=g(x)
+\]
+with domain restrictions
+\[
+f(x)>0,\qquad g(x)>0
+\]
+
+One log:
+\[
+\log_b(f(x))=k \Rightarrow f(x)=b^k
+\]
+
+\section*{Growth and Decay}
+\[
+y=ab^t
+\]
+\[
+y=ae^{kt}
+\]
+\[
+k>0 \Rightarrow \text{growth},\qquad k<0 \Rightarrow \text{decay}
+\]
+
+Doubling time:
+\[
+t=\frac{\ln 2}{k}
+\]
+
+Half-life:
+\[
+t=\frac{\ln(1/2)}{k}
+\]
+
+\section*{Domain Reminders}
+\begin{itemize}
+  \item Log arguments must be positive.
+  \item Exponential outputs are always positive.
+  \item Horizontal asymptote for $ab^x+k$ is $y=k$.
+\end{itemize}
+
+\end{document}

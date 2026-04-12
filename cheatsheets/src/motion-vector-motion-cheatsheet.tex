@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Motion and Vector Motion Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Scalar Motion}
+\[
+v(t)=s'(t),\qquad a(t)=v'(t)=s''(t)
+\]
+\[
+\text{speed}=|v(t)|
+\]
+
+\section*{Direction}
+\begin{itemize}
+  \item moving right / forward when $v(t)>0$
+  \item moving left / backward when $v(t)<0$
+  \item at rest when $v(t)=0$
+\end{itemize}
+
+\section*{Speeding Up vs Slowing Down}
+\begin{itemize}
+  \item speeding up when $v$ and $a$ have the same sign
+  \item slowing down when $v$ and $a$ have opposite signs
+\end{itemize}
+
+\section*{Displacement and Distance}
+\[
+\text{displacement}=s(b)-s(a)=\int_a^b v(t)\,dt
+\]
+\[
+\text{total distance}=\int_a^b |v(t)|\,dt
+\]
+
+\section*{Vector Motion}
+\[
+\mathbf{r}(t)=\langle x(t),y(t),z(t)\rangle
+\]
+\[
+\mathbf{v}(t)=\mathbf{r}'(t),\qquad \mathbf{a}(t)=\mathbf{r}''(t)
+\]
+
+\section*{Speed in Vector Form}
+\[
+|\mathbf{v}(t)|=\sqrt{(x'(t))^2+(y'(t))^2+(z'(t))^2}
+\]
+
+\section*{Tangent Line to a Space Curve}
+At $t=t_0$:
+\[
+\mathbf{r}(t_0)+\lambda \mathbf{v}(t_0)
+\]
+
+\section*{Parametric Plane Motion}
+If
+\[
+x=x(t),\qquad y=y(t)
+\]
+then
+\[
+\frac{dy}{dx}=\frac{dy/dt}{dx/dt}
+\]
+
+\end{document}

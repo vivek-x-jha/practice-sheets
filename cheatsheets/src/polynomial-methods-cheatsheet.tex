@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Polynomial Methods Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Factoring Patterns}
+\[
+a^2-b^2=(a-b)(a+b)
+\]
+\[
+a^2\pm 2ab+b^2=(a\pm b)^2
+\]
+\[
+a^3-b^3=(a-b)(a^2+ab+b^2)
+\]
+\[
+a^3+b^3=(a+b)(a^2-ab+b^2)
+\]
+
+\section*{Quadratic and Quartic Moves}
+\begin{itemize}
+  \item For $ax^2+bx+c$, try GCF, trinomial factoring, grouping, or quadratic formula.
+  \item For biquadratic form $ax^4+bx^2+c$, substitute $u=x^2$.
+  \item For symmetric quartics, try grouping or factor as $(x^2+mx+n)(x^2-mx+p)$.
+\end{itemize}
+
+\section*{Rational Root Theorem}
+If
+\[
+f(x)=a_nx^n+\cdots+a_1x+a_0
+\]
+has a rational root $\dfrac{p}{q}$ in lowest terms, then
+\[
+p\mid a_0,\qquad q\mid a_n
+\]
+
+Possible rational roots:
+\[
+\pm \frac{\text{factors of constant term}}{\text{factors of leading coefficient}}
+\]
+
+\section*{Synthetic Division Setup}
+Divide by $x-r$ using:
+\[
+\begin{array}{r|rrrr}
+r & a_n & a_{n-1} & \cdots & a_0
+\end{array}
+\]
+
+Remainder Theorem:
+\[
+\text{remainder on division by } x-r \text{ is } f(r)
+\]
+
+Factor Theorem:
+\[
+f(r)=0 \iff x-r \text{ is a factor}
+\]
+
+\section*{Complex Roots}
+If a polynomial has real coefficients and
+\[
+a+bi
+\]
+is a root, then
+\[
+a-bi
+\]
+is also a root.
+
+\section*{End Behavior}
+Use degree and leading coefficient.
+\begin{itemize}
+  \item even degree, positive leading coefficient: both ends up
+  \item even degree, negative leading coefficient: both ends down
+  \item odd degree, positive leading coefficient: left down, right up
+  \item odd degree, negative leading coefficient: left up, right down
+\end{itemize}
+
+\section*{Quick Graph Checklist}
+\begin{itemize}
+  \item $x$-intercepts from real zeros
+  \item multiplicity even: touch and turn
+  \item multiplicity odd: cross
+  \item $y$-intercept is $f(0)$
+  \item end behavior from degree and leading coefficient
+\end{itemize}
+
+\end{document}

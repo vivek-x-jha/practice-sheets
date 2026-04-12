@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=0.7in}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+\begin{document}
+\begin{center}
+{\LARGE Integration Basics Cheatsheet}\\[0.4em]
+{\large Fundamental Review}
+\end{center}
+
+\section*{Antiderivatives}
+\[
+\int x^n\,dx=\frac{x^{n+1}}{n+1}+C\qquad (n\ne -1)
+\]
+\[
+\int \frac{1}{x}\,dx=\ln|x|+C
+\]
+\[
+\int e^x\,dx=e^x+C,\qquad \int a^x\,dx=\frac{a^x}{\ln a}+C
+\]
+\[
+\int \sin x\,dx=-\cos x+C,\qquad \int \cos x\,dx=\sin x+C
+\]
+\[
+\int \sec^2 x\,dx=\tan x+C,\qquad \int \csc^2 x\,dx=-\cot x+C
+\]
+
+\section*{Definite Integrals}
+\[
+\int_a^b f(x)\,dx=F(b)-F(a)
+\]
+where
+\[
+F'(x)=f(x)
+\]
+
+\section*{FTC}
+If
+\[
+F(x)=\int_a^x f(t)\,dt
+\]
+then
+\[
+F'(x)=f(x)
+\]
+
+\section*{Area Interpretation}
+\[
+\int_a^b f(x)\,dx
+\]
+is signed area:
+\begin{itemize}
+  \item above the $x$-axis: positive
+  \item below the $x$-axis: negative
+\end{itemize}
+
+\section*{Riemann Sums}
+\[
+\Delta x=\frac{b-a}{n}
+\]
+\[
+\sum_{i=1}^n f(x_i)\Delta x
+\]
+
+\section*{Basic $u$-Sub Cue}
+If you see a composition like
+\[
+\int f(g(x))g'(x)\,dx
+\]
+try
+\[
+u=g(x),\qquad du=g'(x)\,dx
+\]
+
+\end{document}
