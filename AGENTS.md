@@ -4,6 +4,7 @@
 - Include a clear instructions section with timing and answer-format expectations when that fits the worksheet type.
 - Avoid giving hints or descriptive labels in problem statements unless a subject-specific rule says otherwise.
 - State when exact form is expected; otherwise specify any rounding requirement clearly.
+- For shell-based file and directory discovery, prefer `fd` over `find` when `fd` is available. Use `find` only as a fallback or when a specific `find` feature is required.
 
 # Algebra2 Worksheet Guidelines
 

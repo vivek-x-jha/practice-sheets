@@ -2,6 +2,9 @@
 
 Curated LaTeX worksheets for math practice by subject.
 
+## Tooling Notes
+- For shell-based file and directory discovery in this repo, prefer `fd` over `find` when `fd` is available. Use `find` as a fallback or when a specific `find` feature is needed.
+
 ## Layout
 - `algebra/`: Proportional-relationships assessments and related Algebra I material.
 - `algebra2/`: Algebra II practice (polynomials, logarithms, rational functions, conics, polar coordinates, complex numbers in polar form, trig review including unit-circle values/inverse trig/triangle solving/graphing, series, and review sets).
