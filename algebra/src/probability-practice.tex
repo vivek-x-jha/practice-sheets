@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{array}
+\geometry{margin=1in}
+
+\title{Algebra 1 Practice: Probability}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Complete in 30 minutes. Show clear work. Give probabilities as simplified fractions unless a percent or decimal is requested.
+
+\section*{Reference Facts}
+\begin{itemize}[leftmargin=1.5em]
+  \item Basic probability:
+  \[
+  P(A)=\frac{\text{number of outcomes in }A}{\text{number of total outcomes}}.
+  \]
+  \item Complement:
+  \[
+  P(\text{not }A)=1-P(A).
+  \]
+  \item Mutually exclusive events cannot happen at the same time:
+  \[
+  P(A\text{ or }B)=P(A)+P(B).
+  \]
+  \item General ``or'' rule:
+  \[
+  P(A\text{ or }B)=P(A)+P(B)-P(A\text{ and }B).
+  \]
+  \item Independent events:
+  \[
+  P(A\text{ and }B)=P(A)P(B).
+  \]
+  \item Conditional probability:
+  \[
+  P(A\mid B)=\frac{P(A\text{ and }B)}{P(B)}.
+  \]
+\end{itemize}
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1em, topsep=0.8em]
+  \item A bag contains 6 red marbles, 5 blue marbles, and 4 green marbles. One marble is chosen at random. Find:
+  \[
+  P(\text{red}),\qquad P(\text{not blue}),\qquad P(\text{green or blue}).
+  \]
+
+  \item A fair number cube is rolled once. Let $A$ be the event of rolling an even number and $B$ be the event of rolling a number greater than 4. Find:
+  \[
+  P(A),\qquad P(B),\qquad P(A\text{ and }B),\qquad P(A\text{ or }B).
+  \]
+
+  \item A spinner has 10 equal sections numbered 1 through 10. Find the probability of spinning:
+  \[
+  \text{a multiple of 3},\qquad
+  \text{a prime number},\qquad
+  \text{a number that is both prime and odd}.
+  \]
+
+  \item A coin is flipped and a fair number cube is rolled. Find:
+  \[
+  P(\text{heads and a 5}),\qquad
+  P(\text{tails and an odd number}),\qquad
+  P(\text{heads or a 6}).
+  \]
+
+  \item Events $A$ and $B$ are independent. If
+  \[
+  P(A)=\frac{3}{5}\quad\text{and}\quad P(B)=\frac{2}{7},
+  \]
+  find $P(A\text{ and }B)$.
+
+  \item Events $C$ and $D$ are mutually exclusive. If
+  \[
+  P(C)=\frac{1}{4}\quad\text{and}\quad P(D)=\frac{3}{10},
+  \]
+  find $P(C\text{ or }D)$ and $P(C\text{ and }D)$.
+
+  \item Events $M$ and $N$ have
+  \[
+  P(M)=0.42,\qquad P(N)=0.35,\qquad P(M\text{ and }N)=0.12.
+  \]
+  Find $P(M\text{ or }N)$.
+
+  \item A card is chosen from a standard 52-card deck. Find:
+  \[
+  P(\text{heart}),\qquad P(\text{king}),\qquad P(\text{heart or king}).
+  \]
+
+  \item The table shows survey results from 80 students.
+  \[
+  \begin{array}{c|ccc}
+   & \text{Plays a Sport} & \text{Does Not Play a Sport} & \text{Total} \\ \hline
+  \text{Has a Pet} & 18 & 22 & 40 \\
+  \text{No Pet} & 12 & 28 & 40 \\ \hline
+  \text{Total} & 30 & 50 & 80
+  \end{array}
+  \]
+  Find:
+  \[
+  P(\text{has a pet}),\qquad
+  P(\text{plays a sport}),\qquad
+  P(\text{has a pet and plays a sport}).
+  \]
+
+  \item Using the table in problem 9, find:
+  \[
+  P(\text{has a pet}\mid \text{plays a sport}),\qquad
+  P(\text{plays a sport}\mid \text{has a pet}).
+  \]
+  Are these two probabilities equal?
+
+  \item Using the table in problem 9, determine whether the events ``has a pet'' and ``plays a sport'' are independent. Justify your answer using probabilities.
+
+  \item The table shows how 120 students get to school.
+  \[
+  \begin{array}{c|ccc}
+   & \text{Bus} & \text{Car} & \text{Walk} \\ \hline
+  \text{Grade 9} & 28 & 15 & 17 \\
+  \text{Grade 10} & 22 & 25 & 13 \\ \hline
+  \text{Total} & 50 & 40 & 30
+  \end{array}
+  \]
+  Find:
+  \[
+  P(\text{Grade 9}),\qquad
+  P(\text{car}),\qquad
+  P(\text{Grade 10 and bus}).
+  \]
+
+  \item Using the table in problem 12, find:
+  \[
+  P(\text{walk}\mid \text{Grade 9}),\qquad
+  P(\text{Grade 10}\mid \text{car}).
+  \]
+
+  \item A school club has 9 seventh graders and 11 eighth graders. Two students are chosen at random without replacement. Find:
+  \[
+  P(\text{both are seventh graders}),\qquad
+  P(\text{one seventh grader and one eighth grader}).
+  \]
+\end{enumerate}
+
+\end{document}

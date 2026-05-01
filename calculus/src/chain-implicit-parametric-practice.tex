@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Calculus Practice: Chain Rule, Implicit, and Parametric Differentiation}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Show key derivative steps and simplify exact answers when reasonable.
+
+\section*{Basic Formulae}
+\begin{itemize}[leftmargin=1.5em]
+  \item Chain rule:
+  \[
+  \frac{d}{dx}[f(g(x))]=f'(g(x))g'(x)
+  \]
+  \item Exponential derivative:
+  \[
+  \frac{d}{dx}\left(e^x\right)
+  =\lim_{h\to 0}\frac{e^{x+h}-e^x}{h}
+  =e^x
+  \]
+  \item Natural logarithm derivative:
+  \[
+  \frac{d}{dx}\left(\ln x\right)
+  =\lim_{h\to 0}\frac{\ln(x+h)-\ln x}{h}
+  =\frac{1}{x}\qquad (x>0)
+  \]
+  \item Common chain-rule forms:
+  \[
+  \frac{d}{dx}\left(e^{u}\right)=e^u u',\qquad
+  \frac{d}{dx}\left(\ln u\right)=\frac{u'}{u}
+  \]
+  \[
+  \frac{d}{dx}\left(\sin u\right)=\cos(u)u',\qquad
+  \frac{d}{dx}\left(\cos u\right)=-\sin(u)u'
+  \]
+  \[
+  \frac{d}{dx}\left(u^n\right)=nu^{n-1}u'
+  \]
+  \item Implicit differentiation: treat $y$ as a function of $x$, so
+  \[
+  \frac{d}{dx}(y^n)=ny^{n-1}\frac{dy}{dx}
+  \]
+  \item Parametric slope:
+  \[
+  \frac{dy}{dx}=\frac{dy/dt}{dx/dt}
+  \]
+  \item Parametric second derivative:
+  \[
+  \frac{d^2y}{dx^2}=\frac{\frac{d}{dt}\left(\frac{dy}{dx}\right)}{dx/dt}
+  \]
+  \item Normal-line slope:
+  \[
+  m_{\text{normal}}=-\frac{1}{m_{\text{tangent}}}
+  \]
+  \item Standard ellipse parametrization:
+  \[
+  \frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1
+  \quad\Longrightarrow\quad
+  \mathbf{r}(t)=\langle h+a\cos t,\ k+b\sin t\rangle
+  \]
+\end{itemize}
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1em, topsep=0.8em]
+  \item Differentiate:
+  \[
+  y=\left(3x^2-5x+1\right)^7.
+  \]
+
+  \item Differentiate:
+  \[
+  y=e^{\sin(4x^2-x)}.
+  \]
+
+  \item Differentiate:
+  \[
+  y=\ln\left((x^2+1)^3\sqrt{5x-2}\right).
+  \]
+
+  \item Differentiate:
+  \[
+  y=\cos^4\left(e^{2x}-x^3\right).
+  \]
+
+  \item Find the equation of the tangent line to
+  \[
+  f(x)=\ln\left(e^{x^2}+3x\right)
+  \]
+  at $x=0$.
+
+  \item Differentiate:
+  \[
+  y=e^{x\cos x}\ln(x^2+4).
+  \]
+
+  \item For
+  \[
+  x^2+y^2+xy=19,
+  \]
+  find $\dfrac{dy}{dx}$ and the tangent line at $(3,2)$.
+
+  \item For
+  \[
+  x^2y+y^3=10,
+  \]
+  find $\dfrac{dy}{dx}$ and determine all points on the curve where the tangent line is horizontal.
+
+  \item For
+  \[
+  e^{xy}+x^2+y^2=5,
+  \]
+  find $\dfrac{dy}{dx}$ in terms of $x$ and $y$.
+
+  \item For
+  \[
+  \sin(xy)+y^2=x,
+  \]
+  find $\dfrac{dy}{dx}$. Then evaluate $\dfrac{dy}{dx}$ at $(0,0)$.
+
+  \item Let
+  \[
+  x=t^3-3t,\qquad y=t^2+2t.
+  \]
+  Find $\dfrac{dy}{dx}$ and $\dfrac{d^2y}{dx^2}$. Then find all $t$ for which the tangent line is horizontal.
+
+  \item Let
+  \[
+  x=2\cos t+\cos(2t),\qquad y=2\sin t-\sin(2t).
+  \]
+  Find the tangent line and normal line at $t=\dfrac{\pi}{3}$.
+
+  \item Let
+  \[
+  x=t^2-4t,\qquad y=t^3-6t.
+  \]
+  Find all values of $t$ where the parametric curve has a point of inflection, assuming $dx/dt\ne 0$.
+
+  \item The ellipse
+  \[
+  \frac{(x-2)^2}{25}+\frac{(y+1)^2}{9}=1
+  \]
+  is parametrized by
+  \[
+  \mathbf{r}(t)=\langle 2+5\cos t,\ -1+3\sin t\rangle.
+  \]
+  Find $\mathbf{r}'(t)$, $\mathbf{r}''(t)$, and the tangent line at $t=\dfrac{\pi}{2}$.
+
+  \item Let
+  \[
+  \mathbf{r}(t)=\langle t^2-1,\ e^t\rangle.
+  \]
+  Find the velocity vector, acceleration vector, and speed at $t=0$.
+
+  \item Let
+  \[
+  \mathbf{r}(t)=\langle \cos t,\ \sin(2t)\rangle.
+  \]
+  Find the tangent line to the curve at $t=\dfrac{\pi}{2}$. Then determine whether $\mathbf{v}\!\left(\dfrac{\pi}{2}\right)$ and $\mathbf{a}\!\left(\dfrac{\pi}{2}\right)$ are orthogonal.
+\end{enumerate}
+
+\end{document}
