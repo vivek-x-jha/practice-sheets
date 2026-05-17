@@ -1,0 +1,213 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{array}
+\geometry{margin=1in}
+
+\title{Algebra II Final Topics Review}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Complete in 90 minutes. Show clear work. Use exact values unless a decimal approximation is explicitly requested.
+
+\section*{Reference Facts}
+\begin{itemize}[leftmargin=1.5em]
+  \item Log properties:
+  \[
+  \log_b(MN)=\log_bM+\log_bN,\qquad
+  \log_b\!\left(\frac{M}{N}\right)=\log_bM-\log_bN,\qquad
+  \log_b(M^r)=r\log_bM
+  \]
+  \item Hyperbola forms:
+  \[
+  \frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}=1,\qquad
+  \frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2}=1
+  \]
+  \item Arithmetic and geometric sequences:
+  \[
+  a_n=a_1+(n-1)d,\qquad
+  a_n=a_1r^{n-1}
+  \]
+  \[
+  S_n=\frac{n(a_1+a_n)}{2},\qquad
+  S_n=\frac{a_1(1-r^n)}{1-r},\qquad
+  S_\infty=\frac{a_1}{1-r}\quad(|r|<1)
+  \]
+  \item Counting:
+  \[
+  n!=n(n-1)(n-2)\cdots 1,\qquad
+  {}_nP_r=\frac{n!}{(n-r)!},\qquad
+  {}_nC_r=\frac{n!}{r!(n-r)!}
+  \]
+  \item Probability:
+  \[
+  P(A\text{ or }B)=P(A)+P(B)-P(A\text{ and }B),\qquad
+  P(A\mid B)=\frac{P(A\text{ and }B)}{P(B)}
+  \]
+  \item Statistics:
+  \[
+  z=\frac{x-\mu}{\sigma},\qquad
+  \text{range}=\max-\min,\qquad
+  \mathrm{IQR}=Q_3-Q_1
+  \]
+\end{itemize}
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1em, topsep=0.8em]
+  \item Condense into a single logarithm:
+  \[
+  3\log_2(x)-\frac12\log_2(y+1)+2\log_2(4)-\log_2(z^3)+\log_2\!\left(\frac{w}{2}\right).
+  \]
+
+  \item Expand completely:
+  \[
+  \log_b\!\left(\frac{5x^3\sqrt{y}}{b^2\sqrt[3]{z^4}}\right).
+  \]
+
+  \item Solve and check for extraneous solutions:
+  \[
+  \log_3(x-1)+\log_3(x-7)=2+\log_3(5).
+  \]
+
+  \item Solve and state the domain restrictions used:
+  \[
+  \log_5(3x+2)-\log_5(x-4)=1.
+  \]
+
+  \item Given
+  \[
+  \log_2(a)=m,\qquad \log_2(b)=n,
+  \]
+  write $\log_2\!\left(\dfrac{8a^3}{\sqrt{b}}\right)$ in terms of $m$ and $n$.
+
+  \item Determine whether each statement is always true or sometimes false. If false, give a correction or counterexample.
+  \[
+  \log_b(x+y)=\log_bx+\log_by,\qquad
+  \log_b(x^4)=4\log_bx,\qquad
+  b^{\log_b x}=x.
+  \]
+
+  \item Find the inverse function of
+  \[
+  f(x)=2\log_3(x-4)-5.
+  \]
+  State the domain of $f$ and the domain of $f^{-1}$.
+
+  \item Graph the key features of
+  \[
+  y=\log_2(x+3)-4.
+  \]
+  State the vertical asymptote, domain, range, and $x$-intercept.
+
+  \item A bank account earns interest compounded annually and is modeled by
+  \[
+  A(t)=1800(1.045)^t.
+  \]
+  How long will it take the account to double? Then find how long it takes to reach \$3,000. Round each to the nearest tenth of a year.
+
+  \item Put the hyperbola in standard form and identify its center, orientation, vertices, and asymptotes:
+  \[
+  9x^2-16y^2-54x-64y-127=0.
+  \]
+
+  \item Write the equation of the hyperbola with center $(2,-1)$, vertices $(2,4)$ and $(2,-6)$, and asymptotes
+  \[
+  y+1=\pm \frac{5}{3}(x-2).
+  \]
+  Then find the coordinates of the foci.
+
+  \item For the arithmetic sequence with $a_5=18$ and $S_{21}=777$, find $a_1$, $d$, and $a_{50}$.
+
+  \item Find the exact value:
+  \[
+  \sum_{k=1}^{40}(7-3k).
+  \]
+
+  \item For a geometric sequence, $a_3=24$ and $a_7=\dfrac{3}{2}$. Find all possible values of $r$ and $a_1$, then find $a_{10}$ for each possible sequence.
+
+  \item Evaluate exactly:
+  \[
+  \sum_{k=0}^{8}6\left(\frac{2}{3}\right)^k.
+  \]
+
+  \item Determine whether the infinite series converges. If it converges, find its exact sum:
+  \[
+  \sum_{n=1}^{\infty}12\left(-\frac14\right)^{n-1}.
+  \]
+
+  \item Convert the repeating decimal to a fraction:
+  \[
+  0.1\overline{27}.
+  \]
+
+  \item Write a recursive formula and an explicit formula for the sequence:
+  \[
+  7,\ 3,\ -1,\ -5,\ldots
+  \]
+
+  \item Rewrite using sigma notation:
+  \[
+  4+8+16+32+\cdots+512.
+  \]
+
+  \item How many different arrangements can be made from the letters in the word \textsc{LEVEL} if the two E's cannot be adjacent?
+
+  \item A club has 9 juniors and 7 seniors. How many committees of 5 students can be formed if the committee must include at least 2 juniors and at least 2 seniors?
+
+  \item A password must contain 2 different letters followed by 3 digits. Letters may not repeat, digits may not repeat, and the first digit cannot be 0. How many passwords are possible?
+
+  \item A standard deck of 52 cards is shuffled and one card is drawn. Find:
+  \[
+  P(\text{heart or king}),\qquad
+  P(\text{not a face card}).
+  \]
+
+  \item Two fair six-sided dice are rolled. Find the probability that the sum is at least 9 or the two dice show the same number.
+
+  \item A bag contains 5 red, 4 blue, and 3 green marbles. Three marbles are drawn without replacement. Find the probability that all three are the same color.
+
+  \item The table shows survey results from 100 students.
+  \[
+  \begin{array}{c|ccc}
+   & \text{Likes Math} & \text{Does Not Like Math} & \text{Total}\\ \hline
+  \text{Takes Art} & 18 & 22 & 40\\
+  \text{Does Not Take Art} & 27 & 33 & 60\\ \hline
+  \text{Total} & 45 & 55 & 100
+  \end{array}
+  \]
+  Find $P(\text{likes math}\mid \text{takes art})$ and $P(\text{takes art}\mid \text{likes math})$. Then determine whether ``likes math'' and ``takes art'' are independent.
+
+  \item A data set has mean $72$ and standard deviation $8$. Find the $z$-score for $x=86$. Then find the data value with $z=-1.25$.
+
+  \item The data set is
+  \[
+  12,\ 15,\ 16,\ 18,\ 20,\ 24,\ 28,\ 30,\ 35.
+  \]
+  Find the median, $Q_1$, $Q_3$, range, and IQR.
+
+  \item A normally distributed test has mean $80$ and standard deviation $6$. Use the empirical rule to estimate the percent of scores between $68$ and $92$, then estimate the percent above $92$.
+
+  \item Classify each as observational study or experiment:
+  \begin{enumerate}[label=(\alph*)]
+    \item A researcher records how many hours students sleep and compares that to quiz scores.
+    \item A researcher randomly assigns students to two study methods and compares quiz scores.
+  \end{enumerate}
+
+  \item Find the amplitude, period, midline, and phase shift of
+  \[
+  y=-3\sin\left(2x-\frac{\pi}{2}\right)+1.
+  \]
+  Then state the range.
+
+  \item Solve on $0\le x<2\pi$:
+  \[
+  2\cos^2 x-\cos x-1=0.
+  \]
+\end{enumerate}
+
+\end{document}
