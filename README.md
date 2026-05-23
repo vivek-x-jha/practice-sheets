@@ -15,6 +15,10 @@ Curated LaTeX worksheets for math practice by subject.
 - `teasers/`: Short topical teaser/problem sets.
 - Builds live in each subject’s `build/` folder; sources are under `src/`.
 
+## Current Algebra II Final Review Materials
+- `algebra2/src/final-targeted-practice.tex`: 60-minute targeted final practice emphasizing exact/inverse trig, trig equations and graph transformations, triangle solving, bearings, and conic sections.
+- `cheatsheets/src/algebra2-topic-cheatsheet.tex`: comprehensive Algebra II reference sheet covering polynomial methods, rational functions, logarithms/exponentials, conics, trigonometry, sequences/series, counting, probability, and statistics.
+
 ## Building
 Use `latexmk` (preferred for builds/cleanup):
 - Algebra: `latexmk -pdf -f -output-directory=algebra/build algebra/src/<file>.tex`
