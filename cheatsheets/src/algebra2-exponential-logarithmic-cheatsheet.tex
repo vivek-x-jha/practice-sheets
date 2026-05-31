@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Exponential and Logarithmic Cheatsheet}{Module 7}
+
+\section*{Inverse Definitions}
+\[
+y=b^x\iff x=\log_b y
+\]
+\[
+\log_b b^x=x,\qquad b^{\log_b x}=x
+\]
+Conditions:
+\[
+b>0,\qquad b\ne1,\qquad x>0
+\]
+
+\section*{Exponent Rules}
+\[
+b^m\cdot b^n=b^{m+n}
+\]
+\[
+\frac{b^m}{b^n}=b^{m-n}
+\]
+\[
+(b^m)^n=b^{mn}
+\]
+\[
+b^{-n}=\frac1{b^n},\qquad b^0=1
+\]
+
+\section*{Log Rules}
+\[
+\log_b(MN)=\log_bM+\log_bN
+\]
+\[
+\log_b\left(\frac MN\right)=\log_bM-\log_bN
+\]
+\[
+\log_b(M^p)=p\log_bM
+\]
+\[
+\log_b a=\frac{\log a}{\log b}=\frac{\ln a}{\ln b}
+\]
+
+\section*{Solving Templates}
+Same base:
+\[
+b^{f(x)}=b^{g(x)}\Rightarrow f(x)=g(x)
+\]
+One log:
+\[
+\log_b(f(x))=k\Rightarrow f(x)=b^k
+\]
+Log equals log:
+\[
+\log_b(f(x))=\log_b(g(x))\Rightarrow f(x)=g(x)
+\]
+Check:
+\[
+f(x)>0,\qquad g(x)>0
+\]
+
+\section*{Graph Features}
+\[
+y=ab^{x-h}+k
+\]
+Horizontal asymptote:
+\[
+y=k
+\]
+\[
+y=a\log_b(x-h)+k
+\]
+Vertical asymptote:
+\[
+x=h
+\]
+
+\section*{Growth and Decay}
+\[
+y=ab^t,\qquad y=ae^{kt}
+\]
+\[
+k>0\Rightarrow \text{growth},\qquad k<0\Rightarrow \text{decay}
+\]
+\[
+\text{doubling time}=\frac{\ln2}{k}
+\]
+\[
+\text{half-life}=\frac{\ln(1/2)}{k}
+\]
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Log arguments must be positive.
+  \item Exponential outputs are positive before vertical shifts.
+  \item Do not distribute logs over addition.
+  \item Use change of base for calculator evaluation.
+\end{itemize}
+
+\end{document}

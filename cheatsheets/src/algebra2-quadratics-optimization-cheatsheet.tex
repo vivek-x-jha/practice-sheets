@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Quadratics and Optimization Cheatsheet}{Module 3}
+
+\section*{Forms}
+Standard:
+\[
+f(x)=ax^2+bx+c
+\]
+Vertex:
+\[
+f(x)=a(x-h)^2+k
+\]
+Factored:
+\[
+f(x)=a(x-r_1)(x-r_2)
+\]
+
+\section*{Vertex}
+From standard form:
+\[
+x=-\frac{b}{2a}
+\]
+\[
+y=f\left(-\frac{b}{2a}\right)
+\]
+From vertex form:
+\[
+(h,k)
+\]
+Axis of symmetry:
+\[
+x=h
+\]
+
+\section*{Solving}
+Factoring:
+\[
+AB=0\Rightarrow A=0\text{ or }B=0
+\]
+Completing the square:
+\[
+x^2+bx=\left(x+\frac b2\right)^2-\left(\frac b2\right)^2
+\]
+Quadratic formula:
+\[
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\]
+
+\section*{Discriminant}
+\[
+D=b^2-4ac
+\]
+\[
+\begin{array}{ll}
+D>0 & \text{two distinct real roots}\\
+D=0 & \text{one repeated real root}\\
+D<0 & \text{two complex conjugate roots}
+\end{array}
+\]
+
+\section*{Complex Solutions}
+\[
+i^2=-1,\qquad \sqrt{-a}=i\sqrt a
+\]
+If coefficients are real and $a+bi$ is a root, then $a-bi$ is also a root.
+
+\section*{Optimization}
+For a quadratic model:
+\[
+f(x)=ax^2+bx+c
+\]
+The maximum or minimum occurs at:
+\[
+x=-\frac{b}{2a}
+\]
+\[
+a>0\Rightarrow \text{minimum},\qquad a<0\Rightarrow \text{maximum}
+\]
+Revenue form:
+\[
+R(x)=x\cdot p(x)
+\]
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Choose the form that reveals the feature needed.
+  \item Vertex form reveals vertex and transformations.
+  \item Factored form reveals zeros.
+  \item Standard form reveals \(y\)-intercept and supports the quadratic formula.
+\end{itemize}
+
+\end{document}

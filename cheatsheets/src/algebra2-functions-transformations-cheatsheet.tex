@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Functions and Transformations Cheatsheet}{Module 2}
+
+\section*{Parent Functions}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Family & Parent & Key Feature \\
+\midrule
+linear & $f(x)=x$ & constant rate \\
+quadratic & $f(x)=x^2$ & vertex \\
+cubic & $f(x)=x^3$ & origin symmetry \\
+absolute value & $f(x)=|x|$ & corner vertex \\
+square root & $f(x)=\sqrt x$ & starts at endpoint \\
+reciprocal & $f(x)=\frac1x$ & asymptotes \\
+exponential & $f(x)=b^x$ & horizontal asymptote \\
+logarithmic & $f(x)=\log_b x$ & vertical asymptote \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Transformation Form}
+\[
+g(x)=a\,f(b(x-h))+k
+\]
+\[
+h=\text{horizontal shift},\qquad k=\text{vertical shift}
+\]
+\[
+|a|=\text{vertical stretch/compression},\qquad a<0\Rightarrow \text{reflect over }x\text{-axis}
+\]
+\[
+\text{horizontal scale factor}=\frac1{|b|},\qquad b<0\Rightarrow \text{reflect over }y\text{-axis}
+\]
+\[
+|b|>1\Rightarrow \text{horizontal compression},\qquad 0<|b|<1\Rightarrow \text{horizontal stretch}
+\]
+
+\section*{Domain and Range}
+\[
+\text{domain}=\text{allowed inputs}
+\]
+\[
+\text{range}=\text{possible outputs}
+\]
+Check denominators, even roots, logarithms, graph endpoints, and asymptotes.
+
+\section*{Composition}
+\[
+(f\circ g)(x)=f(g(x))
+\]
+The domain of $f\circ g$ must satisfy:
+\[
+x\in \text{domain of }g,\qquad g(x)\in \text{domain of }f
+\]
+
+\section*{Inverses}
+\[
+f(f^{-1}(x))=x,\qquad f^{-1}(f(x))=x
+\]
+To find an inverse:
+\begin{enumerate}
+  \item Write $y=f(x)$.
+  \item Switch $x$ and $y$.
+  \item Solve for $y$.
+  \item State domain and range restrictions.
+\end{enumerate}
+Horizontal line test: a function has an inverse function if every horizontal line hits the graph at most once.
+
+\section*{Piecewise Functions}
+\[
+f(x)=
+\begin{cases}
+2x+1, & x<0\\
+x^2, & x\ge0
+\end{cases}
+\]
+Use the rule whose condition contains the input.
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Transform inside the input affects $x$-values.
+  \item Transform outside the function affects $y$-values.
+  \item Inverse graphs reflect across $y=x$.
+  \item Piecewise boundaries control which rule applies.
+\end{itemize}
+
+\end{document}

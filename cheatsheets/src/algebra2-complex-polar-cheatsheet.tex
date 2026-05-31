@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Complex Numbers and Polar Cheatsheet}{Module 12}
+
+\section*{Complex Basics}
+\[
+i^2=-1,\qquad i^3=-i,\qquad i^4=1
+\]
+\[
+\sqrt{-a}=i\sqrt a
+\]
+Standard form:
+\[
+a+bi
+\]
+Conjugate:
+\[
+a-bi
+\]
+\[
+(a+bi)(a-bi)=a^2+b^2
+\]
+
+\section*{Complex Arithmetic}
+\[
+(a+bi)+(c+di)=(a+c)+(b+d)i
+\]
+\[
+(a+bi)(c+di)=(ac-bd)+(ad+bc)i
+\]
+Divide by multiplying by the conjugate of the denominator.
+
+\section*{Polar Coordinates}
+\[
+x=r\cos\theta,\qquad y=r\sin\theta
+\]
+\[
+r^2=x^2+y^2,\qquad \tan\theta=\frac yx
+\]
+Choose $\theta$ using the quadrant of $(x,y)$.
+
+\section*{Complex Polar Form}
+\[
+z=a+bi
+\]
+\[
+r=\sqrt{a^2+b^2},\qquad \tan\theta=\frac ba
+\]
+\[
+z=r(\cos\theta+i\sin\theta)=r\,\operatorname{cis}\theta
+\]
+
+\section*{Multiplication and Division in Polar Form}
+\[
+r_1\operatorname{cis}\theta_1\cdot r_2\operatorname{cis}\theta_2
+=r_1r_2\operatorname{cis}(\theta_1+\theta_2)
+\]
+\[
+\frac{r_1\operatorname{cis}\theta_1}{r_2\operatorname{cis}\theta_2}
+=\frac{r_1}{r_2}\operatorname{cis}(\theta_1-\theta_2)
+\]
+
+\section*{De Moivre}
+\[
+\left(r\operatorname{cis}\theta\right)^n=r^n\operatorname{cis}(n\theta)
+\]
+
+\section*{Nth Roots}
+For
+\[
+z=r\operatorname{cis}\theta
+\]
+the $n$ roots are:
+\[
+z_k=r^{1/n}\operatorname{cis}\left(\frac{\theta+2\pi k}{n}\right),
+\qquad k=0,1,\dots,n-1
+\]
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Complex conjugates are useful for division and real-coefficient polynomial roots.
+  \item Polar angles are not unique.
+  \item Negative $r$ points in the opposite direction.
+  \item Roots are evenly spaced around a circle.
+\end{itemize}
+
+\end{document}

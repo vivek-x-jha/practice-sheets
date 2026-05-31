@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Trigonometry Cheatsheet}{Module 9}
+
+\section*{Angle Basics}
+\[
+180^\circ=\pi\text{ radians},\qquad 360^\circ=2\pi\text{ radians}
+\]
+\[
+\theta^\circ=\theta\cdot\frac{\pi}{180},\qquad
+\theta\text{ radians}=\theta\cdot\frac{180}{\pi}^\circ
+\]
+
+\section*{Special Values}
+\[
+\sin\left(\frac{\pi}{6},\frac{\pi}{4},\frac{\pi}{3}\right)=
+\left(\frac12,\frac{\sqrt2}{2},\frac{\sqrt3}{2}\right)
+\]
+\[
+\cos\left(\frac{\pi}{6},\frac{\pi}{4},\frac{\pi}{3}\right)=
+\left(\frac{\sqrt3}{2},\frac{\sqrt2}{2},\frac12\right)
+\]
+\[
+\tan\left(\frac{\pi}{6},\frac{\pi}{4},\frac{\pi}{3}\right)=
+\left(\frac{\sqrt3}{3},1,\sqrt3\right)
+\]
+Quadrant signs:
+\[
+\text{QI all},\qquad \text{QII sin},\qquad \text{QIII tan},\qquad \text{QIV cos}
+\]
+
+\section*{Core Identities}
+\[
+\sin^2x+\cos^2x=1
+\]
+\[
+1+\tan^2x=\sec^2x
+\]
+\[
+1+\cot^2x=\csc^2x
+\]
+\[
+\tan x=\frac{\sin x}{\cos x},\qquad
+\cot x=\frac{\cos x}{\sin x}
+\]
+
+\section*{Symmetry and Cofunctions}
+\[
+\sin(-x)=-\sin x,\qquad \cos(-x)=\cos x,\qquad \tan(-x)=-\tan x
+\]
+\[
+\sin\left(\frac{\pi}{2}-x\right)=\cos x,\qquad
+\cos\left(\frac{\pi}{2}-x\right)=\sin x
+\]
+\[
+\tan\left(\frac{\pi}{2}-x\right)=\cot x
+\]
+
+\section*{Angle Formulas}
+\[
+\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+\]
+\[
+\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta
+\]
+\[
+\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta
+\]
+\[
+\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta
+\]
+\[
+\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}
+\]
+\[
+\tan(\alpha-\beta)=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}
+\]
+
+\section*{Double and Half Angles}
+\[
+\sin(2x)=2\sin x\cos x
+\]
+\[
+\cos(2x)=\cos^2x-\sin^2x=2\cos^2x-1=1-2\sin^2x
+\]
+\[
+\tan(2x)=\frac{2\tan x}{1-\tan^2x}
+\]
+\[
+\sin\left(\frac x2\right)=\pm\sqrt{\frac{1-\cos x}{2}},\qquad
+\cos\left(\frac x2\right)=\pm\sqrt{\frac{1+\cos x}{2}}
+\]
+The sign depends on the quadrant of $\frac x2$.
+
+\section*{Graphing}
+\[
+y=a\sin(b(x-h))+k
+\]
+\[
+y=a\cos(b(x-h))+k
+\]
+\[
+\text{amplitude}=|a|,\qquad \text{period}=\frac{2\pi}{|b|}
+\]
+\[
+\text{midline }y=k,\qquad \text{phase shift }h
+\]
+For tangent:
+\[
+y=a\tan(b(x-h))+k,\qquad \text{period}=\frac{\pi}{|b|}
+\]
+
+\section*{Inverse Trig}
+\[
+\sin^{-1}x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]
+\]
+\[
+\cos^{-1}x\in[0,\pi]
+\]
+\[
+\tan^{-1}x\in\left(-\frac{\pi}{2},\frac{\pi}{2}\right)
+\]
+
+\section*{Solving Trig Equations}
+\begin{itemize}
+  \item Isolate the trig expression.
+  \item Find reference angle.
+  \item Use quadrant signs.
+  \item List all solutions in the requested interval.
+\end{itemize}
+
+\end{document}

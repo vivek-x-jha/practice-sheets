@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Triangle Trigonometry Cheatsheet}{Module 10}
+
+\section*{Right Triangle Trig}
+\[
+\sin\theta=\frac{\text{opposite}}{\text{hypotenuse}}
+\]
+\[
+\cos\theta=\frac{\text{adjacent}}{\text{hypotenuse}}
+\]
+\[
+\tan\theta=\frac{\text{opposite}}{\text{adjacent}}
+\]
+Reciprocal functions:
+\[
+\csc\theta=\frac1{\sin\theta},\qquad
+\sec\theta=\frac1{\cos\theta},\qquad
+\cot\theta=\frac1{\tan\theta}
+\]
+
+\section*{Special Right Triangles}
+\[
+45^\circ-45^\circ-90^\circ:\qquad x,\ x,\ x\sqrt2
+\]
+\[
+30^\circ-60^\circ-90^\circ:\qquad x,\ x\sqrt3,\ 2x
+\]
+
+\section*{Triangle Labels}
+Side $a$ is opposite angle $A$, side $b$ is opposite angle $B$, and side $c$ is opposite angle $C$.
+
+\section*{Law of Sines}
+\[
+\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}
+\]
+Use for ASA, AAS, and sometimes SSA.
+
+\section*{SSA Ambiguous Case}
+Given $A$, $a$, and $b$, compute:
+\[
+h=b\sin A
+\]
+\[
+\begin{array}{ll}
+a<h & \text{no triangle}\\
+a=h & \text{one right triangle}\\
+h<a<b & \text{two triangles}\\
+a\ge b & \text{one triangle}
+\end{array}
+\]
+
+\section*{Law of Cosines}
+\[
+c^2=a^2+b^2-2ab\cos C
+\]
+\[
+a^2=b^2+c^2-2bc\cos A
+\]
+\[
+b^2=a^2+c^2-2ac\cos B
+\]
+Use for SAS and SSS.
+
+\section*{Area}
+Two sides and included angle:
+\[
+K=\frac12 ab\sin C
+\]
+Heron's Formula:
+\[
+s=\frac{a+b+c}{2},\qquad
+K=\sqrt{s(s-a)(s-b)(s-c)}
+\]
+
+\section*{Bearings}
+True bearings are measured clockwise from north.
+\[
+060^\circ=60^\circ\text{ clockwise from north}
+\]
+\[
+\text{N }35^\circ\text{ E}=35^\circ\text{ east of north}
+\]
+For bearing word problems, draw north-south-east-west first, mark the given directions, then identify the included triangle angle.
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Law of Cosines handles the included angle or all three sides.
+  \item Law of Sines can create two possible triangles in SSA.
+  \item Area formula $\frac12 ab\sin C$ needs the included angle.
+  \item Keep angle units consistent.
+\end{itemize}
+
+\end{document}

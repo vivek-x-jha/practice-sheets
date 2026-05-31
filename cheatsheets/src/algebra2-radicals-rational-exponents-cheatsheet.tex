@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Radicals and Rational Exponents Cheatsheet}{Module 6}
+
+\section*{Rational Exponent Forms}
+\[
+a^{1/n}=\sqrt[n]{a}
+\]
+\[
+a^{m/n}=\sqrt[n]{a^m}=(\sqrt[n]{a})^m
+\]
+\[
+a^{-m/n}=\frac{1}{a^{m/n}}
+\]
+
+\section*{Radical Rules}
+\[
+\sqrt[n]{ab}=\sqrt[n]{a}\sqrt[n]{b}
+\]
+\[
+\sqrt[n]{\frac ab}=\frac{\sqrt[n]{a}}{\sqrt[n]{b}}\qquad (b\ne0)
+\]
+\[
+\sqrt[n]{a^n}=
+\begin{cases}
+|a|, & n\text{ even}\\
+a, & n\text{ odd}
+\end{cases}
+\]
+
+\section*{Simplifying}
+Pull out perfect powers.
+\[
+\sqrt[3]{54x^5}=\sqrt[3]{27x^3\cdot2x^2}=3x\sqrt[3]{2x^2}
+\]
+Combine only like radicals:
+\[
+4\sqrt7-9\sqrt7=-5\sqrt7
+\]
+
+\section*{Rationalizing}
+Single radical denominator:
+\[
+\frac{5}{\sqrt3}=\frac{5\sqrt3}{3}
+\]
+Binomial radical denominator:
+\[
+\frac{1}{a+\sqrt b}\cdot\frac{a-\sqrt b}{a-\sqrt b}
+=\frac{a-\sqrt b}{a^2-b}
+\]
+
+\section*{Solving Radical Equations}
+\begin{enumerate}
+  \item Isolate one radical.
+  \item Raise both sides to the needed power.
+  \item Solve the resulting equation.
+  \item Check in the original equation.
+\end{enumerate}
+Example template:
+\[
+\sqrt{A}=B\Rightarrow A=B^2
+\]
+with
+\[
+B\ge0
+\]
+
+\section*{Extraneous Solutions}
+Squaring can introduce false solutions. Every solution must satisfy the original equation and any domain restrictions.
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Even-index radicals require nonnegative radicands over the reals.
+  \item Odd-index radicals can have negative radicands.
+  \item Rational exponents follow exponent rules.
+  \item Simplified radicals have no removable perfect-power factors.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Conic Sections Cheatsheet}{Module 11}
+
+\section*{Identification}
+For non-rotated conics:
+\[
+Ax^2+Cy^2+Dx+Ey+F=0
+\]
+\[
+\begin{array}{ll}
+\text{circle} & A=C\\
+\text{parabola} & \text{one squared variable}\\
+\text{ellipse} & x^2,y^2\text{ same sign, unequal coefficients}\\
+\text{hyperbola} & x^2,y^2\text{ opposite signs}
+\end{array}
+\]
+
+\section*{Completing the Square}
+\[
+x^2+bx=\left(x+\frac b2\right)^2-\left(\frac b2\right)^2
+\]
+Group $x$ terms and $y$ terms separately.
+
+\section*{Circle}
+\[
+(x-h)^2+(y-k)^2=r^2
+\]
+Center:
+\[
+(h,k)
+\]
+Radius:
+\[
+r
+\]
+
+\section*{Parabola}
+Vertical axis:
+\[
+(x-h)^2=4p(y-k)
+\]
+Focus:
+\[
+(h,k+p)
+\]
+Directrix:
+\[
+y=k-p
+\]
+Horizontal axis:
+\[
+(y-k)^2=4p(x-h)
+\]
+Focus:
+\[
+(h+p,k)
+\]
+Directrix:
+\[
+x=h-p
+\]
+
+\section*{Ellipse}
+Horizontal major axis:
+\[
+\frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1,\qquad a>b
+\]
+Vertical major axis:
+\[
+\frac{(x-h)^2}{b^2}+\frac{(y-k)^2}{a^2}=1,\qquad a>b
+\]
+\[
+c^2=a^2-b^2,\qquad e=\frac ca
+\]
+
+\section*{Hyperbola}
+Horizontal transverse axis:
+\[
+\frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}=1
+\]
+Asymptotes:
+\[
+y-k=\pm\frac ba(x-h)
+\]
+Vertical transverse axis:
+\[
+\frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2}=1
+\]
+Asymptotes:
+\[
+y-k=\pm\frac ab(x-h)
+\]
+\[
+c^2=a^2+b^2,\qquad e=\frac ca
+\]
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Standard form equals $1$ for ellipses and hyperbolas.
+  \item The larger denominator under an ellipse gives the major axis direction.
+  \item The positive term in a hyperbola gives the transverse axis direction.
+  \item For parabolas, $p$ controls focus and directrix distance.
+\end{itemize}
+
+\end{document}

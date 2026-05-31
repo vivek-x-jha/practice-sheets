@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Rational Functions Cheatsheet}{Module 5}
+
+\section*{Definition}
+\[
+f(x)=\frac{p(x)}{q(x)},\qquad q(x)\ne0
+\]
+
+\section*{Domain}
+Exclude values that make the original denominator zero.
+\[
+q(x)=0\Rightarrow x\text{ is not in the domain}
+\]
+
+\section*{Holes and Vertical Asymptotes}
+Factor first.
+\[
+\frac{(x-2)(x+5)}{(x-2)(x-3)}
+\]
+Canceled factor:
+\[
+x=2\Rightarrow \text{hole}
+\]
+Remaining denominator zero:
+\[
+x=3\Rightarrow \text{vertical asymptote}
+\]
+
+\section*{Intercepts}
+\[
+x\text{-intercepts: zeros of the simplified numerator}
+\]
+\[
+y\text{-intercept: }f(0)\text{ if defined}
+\]
+
+\section*{Horizontal and Slant Asymptotes}
+For
+\[
+f(x)=\frac{p(x)}{q(x)}
+\]
+\[
+\deg p<\deg q\Rightarrow y=0
+\]
+\[
+\deg p=\deg q\Rightarrow y=\frac{\text{leading coefficient of }p}{\text{leading coefficient of }q}
+\]
+\[
+\deg p>\deg q\Rightarrow \text{use polynomial division}
+\]
+\[
+\deg p=\deg q+1\Rightarrow \text{slant asymptote}
+\]
+
+\section*{Rational Equations}
+Before clearing denominators, state restrictions.
+\[
+\frac{A}{B}=\frac{C}{D},\qquad B\ne0,\ D\ne0
+\]
+Then multiply by the LCD and solve.
+
+\section*{Sign Chart}
+Critical values come from zeros and vertical asymptotes. Test one value in each interval to determine positive and negative behavior.
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Domain restrictions come from the original denominator.
+  \item Holes come from canceled factors.
+  \item Vertical asymptotes come from uncanceled denominator factors.
+  \item Check solutions to rational equations against restrictions.
+\end{itemize}
+
+\end{document}

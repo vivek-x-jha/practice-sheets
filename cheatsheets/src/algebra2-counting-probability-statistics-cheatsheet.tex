@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Counting, Probability, and Statistics Cheatsheet}{Module 13}
+
+\section*{Counting Principle}
+If one choice has $m$ options and the next has $n$ options, then together there are
+\[
+mn
+\]
+outcomes.
+
+\section*{Factorials}
+\[
+n!=n(n-1)(n-2)\cdots 1
+\]
+\[
+0!=1
+\]
+
+\section*{Permutations and Combinations}
+Order matters:
+\[
+{}_nP_r=\frac{n!}{(n-r)!}
+\]
+Order does not matter:
+\[
+{}_nC_r=\frac{n!}{r!(n-r)!}
+\]
+Repeated arrangements:
+\[
+\frac{n!}{a!b!c!\cdots}
+\]
+
+\section*{Probability Rules}
+\[
+P(A)=\frac{\text{favorable outcomes}}{\text{total outcomes}}
+\]
+Complement:
+\[
+P(A^c)=1-P(A)
+\]
+Addition rule:
+\[
+P(A\cup B)=P(A)+P(B)-P(A\cap B)
+\]
+Conditional probability:
+\[
+P(A\mid B)=\frac{P(A\cap B)}{P(B)}
+\]
+Odds:
+\[
+\text{odds in favor}=\frac{\text{favorable outcomes}}{\text{unfavorable outcomes}}
+\]
+
+\section*{Independence}
+Events $A$ and $B$ are independent when:
+\[
+P(A\mid B)=P(A)
+\]
+Equivalent test:
+\[
+P(A\cap B)=P(A)P(B)
+\]
+
+\section*{Statistics}
+\[
+\text{mean}=\frac{\sum x}{n}
+\]
+\[
+\text{range}=\max-\min,\qquad
+\mathrm{IQR}=Q_3-Q_1
+\]
+Z-score:
+\[
+z=\frac{x-\mu}{\sigma}
+\]
+Data value from z-score:
+\[
+x=\mu+z\sigma
+\]
+
+\section*{Normal Model Reminders}
+Empirical rule:
+\[
+68\%\text{ within }1\sigma,\qquad 95\%\text{ within }2\sigma,\qquad 99.7\%\text{ within }3\sigma
+\]
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Use permutations when positions or order matter.
+  \item Use combinations when only the group matters.
+  \item Conditional probability changes the denominator.
+  \item Independence is a probability relationship, not a wording clue.
+\end{itemize}
+
+\end{document}

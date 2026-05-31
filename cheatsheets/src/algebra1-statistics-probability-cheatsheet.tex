@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra I Statistics and Probability Cheatsheet}{Module 11}
+
+\section*{Measures of Center}
+\[
+\text{mean}=\frac{\text{sum of data values}}{\text{number of data values}}
+\]
+Median is the middle value after ordering the data. Mode is the most frequent value.
+
+\section*{Measures of Spread}
+\[
+\text{range}=\max-\min
+\]
+\[
+\text{IQR}=Q_3-Q_1
+\]
+Five-number summary:
+\[
+\min,\quad Q_1,\quad \text{median},\quad Q_3,\quad \max
+\]
+
+\section*{Box Plots}
+\begin{itemize}
+  \item Box runs from $Q_1$ to $Q_3$.
+  \item Median line is inside the box.
+  \item Whiskers extend to minimum and maximum unless outliers are separated.
+\end{itemize}
+Outlier rule:
+\[
+x<Q_1-1.5(\mathrm{IQR})\quad \text{or}\quad x>Q_3+1.5(\mathrm{IQR})
+\]
+
+\section*{Two-Way Tables}
+Rows and columns show categories. Joint frequencies are inside the table. Marginal frequencies are row or column totals.
+\[
+P(A)=\frac{\text{count in }A}{\text{total count}}
+\]
+\[
+P(A\mid B)=\frac{\text{count in both }A\text{ and }B}{\text{count in }B}
+\]
+
+\section*{Basic Probability}
+\[
+P(\text{event})=\frac{\text{favorable outcomes}}{\text{total outcomes}}
+\]
+\[
+0\le P(A)\le1
+\]
+Complement:
+\[
+P(\text{not }A)=1-P(A)
+\]
+
+\section*{Compound Probability}
+Addition rule:
+\[
+P(A\text{ or }B)=P(A)+P(B)-P(A\text{ and }B)
+\]
+Independent multiplication rule:
+\[
+P(A\text{ and }B)=P(A)P(B)
+\]
+
+\section*{Odds}
+\[
+\text{odds in favor}=\frac{\text{favorable outcomes}}{\text{unfavorable outcomes}}
+\]
+\[
+\text{odds against}=\frac{\text{unfavorable outcomes}}{\text{favorable outcomes}}
+\]
+
+\section*{Quick Checks}
+\begin{itemize}
+  \item Order data before finding median or quartiles.
+  \item Use totals carefully in two-way tables.
+  \item Probabilities can be fractions, decimals, or percents.
+  \item ``Or'' includes overlap unless the events are mutually exclusive.
+\end{itemize}
+
+\end{document}

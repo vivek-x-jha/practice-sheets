@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\input{cheatsheets/src/cheatsheet-preamble.tex}
+
+\begin{document}
+\cheatsheettitle{Algebra II Polynomial Functions Cheatsheet}{Module 4}
+
+\section*{End Behavior}
+Use degree and leading coefficient.
+\[
+\begin{array}{lll}
+\text{even degree} & \text{positive leading coefficient} & \text{both ends up}\\
+\text{even degree} & \text{negative leading coefficient} & \text{both ends down}\\
+\text{odd degree} & \text{positive leading coefficient} & \text{left down, right up}\\
+\text{odd degree} & \text{negative leading coefficient} & \text{left up, right down}
+\end{array}
+\]
+
+\section*{Zeros and Multiplicity}
+If
+\[
+f(x)=a(x-r)^m(\cdots)
+\]
+then $r$ is a zero with multiplicity $m$.
+\[
+m\text{ even}\Rightarrow \text{touches and turns}
+\]
+\[
+m\text{ odd}\Rightarrow \text{crosses}
+\]
+
+\section*{Rational Root Theorem}
+If
+\[
+f(x)=a_nx^n+\cdots+a_0
+\]
+has rational root $\frac pq$ in lowest terms, then
+\[
+p\mid a_0,\qquad q\mid a_n
+\]
+Possible rational roots:
+\[
+\pm\frac{\text{factors of constant term}}{\text{factors of leading coefficient}}
+\]
+
+\section*{Remainder and Factor Theorems}
+Remainder Theorem:
+\[
+\text{remainder on division by }x-r\text{ is }f(r)
+\]
+Factor Theorem:
+\[
+f(r)=0\iff x-r\text{ is a factor}
+\]
+
+\section*{Division}
+Use synthetic division only for divisors of the form
+\[
+x-r
+\]
+Use long division for other polynomial divisors.
+
+\section*{Complex Roots}
+For real-coefficient polynomials:
+\[
+a+bi\text{ root}\Rightarrow a-bi\text{ root}
+\]
+Nonreal roots come in conjugate pairs.
+
+\section*{Graph Checklist}
+\begin{itemize}
+  \item Find real zeros and multiplicities.
+  \item Find \(y\)-intercept $f(0)$.
+  \item Determine end behavior.
+  \item Use turning points and sign checks to refine shape.
+\end{itemize}
+
+\end{document}
