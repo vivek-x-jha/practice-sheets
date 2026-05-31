@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Algebra II Functions and Logs Practice}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Complete in 60 minutes. Show clear work. Use exact values unless a decimal approximation is explicitly requested. When a question asks for a reason, give a short mathematical explanation, not just a yes or no.
+
+\section*{Reference Facts}
+\begin{itemize}[leftmargin=1.5em]
+  \item A relation is a function if each input has exactly one output. A graph represents a function if it passes the vertical line test.
+  \item A function is one-to-one if each output comes from exactly one input. A graph represents a one-to-one function if it passes the horizontal line test.
+  \item Even and odd tests:
+  \[
+  f(-x)=f(x)\quad \text{even},\qquad f(-x)=-f(x)\quad \text{odd}
+  \]
+  \item Inverse functions undo each other:
+  \[
+  f^{-1}(f(x))=x,\qquad f(f^{-1}(x))=x
+  \]
+  \item Log properties:
+  \[
+  \log_b(MN)=\log_bM+\log_bN,\qquad
+  \log_b\!\left(\frac{M}{N}\right)=\log_bM-\log_bN,\qquad
+  \log_b(M^r)=r\log_bM
+  \]
+  \[
+  \log_b(b^x)=x,\qquad b^{\log_b x}=x,\qquad
+  \log_b x=\frac{\log_a x}{\log_a b}
+  \]
+\end{itemize}
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1.1em, topsep=0.8em]
+  \item The relation contains the ordered pairs
+  \[
+  (-5,2),\ (-3,-1),\ (-1,2),\ (1,6),\ (3,10),\ (5,6).
+  \]
+  Determine whether the relation is a function. Then determine whether its inverse relation is a function. If the inverse relation is not a function, give the smallest possible restriction of the original domain that keeps exactly four points and makes the inverse a function.
+
+  \item Let
+  \[
+  f(x)=\frac{2x-7}{x+4}.
+  \]
+  Find the domain of $f$, the range of $f$, the $x$- and $y$-intercepts, and both asymptotes.
+
+  \item Determine whether each function is even, odd, or neither. Justify algebraically.
+  \[
+  f(x)=x^6-4x^4+x^2-9,\qquad
+  g(x)=\frac{x^5-3x}{x^2+1},\qquad
+  h(x)=\frac{x^3-2x+5}{x^2+4}.
+  \]
+
+  \item A function $p$ is given by
+  \[
+  p(x)=
+  \begin{cases}
+  -2x+1, & x<-1\\
+  x^2-4, & -1\le x<3\\
+  2x-13, & x\ge 3
+  \end{cases}
+  \]
+  Find $p(-4)$, $p(-1)$, $p(3)$, and every $x$ such that $p(x)=0$. Then state whether $p$ is one-to-one on its full domain.
+
+  \item Let
+  \[
+  f(x)=\frac{x-1}{x+2},\qquad g(x)=x^2-4.
+  \]
+  Find $(f\circ g)(x)$ and its domain. Then find $(g\circ f)(x)$ and its domain.
+
+  \item Find the inverse of
+  \[
+  f(x)=\frac{5x+6}{3x-2}.
+  \]
+  State the domain of $f$ and the domain of $f^{-1}$. Then verify algebraically that $f(f^{-1}(x))=x$.
+
+  \item The graph of $y=f(x)$ passes through the points
+  \[
+  (-4,7),\ (-2,1),\ (0,-3),\ (3,1),\ (6,9).
+  \]
+  List the corresponding points on the graph of $y=f^{-1}(x)$. Then determine whether the given points could all lie on a one-to-one function. Explain geometrically.
+
+  \item Let
+  \[
+  q(x)=(x-2)^2-5.
+  \]
+  Restrict the domain of $q$ so that it has an inverse function and the restriction includes $x=2$. Find the inverse for that restricted function, and state its domain.
+
+  \item Expand completely:
+  \[
+  \log_b\!\left(\frac{27x^5\sqrt[3]{y^4}}{b^2\sqrt{z}(x-1)^3}\right).
+  \]
+
+  \item Condense into a single logarithm:
+  \[
+  \frac32\log_3(x-1)-\frac12\log_3(y+2)+2\log_3(9)-3\log_3(z).
+  \]
+
+  \item Solve and check for extraneous solutions:
+  \[
+  \log_2(x-1)+\log_2(x-5)=3+\log_2(x+3).
+  \]
+
+  \item Solve. State the domain restriction used.
+  \[
+  \log_4(2x+7)-\log_4(x-1)=\log_4(3).
+  \]
+\end{enumerate}
+
+\end{document}
