@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=1in}
+
+\title{Algebra II Final Practice: Conics, Statistics, Probability, and Functions}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+Complete in 60 minutes. Show clear work. Use exact forms for conic features unless a decimal approximation is explicitly requested. For statistics, use population standard deviation and round it to the nearest hundredth.
+
+\section*{Reference Facts}
+\begin{itemize}[leftmargin=1.5em]
+  \item Circle:
+  \[
+  (x-h)^2+(y-k)^2=r^2
+  \]
+  \item Parabolas:
+  \[
+  (x-h)^2=4p(y-k),\qquad (y-k)^2=4p(x-h)
+  \]
+  \item Ellipses:
+  \[
+  \frac{(x-h)^2}{a^2}+\frac{(y-k)^2}{b^2}=1,\qquad c^2=a^2-b^2
+  \]
+  \item Hyperbolas:
+  \[
+  \frac{(x-h)^2}{a^2}-\frac{(y-k)^2}{b^2}=1,\qquad
+  \frac{(y-k)^2}{a^2}-\frac{(x-h)^2}{b^2}=1,\qquad c^2=a^2+b^2
+  \]
+  \item Z-score:
+  \[
+  z=\frac{x-\mu}{\sigma},\qquad x=\mu+z\sigma
+  \]
+  \item Counting:
+  \[
+  {}_nC_r=\frac{n!}{r!(n-r)!}
+  \]
+\end{itemize}
+
+\section*{Problems}
+\begin{enumerate}[leftmargin=*, itemsep=1.15em, topsep=0.8em]
+  \item Identify each conic as a circle, parabola, ellipse, or hyperbola. Do not rewrite in standard form.
+  \[
+  x^2+y^2-6x+8y-11=0
+  \]
+  \[
+  y^2-4y-12x+16=0
+  \]
+  \[
+  9x^2+4y^2-54x+16y+61=0
+  \]
+  \[
+  16y^2-25x^2-96y-50x-281=0
+  \]
+
+  \item Rewrite the circle in standard form. Then identify its center and radius.
+  \[
+  x^2+y^2+10x-12y+25=0
+  \]
+  Then write the equation of the circle whose diameter has endpoints $(-2,7)$ and $(8,-1)$.
+
+  \item Rewrite the parabola in standard form. Then state its orientation, vertex, focus, directrix, and axis of symmetry.
+  \[
+  x^2+8x-12y+4=0
+  \]
+
+  \item For the ellipse
+  \[
+  \frac{(x-2)^2}{25}+\frac{(y+1)^2}{9}=1,
+  \]
+  state the center, orientation, vertices, co-vertices, and foci.
+
+  \item Write an equation of the ellipse with center $(1,-3)$, vertices $(1,5)$ and $(1,-11)$, and foci $(1,2)$ and $(1,-8)$.
+
+  \item For the hyperbola
+  \[
+  \frac{(y-4)^2}{16}-\frac{(x+2)^2}{9}=1,
+  \]
+  state the center, orientation, vertices, co-vertices, foci, and asymptotes.
+
+  \item Write an equation of the hyperbola with center $(3,-2)$, vertices $(-2,-2)$ and $(8,-2)$, and foci $(-4,-2)$ and $(10,-2)$. Then state its asymptotes.
+
+  \item The data set below gives quiz scores.
+  \[
+  42,\ 45,\ 47,\ 47,\ 50,\ 52,\ 54,\ 57,\ 61,\ 65
+  \]
+  Find the mean, median, mode, range, population standard deviation, five-number summary, and IQR.
+
+  \item A set of final exam scores is approximately normal with mean $76$ and standard deviation $8$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Find the $z$-score for a score of $90$.
+    \item Find the exam score with $z=-1.25$.
+    \item Interpret the meaning of the $z$-score from part (a) in a complete sentence.
+  \end{enumerate}
+
+  \item A club has $8$ juniors and $6$ seniors. A committee of $4$ students is chosen at random.
+  \begin{enumerate}[label=(\alph*)]
+    \item How many committees are possible?
+    \item How many committees have exactly $2$ juniors and $2$ seniors?
+    \item What is the probability that the committee has exactly $2$ juniors and $2$ seniors?
+  \end{enumerate}
+
+  \item A parking permit code uses $2$ different uppercase letters followed by $3$ digits. The first digit cannot be $0$, and digits may repeat.
+  \begin{enumerate}[label=(\alph*)]
+    \item How many permit codes are possible?
+    \item How many permit codes are possible if the digits may not repeat?
+  \end{enumerate}
+
+  \item A theater sells $300$ tickets when the price is $\$12$. For each $\$1$ increase in price, the theater expects to sell $15$ fewer tickets. Let $x$ be the number of $\$1$ price increases.
+  \begin{enumerate}[label=(\alph*)]
+    \item Create a price function $p(x)$ and a ticket-sales function $t(x)$.
+    \item Create a revenue function $R(x)$.
+    \item Find the ticket price that maximizes revenue.
+    \item Find the maximum revenue and the number of tickets sold at that price.
+    \item State a reasonable practical domain for $x$.
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
