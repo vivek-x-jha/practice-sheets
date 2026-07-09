@@ -69,3 +69,9 @@
 - Do not ask the user whether cleanup should happen after a successful build unless they explicitly request otherwise.
 - Do not run build and clean in parallel. Build first, then clean, then verify that the PDF remains in the appropriate `build/` folder.
 - If `latexmk -c` leaves auxiliary artifacts behind for a specific file, remove only that file's non-PDF build artifacts directly and verify that only the PDF remains.
+
+# Memory
+
+- Use `docs/known-issues.md` for recurring LaTeX/build/content issues and active workarounds.
+- Use `docs/agent-memory.md` for durable project facts that should survive across agent sessions.
+- Keep student/private context and answer material out of memory files unless it is generic, non-sensitive project guidance.
