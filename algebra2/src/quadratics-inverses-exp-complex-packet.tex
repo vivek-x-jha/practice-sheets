@@ -1,0 +1,295 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=0.8in}
+\setlist{nosep}
+
+\title{Algebra II Reference and Practice Packet}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Context}
+This packet connects four central Algebra II ideas: quadratic structure, inverse functions, the inverse relationship between exponential and logarithmic functions, and complex numbers. The reference pages summarize the essential rules. The practice test that follows is designed for 45 minutes and contains four multiple-choice questions from each topic.
+
+\section*{1. Quadratics}
+For $f(x)=ax^2+bx+c$ with $a\ne0$:
+\begin{itemize}[leftmargin=1.5em,itemsep=0.25em]
+  \item \textbf{Standard form:} $f(x)=ax^2+bx+c$.
+  \item \textbf{Vertex form:} $f(x)=a(x-h)^2+k$; the vertex is $(h,k)$ and the axis is $x=h$.
+  \item \textbf{Factored form:} $f(x)=a(x-r_1)(x-r_2)$; the zeros are $r_1,r_2$.
+  \item \textbf{Axis and vertex:} $x=-\dfrac{b}{2a}$ and $y=f\!\left(-\dfrac{b}{2a}\right)$.
+  \item \textbf{Quadratic formula:} $x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$.
+  \item \textbf{Discriminant:} $D=b^2-4ac$. If $D>0$, there are two distinct real roots; if $D=0$, one repeated real root; if $D<0$, two nonreal conjugate roots.
+  \item \textbf{Root relationships:} $r_1+r_2=-\dfrac ba$ and $r_1r_2=\dfrac ca$.
+  \item If $a>0$, the vertex gives a minimum; if $a<0$, it gives a maximum.
+\end{itemize}
+Completing the square uses
+\[
+  x^2+Bx=\left(x+\frac B2\right)^2-\left(\frac B2\right)^2.
+\]
+
+\section*{2. Inverse Functions}
+An inverse reverses a function's input and output. The notation $f^{-1}$ means inverse function, not reciprocal:
+\[
+  f^{-1}(x)\ne \frac1{f(x)}.
+\]
+A function has an inverse function on its domain only when it is one-to-one (it passes the horizontal line test).
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0.25em]
+  \item To find $f^{-1}$: write $y=f(x)$, interchange $x$ and $y$, solve for $y$, and state any necessary domain restriction.
+  \item Composition check:
+  \[
+    f\bigl(f^{-1}(x)\bigr)=x,\qquad f^{-1}(f(x))=x
+  \]
+  wherever the expressions are defined.
+  \item Domain and range switch:
+  \[
+    \operatorname{Dom}(f^{-1})=\operatorname{Range}(f),\qquad
+    \operatorname{Range}(f^{-1})=\operatorname{Dom}(f).
+  \]
+  \item The graphs of $f$ and $f^{-1}$ are reflections across $y=x$.
+  \item A quadratic must have its domain restricted to one side of its vertex before it has an inverse function.
+\end{itemize}
+
+\section*{3. Exponential and Natural Logarithmic Functions}
+The natural exponential function is $\exp(x)=e^x$. Its inverse is $\ln x$:
+\[
+  \ln(e^x)=x\quad(x\in\mathbb R),
+  \qquad
+  e^{\ln x}=x\quad(x>0).
+\]
+Thus $y=e^x$ and $y=\ln x$ are reflections across $y=x$.
+
+\begin{center}
+\begin{tabular}{c|c}
+Exponential rules & Logarithm rules\\ \hline
+$e^u e^v=e^{u+v}$ & $\ln(MN)=\ln M+\ln N$\\
+$\dfrac{e^u}{e^v}=e^{u-v}$ & $\ln\!\left(\dfrac MN\right)=\ln M-\ln N$\\
+$(e^u)^r=e^{ru}$ & $\ln(M^r)=r\ln M$
+\end{tabular}
+\end{center}
+For real logarithms, every logarithm argument must be positive. Also,
+\[
+  \log_b x=\frac{\ln x}{\ln b},\qquad b>0,\ b\ne1,\ x>0.
+\]
+When solving an exponential equation, isolate the exponential expression and take a logarithm. When solving a logarithmic equation, combine logs when useful, rewrite exponentially, and reject values outside the original domain.
+
+\section*{4. Complex Numbers as Pairs of Real Numbers}
+Let
+\[
+  z=a+bi\longleftrightarrow(a,b)
+  \qquad\text{and}\qquad
+  w=c+di\longleftrightarrow(c,d).
+\]
+These are two ways to write the same complex numbers. On the complex plane, $z=a+bi$ is plotted at $(a,b)$: $a$ is the real coordinate and $b$ is the imaginary coordinate. In particular,
+\[
+  a=a+0i\longleftrightarrow(a,0),
+  \qquad i=0+1i\longleftrightarrow(0,1).
+\]
+Thus complex numbers extend the real numbers by adding a second coordinate.
+
+Pair addition is ordinary vector addition. Multiplication needs a special rule because $i^2=-1$:
+\[
+\begin{aligned}
+ z+w&=(a+c)+(b+d)i
+      &&\longleftrightarrow&&(a+c,b+d),\\
+ zw&=(ac-bd)+(ad+bc)i
+      &&\longleftrightarrow&&(ac-bd,ad+bc).
+\end{aligned}
+\]
+For example, $i^2=-1$ becomes $(0,1)(0,1)=(-1,0)$. Complex multiplication is therefore \emph{not} component-by-component vector multiplication.
+
+The conjugate reflects a point across the real axis, and the modulus is its distance from the origin:
+\[
+  \overline z=a-bi\longleftrightarrow(a,-b),
+  \qquad |z|=\sqrt{a^2+b^2},
+  \qquad z\overline z=|z|^2=a^2+b^2.
+\]
+For $w=c+di\ne0$, division is defined by multiplying by $\overline w=c-di$:
+\[
+\begin{aligned}
+  \frac zw
+  &=\frac{(a+bi)(c-di)}{c^2+d^2}\\
+  &=\frac{ac+bd}{c^2+d^2}
+    +\frac{bc-ad}{c^2+d^2}i\\
+  &\longleftrightarrow
+  \left(\frac{ac+bd}{c^2+d^2},
+        \frac{bc-ad}{c^2+d^2}\right).
+\end{aligned}
+\]
+
+\subsection*{Field vocabulary in Algebra II language}
+A \textbf{field} is a number system in which the familiar rules of arithmetic work: numbers can be added, subtracted, multiplied, and divided by any nonzero number. Each rule below is shown in both $a+bi$ notation and pair notation.
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0.4em]
+  \item \textbf{Closure:} An operation stays inside the number system. The formulas above show that $z+w$ and $zw$ both have the form $A+Bi\longleftrightarrow(A,B)$, so their real and imaginary parts are still real numbers.
+
+  \item \textbf{Additive identity:} This is the number that changes nothing when added:
+  \[
+    z+0=(a+bi)+(0+0i)=a+bi
+    \quad\longleftrightarrow\quad
+    (a,b)+(0,0)=(a,b).
+  \]
+  Thus $0=0+0i\longleftrightarrow(0,0)$ is the additive identity.
+
+  \item \textbf{Additive inverse:} This is the number that adds to $z$ to make $0$:
+  \[
+    -z=-a-bi\longleftrightarrow(-a,-b),
+  \]
+  because
+  \[
+    (a+bi)+(-a-bi)=0
+    \quad\longleftrightarrow\quad
+    (a,b)+(-a,-b)=(0,0).
+  \]
+  Subtracting a complex number means adding its additive inverse.
+
+  \item \textbf{Multiplicative identity:} This is the number that changes nothing when multiplied:
+  \[
+    z\cdot1=(a+bi)(1+0i)=a+bi
+    \quad\longleftrightarrow\quad
+    (a,b)(1,0)=(a,b).
+  \]
+  Thus $1=1+0i\longleftrightarrow(1,0)$ is the multiplicative identity.
+
+  \item \textbf{Multiplicative inverse:} For $z=a+bi\ne0$, this is the reciprocal that multiplies with $z$ to make $1$:
+  \[
+  \begin{aligned}
+    z^{-1}=\frac1z
+      &=\frac{\overline z}{z\overline z}
+       =\frac{a-bi}{a^2+b^2}\\
+      &=\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i
+       \longleftrightarrow
+       \left(\frac{a}{a^2+b^2},\frac{-b}{a^2+b^2}\right).
+  \end{aligned}
+  \]
+  Therefore
+  \[
+    zz^{-1}=1
+    \quad\longleftrightarrow\quad
+    (a,b)(a,b)^{-1}=(1,0).
+  \]
+  Zero has no multiplicative inverse because division by zero is undefined.
+
+  \item \textbf{Commutative property:} Changing order does not change a sum or product: $z+w=w+z$ and $zw=wz$.
+
+  \item \textbf{Associative property:} Changing grouping does not change a sum or product: $(z+w)+u=z+(w+u)$ and $(zw)u=z(wu)$.
+
+  \item \textbf{Distributive property:} Multiplication distributes across addition: $z(w+u)=zw+zu$.
+\end{itemize}
+Because the $a+bi$ operations---equivalently, the pair operations---satisfy all these rules, $\mathbb C$ is a field. The pair model adds a visual interpretation without changing the Algebra II arithmetic.
+
+\clearpage
+\section*{45-Minute Practice Test}
+\textbf{Instructions.} Complete all 16 questions in 45 minutes. Select the best answer for each question. Show supporting work on separate paper. Use exact values unless a question requests an approximation. Unless your teacher says otherwise, complete the test without referring to the preceding reference pages.
+
+\subsection*{Quadratics}
+\begin{enumerate}[leftmargin=*,itemsep=1em]
+  \item A quadratic has zeros $-2$ and $5$ and satisfies $f(1)=-24$. What is its minimum value?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $-49$ \item $-\dfrac{49}{2}$ \item $-24$ \item $\dfrac32$
+  \end{enumerate}
+
+  \item The equation $x^2-(k+2)x+2k=0$ has exactly one real solution. What is the sum of $k$ and that solution?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item 2 \item 3 \item 4 \item 6
+  \end{enumerate}
+
+  \item The graph of $f(x)=ax^2+bx+6$ has axis of symmetry $x=2$ and vertex value $f(2)=-10$. What is the larger zero of $f$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $2-\dfrac{\sqrt{10}}2$ \item $2+\dfrac{\sqrt{10}}2$
+    \item $4-\sqrt{10}$ \item $4+\sqrt{10}$
+  \end{enumerate}
+
+  \item A projectile's height in feet is $h(t)=-16t^2+vt+6$. If its height after 1 second is 70 feet, what is its maximum height?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item 86 ft \item 96 ft \item 106 ft \item 112 ft
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{Inverse Functions}
+\begin{enumerate}[leftmargin=*,itemsep=1em,resume]
+  \item If $f(x)=\dfrac{3x-5}{2x+1}$, what is $f^{-1}(4)$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $-\dfrac95$ \item $-\dfrac59$ \item $\dfrac59$ \item $\dfrac95$
+  \end{enumerate}
+
+  \item The function $f(x)=(x-4)^2-7$ is restricted to $x\ge4$. Which expression gives its inverse, including the correct inverse domain?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $f^{-1}(x)=4+\sqrt{x+7}$, $x\ge-7$
+    \item $f^{-1}(x)=4-\sqrt{x+7}$, $x\ge-7$
+    \item $f^{-1}(x)=\sqrt{x+7}-4$, $x\ge-7$
+    \item $f^{-1}(x)=4+\sqrt{x-7}$, $x\ge7$
+  \end{enumerate}
+
+  \item A one-to-one function satisfies $f(3)=11$. If $g(x)=f^{-1}(2x-1)$, what is $g(6)$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item 3 \item 5 \item 6 \item 11
+  \end{enumerate}
+
+  \item If $f(x)=2(x-1)^3+5$, which expression equals $f^{-1}(x)$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $1+\sqrt[3]{\dfrac{x-5}{2}}$
+    \item $1+\dfrac{\sqrt[3]{x-5}}2$
+    \item $\sqrt[3]{\dfrac{x-1}{2}}+5$
+    \item $\dfrac{\sqrt[3]{x-5}+1}{2}$
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{Exponential and Logarithmic Functions}
+\begin{enumerate}[leftmargin=*,itemsep=1em,resume]
+  \item What is the solution of $\ln(x-1)+\ln(x+3)=\ln18$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $-7$ \item $-3$ \item 1 \item 3
+  \end{enumerate}
+
+  \item Which set contains all real solutions of $e^{2x}-5e^x+6=0$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $\{2,3\}$ \item $\{\ln2,\ln3\}$
+    \item $\{-\ln2,-\ln3\}$ \item $\{\ln6\}$
+  \end{enumerate}
+
+  \item An exponential function $q(t)=ab^t$ satisfies $q(1)=12$ and $q(4)=324$. What is $q(0)$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item 2 \item 3 \item 4 \item 9
+  \end{enumerate}
+
+  \item What is the exact solution of $2^{x+1}=5^{2x-1}$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $\dfrac{\ln10}{\ln(25/2)}$
+    \item $\dfrac{\ln(5/2)}{\ln10}$
+    \item $\dfrac{\ln10}{\ln(10/25)}$
+    \item $\dfrac{\ln(25/2)}{\ln10}$
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{Complex Numbers}
+\begin{enumerate}[leftmargin=*,itemsep=1em,resume]
+  \item On the complex plane, $z$ is represented by $(3,-2)$ and $w$ by $(1,4)$. Which point represents $zw$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $(3,-8)$ \item $(5,2)$ \item $(11,10)$ \item $(11,-10)$
+  \end{enumerate}
+
+  \item Which ordered pair represents $\dfrac{4+2i}{1-i}$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $(1,3)$ \item $(1,-3)$ \item $(3,1)$ \item $(3,-1)$
+  \end{enumerate}
+
+  \item If $z=-3+4i$, which expression equals $z^{-1}$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $\dfrac{-3+4i}{5}$ \item $\dfrac{-3-4i}{5}$
+    \item $\dfrac{-3+4i}{25}$ \item $\dfrac{-3-4i}{25}$
+  \end{enumerate}
+
+  \item Let $z=x+yi$. If $(2-i)z+\overline z=7+i$, what is $z$?
+  \begin{enumerate}[label=\Alph*.,itemsep=0pt]
+    \item $\dfrac32+\dfrac52i$ \item $\dfrac52+\dfrac32i$
+    \item $2+3i$ \item $3+2i$
+  \end{enumerate}
+\end{enumerate}
+
+\end{document}
