@@ -12,6 +12,7 @@ Curated LaTeX worksheets for math practice by subject.
 - `calculus/`: Calculus AB-style practice (limits, derivative rules and definitions, integrals, washer/shell volume problems, particle motion, exponential/logistic/Newton models, and review sets).
 - `cheatsheets/`: Compact reference sheets and formula summaries by topic.
 - `geometry/`: Geometry and trigonometry practice (applications, Law of Sines/Cosines, and proof work).
+- `sat/`: Timed SAT-style math and English drill sections.
 - `teasers/`: Short topical teaser/problem sets.
 - Builds live in each subject’s `build/` folder; sources are under `src/`.
 
@@ -27,6 +28,7 @@ Use `latexmk` (preferred for builds/cleanup):
 - Calculus: `latexmk -pdf -f -output-directory=calculus/build calculus/src/<file>.tex`
 - Cheatsheets: `latexmk -pdf -f -output-directory=cheatsheets/build cheatsheets/src/<file>.tex`
 - Geometry: `latexmk -pdf -f -output-directory=geometry/build geometry/src/<file>.tex`
+- SAT: `latexmk -pdf -f -output-directory=sat/build sat/src/<file>.tex`
 - Teasers: `latexmk -pdf -f -output-directory=teasers/build teasers/src/<file>.tex`
 
 ## Cleaning
@@ -37,6 +39,7 @@ Preserve PDFs; remove auxiliary files with:
 - `latexmk -c -output-directory=calculus/build calculus/src/<file>.tex`
 - `latexmk -c -output-directory=cheatsheets/build cheatsheets/src/<file>.tex`
 - `latexmk -c -output-directory=geometry/build geometry/src/<file>.tex`
+- `latexmk -c -output-directory=sat/build sat/src/<file>.tex`
 - `latexmk -c -output-directory=teasers/build teasers/src/<file>.tex`
 
 ## Guidelines

@@ -45,6 +45,13 @@
 - Keep problems short, puzzle-like, and reasoning-focused.
 - Prefer elegant number sense, divisibility, pattern, and logic prompts suitable for enrichment.
 
+# SAT Worksheet Guidelines
+
+- Use `sat/` for SAT-style math and English drill sections.
+- Math drills should be timed, assessment-style, and may include lengthy word problems, equations with missing constants determined from auxiliary information, systems/functions, data interpretation, geometry, and SAT-standard trigonometry.
+- English drills should focus on concise SAT-style grammar, rhetoric, transitions, sentence boundaries, punctuation, and evidence/revision questions.
+- State timing, calculator expectations when relevant, and exact/rounding directions clearly.
+
 # Build and Clean Commands
 
 - Build (Algebra): `latexmk -pdf -f -output-directory=algebra/build algebra/src/<file>.tex`
@@ -61,6 +68,8 @@
 - Clean (Geometry): `latexmk -c -output-directory=geometry/build geometry/src/<file>.tex`
 - Build (Teasers): `latexmk -pdf -f -output-directory=teasers/build teasers/src/<file>.tex`
 - Clean (Teasers): `latexmk -c -output-directory=teasers/build teasers/src/<file>.tex`
+- Build (SAT): `latexmk -pdf -f -output-directory=sat/build sat/src/<file>.tex`
+- Clean (SAT): `latexmk -c -output-directory=sat/build sat/src/<file>.tex`
 - Prefer `latexmk -c` for cleanup; do not delete PDFs when cleaning build artifacts.
 
 # Build Hook
