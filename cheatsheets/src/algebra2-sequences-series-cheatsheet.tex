@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \input{cheatsheets/src/cheatsheet-preamble.tex}
+\usepackage{pdflscape}
 
 \begin{document}
 \cheatsheettitle{Algebra II Sequences and Series Cheatsheet}{Module 8}
@@ -72,5 +73,85 @@ If $|r|\ge1$, the infinite geometric series diverges.
   \item Infinite geometric sums require $|r|<1$.
   \item Match the starting index to the first term.
 \end{itemize}
+
+\clearpage
+\section*{Common Sigma Formulas}
+For a positive integer $n$:
+\[
+  \sum_{k=1}^{n}k=1+2+\cdots+n=\frac{n(n+1)}2
+\]
+\[
+  \sum_{k=1}^{n}k^2=1^2+2^2+\cdots+n^2
+  =\frac{n(n+1)(2n+1)}6
+\]
+\[
+  \sum_{k=1}^{n}k^3=1^3+2^3+\cdots+n^3
+  =\left(\frac{n(n+1)}2\right)^2
+\]
+For consecutive integers beginning at $m$ instead of $1$, subtract the terms before $m$:
+\[
+  \sum_{k=m}^{n}k
+  =\sum_{k=1}^{n}k-\sum_{k=1}^{m-1}k
+  =\frac{n(n+1)-(m-1)m}{2}.
+\]
+The same subtraction idea works for sums of squares and cubes.
+
+\begin{landscape}
+\section*{Sequence and Series Comparison Table}
+Let $S_n=\sum_{k=1}^{n}a_k$. The last two columns refer to the series formed by adding the sequence terms. Assume $a_1\ne0$ in the geometric row unless noted.
+
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{1.35in} >{\raggedright\arraybackslash}p{1.55in} >{\raggedright\arraybackslash}p{1.2in} >{\raggedright\arraybackslash}p{1.35in} >{\raggedright\arraybackslash}p{1.8in} >{\raggedright\arraybackslash}p{1.35in}}
+\toprule
+\textbf{Function / sequence name} & \textbf{Recursive form} & \textbf{Explicit form} & \textbf{$\boldsymbol{\lim_{n\to\infty}a_n}$} & \textbf{Partial sum $\boldsymbol{S_n}$} & \textbf{Infinite sum $\boldsymbol{\sum_{n=1}^{\infty}a_n}$} \\
+\midrule
+Constant sequence
+& $a_1=c$; $a_n=a_{n-1}$
+& $a_n=c$
+& $c$
+& $cn$
+& $0$ if $c=0$; otherwise diverges \\
+\addlinespace
+Consecutive integers
+& $a_1=1$; $a_n=a_{n-1}+1$
+& $a_n=n$
+& $+\infty$
+& $\dfrac{n(n+1)}2$
+& Diverges \\
+\addlinespace
+Arithmetic sequence
+& $a_1$ given; $a_n=a_{n-1}+d$
+& $a_n=a_1+(n-1)d$
+& $+\infty$ if $d>0$; $a_1$ if $d=0$; $-\infty$ if $d<0$
+& $\dfrac n2\bigl(2a_1+(n-1)d\bigr)$
+& Diverges unless $a_1=d=0$ \\
+\addlinespace
+Square numbers
+& $a_1=1$; $a_n=a_{n-1}+2n-1$
+& $a_n=n^2$
+& $+\infty$
+& $\dfrac{n(n+1)(2n+1)}6$
+& Diverges \\
+\addlinespace
+Cube numbers
+& $a_1=1$; $a_n=a_{n-1}+3n^2-3n+1$
+& $a_n=n^3$
+& $+\infty$
+& $\left(\dfrac{n(n+1)}2\right)^2$
+& Diverges \\
+\addlinespace
+Geometric sequence
+& $a_1$ given; $a_n=ra_{n-1}$
+& $a_n=a_1r^{n-1}$
+& $0$ if $|r|<1$; $a_1$ if $r=1$; otherwise depends on $r$ or does not exist
+& $\dfrac{a_1(1-r^n)}{1-r}$ if $r\ne1$; $na_1$ if $r=1$
+& $\dfrac{a_1}{1-r}$ if $|r|<1$; otherwise diverges \\
+\bottomrule
+\end{tabular}
+\normalsize
+
+\vspace{0.6em}
+\textbf{Convergence check:} If $\sum a_n$ converges, then $a_n\to0$. A sequence approaching $0$ is necessary for an infinite sum to converge, but it is not always sufficient.
+\end{landscape}
 
 \end{document}
