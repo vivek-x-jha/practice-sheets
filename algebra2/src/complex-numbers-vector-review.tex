@@ -1,0 +1,296 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=0.8in}
+
+\title{Algebra II Review: Complex Numbers as Plane Vectors}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Context}
+A complex number behaves like a two-dimensional real vector, but it also has a specially defined multiplication. That multiplication turns each pair $\langle a,b\rangle$ into a single number that can be added, multiplied, divided, measured, and assigned a direction. This viewpoint explains the usual notation $a+bi$ rather than treating it as an arbitrary rule.
+
+\section*{Real Pairs with Special Operations}
+Begin with ordered pairs of real numbers:
+\[
+  z=\langle a,b\rangle,
+  \qquad
+  w=\langle c,d\rangle.
+\]
+Addition is ordinary vector addition:
+\[
+  \langle a,b\rangle+\langle c,d\rangle
+  =\langle a+c,b+d\rangle.
+\]
+Define multiplication by the special rule
+\[
+  \boxed{\langle a,b\rangle\langle c,d\rangle
+  =\langle ac-bd,ad+bc\rangle.}
+\]
+This is \emph{not} component-by-component multiplication.
+
+If $r$ is a real scalar, identify it with the pair $\langle r,0\rangle$. Multiplication by this pair gives ordinary scalar multiplication:
+\[
+\begin{aligned}
+  \langle r,0\rangle\langle a,b\rangle
+  &=\langle ra-0b,rb+0a\rangle\\
+  &=\langle ra,rb\rangle
+  =r\langle a,b\rangle.
+\end{aligned}
+\]
+Thus real scalar multiplication is a special case of complex multiplication.
+
+\section*{Length and Direction}
+The length, or \textbf{modulus}, of $z=\langle a,b\rangle$ is its distance from the origin:
+\[
+  |z|=\sqrt{a^2+b^2}.
+\]
+The \textbf{argument} of a nonzero complex number is a direction angle $\theta$ measured from the positive real axis:
+\[
+  \arg z=\theta,
+  \qquad
+  \cos\theta=\frac{a}{|z|},
+  \qquad
+  \sin\theta=\frac{b}{|z|}.
+\]
+The quadrant must agree with the signs of $a$ and $b$. Arguments differing by $2\pi k$ describe the same direction. In this sheet, $\operatorname{Arg}z$ denotes the principal argument in $0\le\theta<2\pi$.
+
+If $r=|z|$, then
+\[
+  z=\langle r\cos\theta,r\sin\theta\rangle.
+\]
+
+\section*{From $\langle a,b\rangle$ to $a+bi$}
+Define
+\[
+  1:=\langle1,0\rangle,
+  \qquad
+  i:=\langle0,1\rangle.
+\]
+Every pair can now be written as
+\[
+\begin{aligned}
+  \langle a,b\rangle
+  &=a\langle1,0\rangle+b\langle0,1\rangle\\
+  &=a\cdot1+b\cdot i\\
+  &=a+bi.
+\end{aligned}
+\]
+Therefore
+\[
+  \boxed{\langle a,b\rangle\longleftrightarrow a+bi.}
+\]
+The pair and $a+bi$ are two representations of the same object. Geometrically, $a+bi$ is plotted at the point $(a,b)$ in the complex plane. Algebraically, it is one scalar complex number. Complex scalars are therefore ``like'' two-dimensional real vectors, but their special multiplication gives them additional algebraic structure.
+
+The multiplication rule explains why $i$ is a square root of $-1$:
+\[
+\begin{aligned}
+  i^2
+  &=\langle0,1\rangle\langle0,1\rangle\\
+  &=\langle0\cdot0-1\cdot1,\,0\cdot1+1\cdot0\rangle\\
+  &=\langle-1,0\rangle=-1.
+\end{aligned}
+\]
+Thus $i^2=-1$, so $i$ is a number whose square is $-1$. In the usual Algebra II notation, $i=\sqrt{-1}$.
+
+Using $i^2=-1$, pair multiplication becomes the familiar calculation
+\[
+  (a+bi)(c+di)=(ac-bd)+(ad+bc)i.
+\]
+
+\section*{Real and Imaginary Parts}
+For $z=a+bi$,
+\[
+  \operatorname{Re}(z)=a,
+  \qquad
+  \operatorname{Im}(z)=b.
+\]
+The imaginary part is the real coefficient $b$, not the term $bi$. The pair notation records the same information:
+\[
+  z=\langle\operatorname{Re}(z),\operatorname{Im}(z)\rangle.
+\]
+
+\section*{Complex Conjugates and Modulus}
+The \textbf{complex conjugate} reflects a complex number across the real axis:
+\[
+  z=a+bi\longrightarrow\overline z=a-bi.
+\]
+In pair form,
+\[
+  \langle a,b\rangle\longrightarrow\langle a,-b\rangle.
+\]
+Multiplying a complex number by its conjugate produces a nonnegative real number:
+\[
+\begin{aligned}
+  z\overline z
+  &=(a+bi)(a-bi)\\
+  &=a^2-abi+abi-b^2i^2\\
+  &=a^2+b^2\\
+  &=|z|^2.
+\end{aligned}
+\]
+Consequently,
+\[
+  \boxed{z\overline z=|z|^2},
+  \qquad
+  |z|=|\overline z|,
+  \qquad
+  z+\overline z=2\operatorname{Re}(z),
+  \qquad
+  z-\overline z=2i\operatorname{Im}(z).
+\]
+
+Example: if $z=3-4i$, then
+\[
+  \overline z=3+4i,
+  \qquad |z|=5,
+  \qquad z\overline z=25.
+\]
+
+\section*{Complex Zeros of Polynomials}
+\subsection*{Conjugate Pair Theorem}
+If a polynomial has \textbf{real coefficients} and $a+bi$ is a nonreal zero, then its conjugate $a-bi$ is also a zero:
+\[
+  P(a+bi)=0 \quad\Longrightarrow\quad P(a-bi)=0.
+\]
+The real-coefficient condition matters. Nonreal zeros of real polynomials occur in conjugate pairs.
+
+The pair produces a real quadratic factor:
+\[
+\begin{aligned}
+  \bigl(x-(a+bi)\bigr)\bigl(x-(a-bi)\bigr)
+  &=(x-a)^2+b^2\\
+  &=x^2-2ax+(a^2+b^2).
+\end{aligned}
+\]
+For example, if $2+3i$ is a zero of a real polynomial, then $2-3i$ is also a zero, and
+\[
+  \bigl(x-(2+3i)\bigr)\bigl(x-(2-3i)\bigr)
+  =(x-2)^2+9=x^2-4x+13
+\]
+is a factor.
+
+\subsection*{Fundamental Theorem of Algebra}
+Every nonconstant polynomial of degree $n$ has exactly $n$ complex zeros when multiplicity is counted. Equivalently, over $\mathbb C$,
+\[
+  P(x)=a_n(x-r_1)(x-r_2)\cdots(x-r_n).
+\]
+A repeated zero is counted more than once. For example, if
+\[
+  P(x)=(x-3)^2(x^2+4),
+\]
+then its four zeros, counting multiplicity, are $3,3,2i,-2i$.
+
+Useful consequences:
+\begin{itemize}[leftmargin=1.5em,itemsep=0.2em]
+  \item A quadratic has two complex zeros, a cubic has three, and a quartic has four, counting multiplicity.
+  \item A real polynomial of odd degree must have at least one real zero because its nonreal zeros pair up.
+  \item For a real polynomial, factor over the reals using linear factors and irreducible quadratic factors; factor over the complex numbers using only linear factors.
+  \item The quadratic formula still applies when $b^2-4ac<0$, using $\sqrt{-m}=i\sqrt m$ for $m>0$.
+\end{itemize}
+
+\section*{Reciprocals and Division}
+For $z=a+bi\ne0$, multiply by the conjugate to write the reciprocal in $a+bi$ form:
+\[
+\begin{aligned}
+  \frac1z
+  &=\frac1{a+bi}\cdot\frac{a-bi}{a-bi}\\
+  &=\frac{a-bi}{a^2+b^2}\\
+  &=\boxed{\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i}.
+\end{aligned}
+\]
+Equivalently,
+\[
+  \frac1z=\frac{\overline z}{|z|^2}.
+\]
+
+For $w=c+di$ and nonzero $z=a+bi$,
+\[
+\begin{aligned}
+  \frac wz
+  &=\frac{w\overline z}{z\overline z}
+  =\frac{(c+di)(a-bi)}{a^2+b^2}\\
+  &=\boxed{\frac{ac+bd}{a^2+b^2}
+  +\frac{ad-bc}{a^2+b^2}i}.
+\end{aligned}
+\]
+For example,
+\[
+  \frac{2+i}{1-2i}
+  =\frac{(2+i)(1+2i)}{(1-2i)(1+2i)}
+  =\frac{5i}{5}=i.
+\]
+
+\clearpage
+\section*{30-Minute Practice}
+\textbf{Instructions.} Complete all 12 questions in 30 minutes. Show clear work. Give exact values, write final complex-number answers in $a+bi$ form unless another form is requested, and use $0\le\operatorname{Arg}z<2\pi$.
+
+\begin{enumerate}[leftmargin=*,itemsep=1em]
+  \item Let $z=\langle2,-3\rangle$ and $w=\langle-1,4\rangle$.
+  \begin{enumerate}[label=(\alph*),itemsep=0.3em]
+    \item Find $2z+w$ in pair form and in $a+bi$ form.
+    \item Find $zw$ using the special pair multiplication, then verify using $a+bi$ notation.
+  \end{enumerate}
+
+  \item Use the pair multiplication rule to show both of the following directly:
+  \[
+    \langle0,1\rangle^2=\langle-1,0\rangle,
+    \qquad
+    \langle r,0\rangle\langle a,b\rangle=\langle ra,rb\rangle.
+  \]
+  Explain what each identity means in $a+bi$ notation.
+
+  \item For $z=-\sqrt3+i$, find $|z|$ and $\operatorname{Arg}z$. Then write $z$ in polar form
+  \[
+    |z|(\cos\theta+i\sin\theta).
+  \]
+
+  \item Let $z=2-3i$ and $w=-1+4i$.
+  \begin{enumerate}[label=(\alph*),itemsep=0.3em]
+    \item Find $\overline z$, $|z|$, and $z\overline z$.
+    \item Write $1/z$ in $a+bi$ form.
+    \item Write $w/z$ in $a+bi$ form.
+  \end{enumerate}
+
+  \item Find the real and imaginary parts of
+  \[
+    \frac{(3-2i)^2}{1+i}.
+  \]
+
+  \item A complex number $z$ satisfies
+  \[
+    z+\overline z=6,
+    \qquad
+    z\overline z=25.
+  \]
+  Find all possible values of $z$ and the principal argument of each.
+
+  \item Solve $x^2-6x+13=0$. Factor the quadratic completely over $\mathbb C$.
+
+  \item A monic quadratic polynomial with real coefficients has $-2+3i$ as a zero. Find the other zero and write the polynomial in standard form.
+
+  \item Factor completely over $\mathbb C$ and list all zeros:
+  \[
+    x^3-5x^2+9x-5.
+  \]
+
+  \item Factor completely over the reals and then over $\mathbb C$:
+  \[
+    x^4-8x^3+26x^2-48x+45.
+  \]
+  State every zero and its multiplicity.
+
+  \item Find the real quartic polynomial $P(x)$ of least degree such that $2$ is a zero of multiplicity $2$, $-1+2i$ is a zero, and $P(0)=40$. Write $P(x)$ in factored and standard forms.
+
+  \item The polynomial
+  \[
+    P(x)=x^3+ax^2+bx+10
+  \]
+  has real coefficients, and $1+2i$ is a zero. Find $a$, $b$, and all three zeros of $P$.
+\end{enumerate}
+
+\end{document}
