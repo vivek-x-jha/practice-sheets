@@ -1,0 +1,266 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\geometry{margin=0.8in}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.3in}
+
+\begin{document}
+
+\begin{center}
+  {\Large\textbf{Calculus: Differentiation and Continuity}}\\[3pt]
+  {\large Challenging Practice --- 45 Minutes}
+\end{center}
+
+Name: \rule{2.7in}{0.4pt}\hfill Date: \rule{1.5in}{0.4pt}
+
+\section*{Instructions}
+Complete all 12 problems without a calculator. Allow about 22 minutes for
+Problems 1--6 and 23 minutes for Problems 7--12. Show derivative steps,
+limit calculations, and theorem hypotheses where requested. Give exact answers;
+factored derivatives are acceptable. All angles are in radians.
+Do not use L'H\^opital's rule or Taylor series. This cover sheet may be used
+throughout the practice.
+
+\section*{Basic Formulas and Facts}
+\begin{multicols}{2}
+\small
+\textbf{Derivative definition and rules}
+\[
+  f'(a)=\lim_{h\to0}\frac{f(a+h)-f(a)}{h}
+\]
+\[
+\begin{aligned}
+  (u+v)'&=u'+v', & (cu)'&=cu',\\
+  (u^n)'&=nu^{n-1}u',\\
+  (uv)'&=u'v+uv',\\
+  \left(\frac{u}{v}\right)'&=\frac{u'v-uv'}{v^2},\quad v\ne0,\\
+  [f(g(x))]'&=f'(g(x))g'(x).
+\end{aligned}
+\]
+Here $u$ and $v$ are differentiable functions of $x$, and $c$ is constant.
+
+\medskip
+\textbf{Common derivatives}
+\[
+\begin{aligned}
+  (e^u)'&=e^u u', & (\ln u)'&=\frac{u'}{u}\ (u>0),\\
+  (\sin u)'&=\cos(u)u',\\
+  (\cos u)'&=-\sin(u)u',\\
+  (\tan u)'&=\sec^2(u)u'.
+\end{aligned}
+\]
+
+\textbf{Implicit differentiation}
+\[
+  \frac{d}{dx}(y^n)=ny^{n-1}y',\qquad
+  \frac{d}{dx}(xy)=y+xy'.
+\]
+For $F(x,y)=C$, if $F_y\ne0$,
+\[
+  y'=-\frac{F_x}{F_y}.
+\]
+Here $F_x$ and $F_y$ mean differentiation with respect to one variable while
+holding the other fixed. A horizontal tangent requires $F_x=0$, $F_y\ne0$;
+a vertical tangent requires $F_y=0$, $F_x\ne0$.
+
+\medskip
+\textbf{Tangent line and second derivative}
+\[
+  y-f(a)=f'(a)(x-a),\qquad y''=\frac{d}{dx}(y').
+\]
+
+\columnbreak
+\textbf{Limits}
+
+Use limit laws when the required limits exist; a quotient law requires a
+nonzero denominator limit. For continuous functions, substitute directly.
+\[
+\begin{gathered}
+  \lim_{t\to0}\frac{\sin t}{t}=1,\qquad
+  \lim_{t\to0}\frac{\tan t}{t}=1,\\
+  \lim_{t\to0}\frac{1-\cos t}{t^2}=\frac12.
+\end{gathered}
+\]
+\[
+  \lim_{x\to a}f(x)=L
+  \iff \lim_{x\to a^-}f(x)=\lim_{x\to a^+}f(x)=L.
+\]
+
+\textbf{Continuity and differentiability}
+
+Continuity at $a$ requires $f(a)$ to be defined and
+\[
+  \lim_{x\to a^-}f(x)=\lim_{x\to a^+}f(x)=f(a).
+\]
+For a piecewise join, differentiability requires continuity and equal,
+finite one-sided difference-quotient limits. Differentiability implies
+continuity; continuity does not imply differentiability. Existence of
+$f'(a)$ does not require $f'$ to be continuous at $a$.
+
+\medskip
+\textbf{Intermediate Value Theorem (IVT)}
+
+If $f$ is continuous on $[a,b]$ and $N$ lies strictly between $f(a)$ and
+$f(b)$, then $f(c)=N$ for some $c\in(a,b)$. This does not guarantee uniqueness.
+
+\medskip
+\textbf{Mean Value Theorem (MVT)}
+
+If $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then some
+$c\in(a,b)$ satisfies
+\[
+  f'(c)=\frac{f(b)-f(a)}{b-a}.
+\]
+
+\textbf{Rolle's theorem}
+
+Under the MVT hypotheses, if $f(a)=f(b)$, then $f'(c)=0$ for some
+$c\in(a,b)$.
+
+\medskip
+A failed hypothesis means the theorem cannot be invoked; its conclusion
+might still happen to hold.
+\end{multicols}
+
+\newpage
+\begin{center}
+  {\large\textbf{Part I: Chain Rule and Implicit Differentiation}}\\[2pt]
+  Problems 1--6: approximately 22 minutes total
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt]
+  \item Differentiate.
+  \[
+    y=\frac{e^{\sin(3x)}\ln(1+x^2)}{\sqrt{2+x^4}}
+  \]
+  \vspace{\stretch{1}}
+
+  \item Differentiable functions $f$ and $g$ satisfy
+  \[
+    g(0)=2,\qquad g'(0)=-1,\qquad f(5)=3,\qquad f'(5)=4.
+  \]
+  For
+  \[
+    H(x)=\ln\!\left(1+\left[f\!\left(g(x)^2+1\right)\right]^2\right),
+  \]
+  find $H'(0)$ and the tangent line at $x=0$.
+  \vspace{\stretch{1}}
+
+  \item For $y=\sin(x^2)$, find $y''$ and evaluate it at
+  $x=\sqrt{\pi/2}$.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{Part I --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item For the curve
+  \[
+    e^{xy}+x^2-y^2=2,
+  \]
+  find $dy/dx$ in terms of $x$ and $y$, and find the tangent line at $(1,0)$.
+  \vspace{\stretch{1}}
+
+  \item For the curve
+  \[
+    x^2y+y^3=2,
+  \]
+  find $dy/dx$ in terms of $x$ and $y$, and find $d^2y/dx^2$ at $(1,1)$.
+  \vspace{\stretch{1}}
+
+  \item Find all points on
+  \[
+    x^2+xy+y^2=12
+  \]
+  where the tangent is horizontal or vertical. Justify each classification
+  and check that the points lie on the curve.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{Part II: Limits, Continuity, and Theorems}}\\[2pt]
+  Problems 7--12: approximately 23 minutes total
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item Evaluate both limits, showing the transformations used.
+  \[
+    \text{(a)}\quad \lim_{x\to0}\frac{\sqrt{1+4x}-1}{\sin(3x)}
+    \qquad
+    \text{(b)}\quad \lim_{x\to0}\frac{1-\cos(4x)}{x\sin(2x)}
+  \]
+  \vspace{\stretch{1}}
+
+  \item Determine all real values of $a$, $b$, and $k$ for which $p$ is
+  differentiable at $x=2$. Then find $p'(2)$. Show the continuity and
+  differentiability conditions separately.
+  \[
+    p(x)=
+    \begin{cases}
+      \dfrac{x^2-4}{x-2}, & x<2,\\[6pt]
+      k, & x=2,\\[2pt]
+      ax^2+b, & x>2.
+    \end{cases}
+  \]
+  \vspace{\stretch{1}}
+
+  \item Let
+  \[
+    q(x)=
+    \begin{cases}
+      x^2\sin(1/x), & x\ne0,\\
+      0, & x=0.
+    \end{cases}
+  \]
+  Determine whether $q$ is continuous at $0$, whether $q'(0)$ exists, and
+  whether $q'$ is continuous at $0$. Use the derivative definition to
+  establish $q'(0)$, and justify any nonexistent limit.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{Part II --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item Does Rolle's theorem apply to $r(x)=|x^2-1|$ on $[-2,2]$?
+  Check every hypothesis. Regardless of your answer, find all
+  $c\in(-2,2)$ for which $r'(c)=0$.
+  \vspace{\stretch{1}}
+
+  \item Let
+  \[
+    s(x)=
+    \begin{cases}
+      x^2, & x\le1,\\
+      2x-1, & x>1.
+    \end{cases}
+  \]
+  Verify every hypothesis of the Mean Value Theorem on $[0,3]$ and find
+  all $c\in(0,3)$ satisfying its conclusion.
+  \vspace{\stretch{1}}
+
+  \item For real $a$, define
+  \[
+    t_a(x)=
+    \begin{cases}
+      x^2+2, & x\le0,\\
+      ax+2, & x>0.
+    \end{cases}
+  \]
+  Determine all values of $a$ for which the Intermediate Value Theorem,
+  applied to the endpoints of $[-1,2]$, guarantees a zero in $(-1,2)$.
+  For those values, find the zero and determine whether it is unique.
+  Justify the theorem's hypotheses and your uniqueness claim.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\end{document}
