@@ -1,0 +1,217 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\geometry{margin=0.8in}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.3in}
+
+\begin{document}
+
+\begin{center}
+  {\Large\textbf{Functions and Average Rate of Change}}\\[3pt]
+  {\large Algebra II Practice --- 45 Minutes}
+\end{center}
+
+Name: \rule{2.7in}{0.4pt}\hfill Date: \rule{1.5in}{0.4pt}
+
+\section*{Instructions}
+Complete all 12 problems in 45 minutes without a calculator. You may use this
+cover sheet. Show key algebraic steps and give exact answers. Use interval
+notation for domains and ranges. For conceptual questions, give a mathematical
+reason or a counterexample; a yes/no answer alone is not sufficient.
+
+\section*{Average Rate of Change (ARC)}
+For $a<b$ and defined endpoint values $f(a)$ and $f(b)$,
+\[
+  \boxed{\operatorname{ARC}_{[a,b]}(f)=\frac{f(b)-f(a)}{b-a}}.
+\]
+This is the slope of the secant line through $(a,f(a))$ and $(b,f(b))$;
+its units are output units per input unit. The difference quotient
+$\dfrac{f(x+h)-f(x)}{h}$ requires $h\ne0$ and both function values to exist.
+
+\section*{ARC for a Quadratic on $[a,b]$}
+Let $f(x)=Ax^2+Bx+C$, where $A\ne0$. Since $b^2-a^2=(b-a)(a+b)$,
+\[
+  \operatorname{ARC}_{[a,b]}(f)
+  =\frac{A(b^2-a^2)+B(b-a)}{b-a}
+  =\frac{(b-a)\bigl(A(a+b)+B\bigr)}{b-a}.
+\]
+\[
+  \boxed{\operatorname{ARC}_{[a,b]}(f)=A(a+b)+B}
+  \qquad(a<b).
+\]
+In vertex form, $f(x)=A(x-h)^2+k$, the equivalent formula is
+$\operatorname{ARC}_{[a,b]}(f)=A(a+b-2h)$.
+
+\section*{Function Foundations}
+\begin{multicols}{2}
+\small
+\textbf{Functions and notation}
+
+A function assigns exactly one output to each input in its domain.
+The domain is the set of allowed inputs; the range is the set of actual outputs.
+The graph of a function passes the vertical line test. The notation $f(x)$
+is a function value, not multiplication by $f$.
+
+\medskip
+\textbf{Domain restrictions}
+
+Denominators cannot be zero. An even-root radicand must be nonnegative.
+A real logarithm argument must be positive. Preserve restrictions from the
+original expression even after algebraic simplification. For piecewise
+functions, use the branch whose condition contains the input.
+
+\columnbreak
+\textbf{Composition}
+\[
+  (f\circ g)(x)=f(g(x)).
+\]
+Its domain requires $x\in\operatorname{Dom}(g)$ and
+$g(x)\in\operatorname{Dom}(f)$.
+
+\medskip
+\textbf{One-to-one functions and inverses}
+
+One-to-one means distinct inputs have distinct outputs; the graph passes the
+horizontal line test. An inverse function requires a one-to-one original
+function, possibly after restricting its domain.
+\[
+  f^{-1}(f(x))=x\quad\text{on }\operatorname{Dom}(f).
+\]
+Inverse functions exchange domain and range. The notation $f^{-1}$ means
+inverse, not reciprocal.
+\end{multicols}
+
+\newpage
+\begin{center}
+  {\large\textbf{Functions and Average Rate of Change --- Practice}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt]
+  \item Consider the relation
+  \[
+    R=\{(-3,4),\,(-1,2),\,(0,4),\,(2,-1)\}.
+  \]
+  State its domain and range. Determine whether $R$ is a function and
+  whether its inverse relation is a function. Justify both decisions.
+  \vspace{\stretch{1}}
+
+  \item Let $f(x)=\dfrac{\sqrt{5-x}}{x-2}$. Find its natural real domain.
+  Find $f(-4)$ and $f(5)$, and explain why $f(2)$ and $f(6)$ are not defined
+  as real function values.
+  \vspace{\stretch{1}}
+
+  \item For $q(x)=-2x^2+7x-3$, find
+  \[
+    \operatorname{ARC}_{[-1,4]}(q),\qquad
+    \operatorname{ARC}_{[1,3]}(q),\qquad
+    \operatorname{ARC}_{[t,t+h]}(q)\quad(h>0).
+  \]
+  Give the last answer in terms of $t$ and $h$.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{Functions and Average Rate of Change --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item Let $f(x)=x^2-6x+8$. Find every interval $[a,b]$ of length $4$
+  for which $\operatorname{ARC}_{[a,b]}(f)=0$. Is $f$ constant on the
+  interval you found? Justify your answer using function values.
+  \vspace{\stretch{1}}
+
+  \item A quadratic $p(x)=Ax^2+Bx+C$ satisfies
+  \[
+    \operatorname{ARC}_{[0,2]}(p)=5,\qquad
+    \operatorname{ARC}_{[1,4]}(p)=11,\qquad p(0)=-3.
+  \]
+  Determine $A$, $B$, and $C$.
+  \vspace{\stretch{1}}
+
+  \item The table gives the water remaining in a tank.
+  \[
+    \begin{array}{c|rrrr}
+      t\text{ (minutes)} & 0 & 1 & 3 & 6\\ \hline
+      V(t)\text{ (liters)} & 24 & 20 & 9 & 3
+    \end{array}
+  \]
+  Find the average rates of change on $[0,3]$ and $[1,6]$, including units.
+  A student says, ``The tank lost exactly 5 liters during each minute
+  from $t=0$ to $t=3$.'' Does the table justify that claim? Explain.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{Functions and Average Rate of Change --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item Let
+  \[
+    p(x)=
+    \begin{cases}
+      x^2+1, & x<1,\\
+      3x-1, & 1\le x<4,\\
+      10-x, & x\ge4.
+    \end{cases}
+  \]
+  Find $p(1)$, $p(4)$, $\operatorname{ARC}_{[-1,4]}(p)$, and
+  $\operatorname{ARC}_{[1,4]}(p)$.
+  \vspace{\stretch{1}}
+
+  \item Let $f(x)=\sqrt{x-1}$ and $g(x)=x^2-3$.
+  Find simplified formulas and domains for $f\circ g$ and $g\circ f$.
+  Then find $\operatorname{ARC}_{[1,5]}(g\circ f)$.
+  \vspace{\stretch{1}}
+
+  \item Let $q(x)=(x-3)^2-4$. Explain why $q$ has no inverse function
+  on its full real domain, using two specific inputs. Restrict its domain
+  to $[3,\infty)$ and find $q^{-1}(x)$, together with the domain and range
+  of that inverse.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{Functions and Average Rate of Change --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item Decide whether each statement is true or false. Give a reason
+  for each true statement and a counterexample for each false statement.
+  \begin{enumerate}[label=(\alph*),leftmargin=1.6em,itemsep=0.25em]
+    \item If $\operatorname{ARC}_{[a,b]}(f)>0$, then $f$ must be strictly
+    increasing throughout $[a,b]$.
+    \item If two functions with domain $\mathbb R$ have equal ARC on every
+    interval $[a,b]$, then they must be the same function.
+    \item A function can have two distinct inputs with the same output.
+    \item If both compositions exist, then $f\circ g=g\circ f$.
+  \end{enumerate}
+  \vspace{\stretch{1}}
+
+  \item Consider
+  \[
+    f(x)=\frac{x^2-9}{x-3},\qquad g(x)=x+3,
+  \]
+  each with its natural real domain. Are these the same function?
+  Explain. Compute their average rates of change on $[-1,2]$.
+  Does agreement of those rates establish that the functions are equal?
+  \vspace{\stretch{1}}
+
+  \item For $f(x)=2x^2-3x+1$ and $h>0$, a student claims
+  \[
+    \frac{f(a+h)-f(a)}{h}=\frac{f(h)}{h}.
+  \]
+  Determine whether the claim holds for all real $a$ and positive $h$.
+  Derive the correct simplified expression for the left side and give a
+  specific counterexample if the claim is false. Also explain the
+  difference between $f(a+h)$ and $f(a)+h$.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\end{document}
