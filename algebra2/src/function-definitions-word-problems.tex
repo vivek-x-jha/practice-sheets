@@ -1,0 +1,207 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=0.8in}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+  {\Large\textbf{When Is a Rule a Function?}}\\[3pt]
+  {\large Algebra II Word Problems and Abstract Reasoning}
+\end{center}
+
+Name: \rule{2.7in}{0.4pt}\hfill Date: \rule{1.5in}{0.4pt}
+
+\section*{Instructions}
+Suggested time: 45 minutes. Complete all 12 problems without a calculator.
+You may use this reference page. For every function decision, identify the
+input, the proposed output, and why the rule does or does not meet the
+definition. Support a rejection with a specific input or counterexample.
+Keep the stated domain and codomain unless a question asks you to change them.
+
+\begingroup
+\small
+\section*{The Definition}
+A function $f:D\to C$ assigns \textbf{exactly one element of $C$ to every
+element of $D$}.
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item \textbf{Domain $D$:} the full set of inputs the rule promises to accept.
+  \item \textbf{Codomain $C$:} the declared set in which outputs must lie.
+  \item \textbf{Range:} the outputs actually obtained,
+  $\{f(x):x\in D\}\subseteq C$.
+\end{itemize}
+
+\section*{Three Requirements}
+For each input in the stated domain:
+\begin{enumerate}[leftmargin=*,itemsep=0.3em]
+  \item An output must exist.
+  \item The output must be unique.
+  \item The output must belong to the stated codomain.
+\end{enumerate}
+A rule can fail for different reasons at different inputs. Changing its domain,
+codomain, or assignment rule changes the proposed function.
+
+\section*{What Is Allowed?}
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item Different inputs may have the same output. The function need not use
+  every element of its codomain.
+  \item Inputs and outputs need not be numbers. They may be names, ordered
+  pairs, sets, or even functions. An entire set can be one output object.
+  \item A function is \textbf{one-to-one} if different inputs always have
+  different outputs. This is an additional property, not part of being a function.
+  \item If the same input object can be represented in different ways,
+  its output must not depend on which representation is used.
+\end{itemize}
+
+\section*{Relations and Composition}
+A relation from $D$ to $C$ is a collection of ordered pairs $(x,y)$ with
+$x\in D$ and $y\in C$. It represents a function on $D$ only if each element
+of $D$ appears as a first coordinate with exactly one second coordinate.
+
+\medskip
+For $(g\circ f)(x)=g(f(x))$ to be defined on all of $D$, $f$ must be defined
+on $D$ and every resulting $f(x)$ must be an allowed input to $g$.
+\endgroup
+
+\newpage
+\begin{center}
+  {\large\textbf{When Is a Rule a Function? --- Practice}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt]
+  \item A school has student IDs $S=\{A,B,C,D\}$ and lockers
+  $L=\{1,2,3,4,5\}$. Its complete assignment record is
+  \[
+    A\mapsto2,\qquad B\mapsto2,\qquad C\mapsto4,\qquad D\mapsto5.
+  \]
+  Does the record define a function from $S$ to $L$? State its range and
+  whether it is one-to-one. A second rule takes any locker in $L$ and
+  returns the ID of a student assigned to it. Is that a function from
+  $L$ to $S$? Identify every type of failure that occurs.
+  \vspace{\stretch{1}}
+
+  \item A library has a fixed inventory $B$ of book IDs and a set $S$ of
+  registered students. At noon, one student has no borrowed books, another
+  has two different books, and every loan is recorded. Compare these rules:
+  \begin{enumerate}[label=(\alph*),leftmargin=1.6em,itemsep=0.25em]
+    \item Input a student in $S$; output a book ID in $B$ that the student
+    has borrowed.
+    \item Input a student in $S$; output the complete set of that student's
+    borrowed book IDs. The codomain is the collection of all subsets of $B$,
+    including the empty set.
+  \end{enumerate}
+  Which rules are functions? Explain what happens for both described students.
+  \vspace{\stretch{1}}
+
+  \item Two weather stations each report at 8 a.m. and 8 p.m. on one fixed
+  date. North reports $6^\circ$ and $11^\circ$; South reports $4^\circ$ and
+  $4^\circ$. A rule takes a station name and returns a reported temperature
+  from that date. Does this give a function from station names to real
+  temperatures? Would using the ordered pair (station, reporting time) as
+  the input repair the rule? State the full new domain and explain.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{When Is a Rule a Function? --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item A courier accepts parcel masses $m\in(0,5]$ kilograms. Its fee chart
+  says ``\$5 when $0<m\le2$'' and ``\$8 when $2\le m\le5$.'' Does the chart
+  define a function from accepted masses to dollar fees? Repair it by
+  changing exactly one endpoint inequality while keeping the full domain.
+  If both listed fees had instead been \$5, would the original overlap
+  prevent the chart from defining a function? Explain.
+  \vspace{\stretch{1}}
+
+  \item A design program accepts a positive area $A$ and returns the
+  perimeter of a rectangle having that area, with no further restrictions.
+  Does this define a function from positive real areas to positive real
+  perimeters? Give two specific rectangles to support your answer. If the
+  program is restricted to squares, does the rule become a function?
+  Give its formula and its domain and codomain.
+  \vspace{\stretch{1}}
+
+  \item An integer machine accepts any integer $n$ and must output an
+  integer $m$ satisfying $2m=n$. Does this define a function
+  $\mathbb Z\to\mathbb Z$? Explain what happens for even and odd inputs.
+  Give two separate repairs: one that changes only the domain and keeps
+  infinitely many inputs, and one that changes only the codomain while
+  keeping every integer input. State both repaired functions precisely.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{When Is a Rule a Function? --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item A machine accepts a real number $x$ and returns a real number $y$
+  satisfying $y^2=x$. Determine what happens when $x<0$, $x=0$, and $x>0$.
+  Does restricting inputs to $x\ge0$ alone make the rule a function into
+  $\mathbb R$? Give a domain and an output restriction that produce a
+  function with infinitely many inputs, and write its rule.
+  \vspace{\stretch{1}}
+
+  \item A program takes a rational number $r$. It writes $r=p/q$, where
+  $p$ is an integer and $q$ is a positive integer, and outputs $p+q$.
+  Fractions need not be in lowest terms. Does this define a function
+  $\mathbb Q\to\mathbb Z$? Use the input $r=1/2$ to justify your answer.
+  Would the assignment $p+q$ define a function if the input were instead
+  the ordered pair $(p,q)$? State that new domain and explain the difference.
+  \vspace{\stretch{1}}
+
+  \item A program accepts any nonempty subset $S$ of $\{1,2,3\}$. A set
+  has no intrinsic order: $\{1,2\}=\{2,1\}$. For each proposed output below,
+  decide whether the rule defines a function into $\{0,1,2,3\}$.
+  For each valid function, state its range.
+  \begin{enumerate}[label=(\alph*),leftmargin=1.6em,itemsep=0.25em]
+    \item The number of elements of $S$.
+    \item The first number written when someone lists the elements of $S$.
+    \item The smallest element of $S$.
+  \end{enumerate}
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\large\textbf{When Is a Rule a Function? --- Continued}}
+\end{center}
+
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume]
+  \item A program's input is an entire real quadratic polynomial
+  $p(x)=Ax^2+Bx+C$, with $A\ne0$. One version returns the real number $p(2)$.
+  Does it define a function from quadratic polynomials to $\mathbb R$?
+  Is it one-to-one? Exhibit two different inputs to support your answer.
+  Another version returns a real zero of the input polynomial. Does that
+  version define a function on the same domain? Give separate examples
+  showing every type of failure that occurs.
+  \vspace{\stretch{1}}
+
+  \item Three students have advisor assignments
+  $S_1\mapsto A_1$, $S_2\mapsto A_1$, and $S_3\mapsto A_2$.
+  The advisor directory contains $A_1$, $A_2$, and $A_3$.
+  Advisors $A_1$ and $A_2$ both have room 101; $A_3$ has no assigned room.
+  Consider the student-to-advisor rule and the advisor-to-room rule, using
+  all listed students and all listed advisors as their respective domains.
+  Is each rule a function? Does ``look up a student's advisor, then that
+  advisor's room'' nevertheless define a function on all three students?
+  Explain, and state a restriction of the advisor domain that makes the
+  second rule a function and permits the composition.
+  \vspace{\stretch{1}}
+
+  \item Invent a real-world assignment with exactly four distinct input
+  objects, a codomain of exactly four distinct output labels, and a range
+  of exactly three labels. List all input--output pairs and explain why
+  your rule is a function but is not one-to-one. Then alter the relation,
+  keeping the same stated domain and codomain, so that it is no longer a
+  function. Identify the precise requirement that your altered relation fails.
+  \vspace*{\stretch{1}}
+\end{enumerate}
+
+\end{document}
