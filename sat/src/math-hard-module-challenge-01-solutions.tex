@@ -1,0 +1,178 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=0.8in}
+
+\begin{document}
+\begin{center}
+  {\Large SAT Math: Hard-Module Challenge 1}\\[0.4em]
+  {\large Answer Key and Worked Solutions}
+\end{center}
+
+\noindent\textit{Original, unofficial practice. Difficulty is not College Board-calibrated; this set does not predict an SAT score.}
+
+\section*{Answer Key}
+\begin{center}
+\begin{tabular}{ccl@{\hspace{2em}}ccl}
+\textbf{Question} & \textbf{Choice} & \textbf{Value} & \textbf{Question} & \textbf{Choice} & \textbf{Value} \\\hline
+1 & A & $-4$ & 7 & C & $5{,}256$ \\
+2 & C & $52$ & 8 & B & $1{,}216$ \\
+3 & B & $19$ & 9 & B & $-26/5$ \\
+4 & D & $11/31$ & 10 & A & $26+10\sqrt{13}$ \\
+5 & C & $3$ & 11 & C & $9$ \\
+6 & D & $18$ & 12 & A & $23$
+\end{tabular}
+\end{center}
+
+\section*{Worked Solutions}
+\begin{enumerate}[leftmargin=*,itemsep=1em]
+  \item \textbf{A: $-4$.} For the system not to have a unique solution, its coefficient determinant must be zero:
+  \[
+    (a-2)(a+1)-18=0
+    \quad\Longrightarrow\quad (a-5)(a+4)=0.
+  \]
+  At $a=5$, the second equation is twice the first, so there are infinitely many solutions. At $a=-4$, the equations become
+  \[
+    -6x+3y=7,\qquad 6x-3y=14.
+  \]
+  Adding them gives $0=21$, so only $\boxed{a=-4}$ gives no solution.
+
+  \vfill
+  \item \textbf{C: $52$.} Since $f(2)=f(8)$, the axis of symmetry is $x=5$. Write $f(x)=a(x-5)^2+d$. Then
+  \[
+    9a+d=24,\qquad a+d=-8,
+  \]
+  so $a=4$ and $d=-12$. The requested sum is
+  \[
+    a+b+c=f(1)=4(1-5)^2-12=\boxed{52},
+  \]
+  not the constant term $f(0)=88$.
+
+  \vfill
+  \item \textbf{B: $19$.} Over the equal input intervals, the output differences are $35-11=24$ and $131-35=96$. Their ratio is
+  \[
+    b^2=\frac{96}{24}=4,
+  \]
+  so $b=2$. Now $a+c=11$ and $4a+c=35$ give $a=8$ and $c=3$. Thus $g(1)=8(2)+3=\boxed{19}$. Ratios of the original outputs do not give the growth factor because of the added constant.
+
+  \vfill
+  \newpage
+  \item \textbf{D: $\dfrac{11}{31}$.} Let $p$ be the fraction of all components made by line B. Then
+  \[
+    0.04(1-p)+0.12p=0.07
+    \quad\Longrightarrow\quad p=\frac38.
+  \]
+  The fraction of all components that are both from B and nondefective is
+  \[
+    \frac38(0.88)=\frac{33}{100}.
+  \]
+  Since $93/100$ of all components are nondefective, the requested probability is
+  \[
+    \frac{33/100}{93/100}=\boxed{\frac{11}{31}}.
+  \]
+  The denominator is the nondefective group, not the entire day's production.
+
+  \vfill
+  \item \textbf{C: $3$.} The original expression requires $x\ne3$. Factoring reduces the equation to
+  \[
+    \frac{(x-3)(x+3)}{x-3}=kx
+    \quad\Longrightarrow\quad x+3=kx,\qquad x\ne3.
+  \]
+  At $k=1$, this gives $3=0$, so there is no solution. For $k\ne1$, the candidate solution is
+  \[
+    x=\frac{3}{k-1}.
+  \]
+  This candidate is excluded when $k=2$, because it equals 3. Every other value of $k$ gives one valid solution. The requested sum is $\boxed{1+2=3}$.
+
+  \vfill
+  \item \textbf{D: $18$.} At $k=3$, the equation is linear: $12x+3=0$, which has one solution. For $k\ne3$, it is quadratic and has exactly one real solution when its discriminant is zero:
+  \[
+    12^2-4(k-3)(3)=0
+    \quad\Longrightarrow\quad k=15.
+  \]
+  Both values qualify, so their sum is $\boxed{3+15=18}$. The equation was not stated to remain quadratic for every $k$.
+
+  \vfill
+  \newpage
+  \item \textbf{C: $5{,}256$.} Let $n$ be the number of \$3 price increases. Ticket price is $30+3n$, and predicted sales are $240-12n$. After the \$6 per-ticket expense and the fixed expense, profit is
+  \begin{align*}
+    P(n)&=(30+3n)(240-12n)-6(240-12n)-1800\\
+        &=(24+3n)(240-12n)-1800\\
+        &=-36n^2+432n+3960\\
+        &=5256-36(n-6)^2.
+  \end{align*}
+  Its maximum is $\boxed{\$5{,}256}$ at $n=6$: a \$48 price and 168 tickets. Maximizing revenue alone would instead give a \$45 price and a smaller profit of \$5,220.
+
+  \vfill
+  \item \textbf{B: $1{,}216$.} The surface-area ratio $9:25$ gives a length ratio $3:5$ and a volume ratio
+  \[
+    3^3:5^3=27:125.
+  \]
+  Write the volumes as $27u$ and $125u$. Then
+  \[
+    125u-27u=784
+    \quad\Longrightarrow\quad 98u=784
+    \quad\Longrightarrow\quad u=8.
+  \]
+  Their sum is $(27+125)(8)=\boxed{1{,}216}$ cubic centimeters. The surface-area ratio cannot be applied directly to volume.
+
+  \vfill
+  \item \textbf{B: $-\dfrac{26}{5}$.} Substitute $y=2x+1$ into the circle equation:
+  \begin{align*}
+    x^2+(2x+1)^2-10x+6(2x+1)+c&=0,\\
+    5x^2+6x+(7+c)&=0.
+  \end{align*}
+  Tangency means exactly one intersection, so the discriminant is zero:
+  \[
+    36-20(7+c)=0
+    \quad\Longrightarrow\quad \boxed{c=-\frac{26}{5}}.
+  \]
+  As a check, the circle has center $(5,-3)$ and radius squared $34-c=196/5>0$.
+
+  \vfill
+  \newpage
+  \item \textbf{A: $26+10\sqrt{13}$.} Set $AD=4t$ and $DB=9t$, with $t>0$. The similar right triangles give
+  \[
+    CD^2=AD\cdot DB=36t^2,
+  \]
+  so $CD=6t$ and $AB=13t$. The area condition is
+  \[
+    \frac12(13t)(6t)=156
+    \quad\Longrightarrow\quad t=2.
+  \]
+  Using the same triangle similarity, the legs are
+  \[
+    AC=\sqrt{AD\cdot AB}=4\sqrt{13},\qquad
+    BC=\sqrt{DB\cdot AB}=6\sqrt{13},
+  \]
+  while $AB=26$. Their sum is $\boxed{26+10\sqrt{13}}$.
+
+  \vfill
+  \item \textbf{C: $9$.} Complete the square:
+  \[
+    x^2-8x+7=(x-4)^2-9.
+  \]
+  For $k>0$, the equation separates into
+  \[
+    (x-4)^2=9+k
+    \quad\text{or}\quad
+    (x-4)^2=9-k.
+  \]
+  The first always has two solutions. The second has two solutions for $0<k<9$, one for $k=9$, and none for $k>9$. The two branches cannot share a solution when $k>0$. Thus exactly three distinct solutions occur only at $\boxed{k=9}$.
+
+  \vfill
+  \item \textbf{A: $23$.} Square the given equation:
+  \[
+    \left(2^x+2^{-x}\right)^2
+    =2^{2x}+2(2^x)(2^{-x})+2^{-2x}=25.
+  \]
+  Since $(2^x)(2^{-x})=1$, the requested value is
+  \[
+    2^{2x}+2^{-2x}=25-2=\boxed{23}.
+  \]
+  Omitting the cross term would incorrectly give 25.
+  \vfill
+\end{enumerate}
+
+\end{document}
