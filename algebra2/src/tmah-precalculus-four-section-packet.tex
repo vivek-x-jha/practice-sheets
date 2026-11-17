@@ -1,0 +1,687 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{multicol}
+\geometry{margin=0.8in}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.3in}
+
+\begin{document}
+
+\begin{center}
+  {\Large\textbf{TMAH Precalculus Practice Packet}}\\[3pt]
+  {\large Four First-Semester Sections}
+\end{center}
+
+Name: \rule{2.7in}{0.4pt}\hfill Date: \rule{1.5in}{0.4pt}
+
+\section*{Instructions and Organization}
+This packet contains original practice aligned to the first-semester sequence
+in the \textit{2026--2027 Trig/Math Analysis Honors pacing calendar}.
+Complete one section at a time; allow about 60 minutes per section.
+Each section has a reference page and 12 problems.
+\begin{enumerate}[leftmargin=*,itemsep=0.15em]
+  \item Chapter 6: angles, trigonometric functions, graphs, and sinusoidal models.
+  \item Chapter 7: inverse trig, equations, identities, and angle formulas.
+  \item Chapter 9: polar coordinates, complex numbers, vectors, and dot products.
+  \item Chapter 11: matrices, determinants, inverses, and linear systems.
+\end{enumerate}
+Work without a calculator. Show key steps and give exact answers, including
+units in applications. An inverse-trig expression is an acceptable exact answer
+when the angle is not a standard unit-circle value. Draw and label your own
+axes for graphing questions; use extra paper if needed. In identity proofs,
+transform the left-hand side into the right-hand side. Assume both sides are
+defined. Use $k\in\mathbb Z$ for general trigonometric solutions.
+
+\section*{Section 1 Reference: Chapter 6}
+\begin{multicols}{2}
+\small
+\textbf{Angles and circular measure}
+\[
+  \theta_{\rm rad}=\theta_{\rm deg}\frac{\pi}{180},\qquad
+  s=r\theta,\qquad K=\frac12r^2\theta.
+\]
+Use radians for arc length $s$ and sector area $K$.
+
+\medskip
+\textbf{Trigonometric functions}
+
+For a nonzero point $(x,y)$ on the terminal ray, let $r=\sqrt{x^2+y^2}$.
+\[
+\begin{aligned}
+  \sin\theta&=y/r,&\cos\theta&=x/r,&\tan\theta&=y/x,\\
+  \csc\theta&=r/y,&\sec\theta&=r/x,&\cot\theta&=x/y.
+\end{aligned}
+\]
+Denominators must be nonzero. On the unit circle, $r=1$.
+
+\medskip
+\textbf{Symmetry and complementary angles}
+\[
+\begin{aligned}
+  \sin(-x)&=-\sin x,&\cos(-x)&=\cos x,\\
+  \tan(-x)&=-\tan x,\\
+  \sin(\pi/2-x)&=\cos x,&\cos(\pi/2-x)&=\sin x.
+\end{aligned}
+\]
+Even: $f(-x)=f(x)$. Odd: $f(-x)=-f(x)$.
+
+\columnbreak
+\textbf{Sine and cosine graphs}
+
+For $y=A\sin(B(x-h))+D$ or $y=A\cos(B(x-h))+D$, with $A,B\ne0$,
+\[
+  \text{amplitude}=|A|,\qquad T=\frac{2\pi}{|B|}.
+\]
+The phase shift is $h$, the midline is $y=D$, and the range is
+$[D-|A|,D+|A|]$. Five key points in one period are spaced by $T/4$.
+
+\medskip
+\textbf{Other trig graphs}
+
+Tangent and cotangent have period $\pi/|B|$; secant and cosecant have period
+$2\pi/|B|$. Vertical asymptotes occur where the corresponding sine or cosine
+denominator is zero.
+\[
+\begin{gathered}
+  \sec x=1/\cos x,\qquad\csc x=1/\sin x,\\
+  \cot x=\cos x/\sin x.
+\end{gathered}
+\]
+The ranges of the untransformed secant and cosecant functions are
+$(-\infty,-1]\cup[1,\infty)$.
+
+\medskip
+\textbf{Sinusoidal models}
+\[
+  |A|=\frac{\max-\min}{2},\qquad D=\frac{\max+\min}{2},\qquad
+  \omega=\frac{2\pi}{T}.
+\]
+Choose a sine or cosine phase that matches the starting position.
+\end{multicols}
+
+\newpage
+\begin{center}{\large\textbf{Section 1: Trigonometric Functions and Graphs}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,series=chapterSix]
+  \item Convert $225^\circ$ to radians and $-7\pi/12$ to degrees.
+  Find the angle in $[0,2\pi)$ coterminal with $-17\pi/6$.
+  \par\vspace{\stretch{1}}
+
+  \item A circle has radius $12$ cm. A sector has central angle $5\pi/6$.
+  Find the sector's arc length and area.
+  \par\vspace{\stretch{1}}
+
+  \item The terminal ray of $\theta$ passes through $(-5,12)$.
+  Find all six trigonometric function values of $\theta$.
+  \par\vspace{\stretch{1}}
+
+  \item Evaluate exactly:
+  \[
+    \frac{\sin(7\pi/6)\cos(5\pi/4)}{\tan(2\pi/3)}+\sec(\pi/3).
+  \]
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 1 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterSix]
+  \item Suppose $\sin\theta=-4/5$ and $\pi<\theta<3\pi/2$.
+  Find $\cos\theta$, $\tan\theta$, $\sin(-\theta)$, and
+  $\cos(\pi/2-\theta)$.
+  \par\vspace{\stretch{1}}
+
+  \item For each function, state its smallest positive period and determine
+  whether it is even, odd, or neither. Justify the symmetry algebraically.
+  \[
+    f(x)=-3\cos(2x)+1,\quad g(x)=2\sin(3x),\quad h(x)=\sin x+\cos x.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item For $y=-2\sin(3x-\pi)+1$, state the amplitude, period, phase shift,
+  midline, and range. Graph one full period and label five key points.
+  \par\vspace{\stretch{1}}
+
+  \item For $y=3\cos((x+\pi)/2)-2$, state the amplitude, period, phase shift,
+  midline, and range. Graph one full period and label five key points.
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 1 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterSix]
+  \item Graph one full period of $y=\tan(2x-\pi/3)$.
+  Label its zero and vertical asymptotes, and state the period.
+  \par\vspace{\stretch{1}}
+
+  \item For $y=2\sec(x/2)+1$, state the period and range. List every vertical
+  asymptote in $[0,4\pi]$ and determine whether the function has any zeros.
+  \par\vspace{\stretch{1}}
+
+  \item For each function, state its period and list all vertical asymptotes
+  and zeros in $[0,2\pi]$:
+  \[
+    y=\csc(2x),\qquad y=-\cot x.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item A Ferris wheel's lowest seat height is $5$ ft and its highest is
+  $65$ ft. A revolution takes $48$ seconds. A rider starts at the lowest
+  point at $t=0$. Write a height model $h(t)$, find the first time the rider
+  reaches the highest point, and find $h(12)$.
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\Large\textbf{Section 2: Inverse Trig, Equations, and Identities}}\\[3pt]
+  Chapter 7 --- Reference and 12 Problems
+\end{center}
+\section*{Reference}
+\begin{multicols}{2}
+\small
+\textbf{Inverse-trig principal ranges}
+\[
+\begin{aligned}
+  \arcsin x&\in[-\pi/2,\pi/2],\\
+  \arccos x&\in[0,\pi],\\
+  \arctan x&\in(-\pi/2,\pi/2).
+\end{aligned}
+\]
+The domains of arcsine and arccosine are $[-1,1]$; arctangent has domain
+$\mathbb R$. Expressions such as $\arcsin(\sin x)$ must return an angle in
+the appropriate principal range.
+
+\medskip
+\textbf{General solution patterns}
+\[
+\begin{aligned}
+  \sin A=\sin B&:\ A=B+2\pi k\\
+              &\quad\text{or }A=\pi-B+2\pi k,\\
+  \cos A=\cos B&:\ A=2\pi k\pm B,\\
+  \tan A=\tan B&:\ A=B+\pi k.
+\end{aligned}
+\]
+Keep all branches and reject values outside the requested interval or original
+domain. Dividing by a trig expression can lose solutions where it is zero.
+
+\medskip
+\textbf{Basic identities}
+\[
+\begin{aligned}
+  \sin^2x+\cos^2x&=1,\\
+  1+\tan^2x&=\sec^2x,\\
+  1+\cot^2x&=\csc^2x.
+\end{aligned}
+\]
+Cosine and secant are even; sine, cosecant, tangent, and cotangent are odd.
+\[
+  \sin(\pi/2-x)=\cos x,\qquad
+  \cos(\pi/2-x)=\sin x.
+\]
+
+\columnbreak
+\textbf{Sum and difference formulas}
+\[
+\begin{aligned}
+  \sin(u\pm v)&=\sin u\cos v\pm\cos u\sin v,\\
+  \cos(u\pm v)&=\cos u\cos v\mp\sin u\sin v,\\
+  \tan(u\pm v)&=\frac{\tan u\pm\tan v}{1\mp\tan u\tan v}.
+\end{aligned}
+\]
+
+\textbf{Double-angle formulas}
+\[
+\begin{aligned}
+  \sin(2x)&=2\sin x\cos x,\\
+  \cos(2x)&=\cos^2x-\sin^2x\\
+          &=2\cos^2x-1=1-2\sin^2x,\\
+  \tan(2x)&=\frac{2\tan x}{1-\tan^2x}.
+\end{aligned}
+\]
+
+\textbf{Half-angle formulas}
+\[
+\begin{aligned}
+  \sin^2(x/2)&=\frac{1-\cos x}{2},\\
+  \cos^2(x/2)&=\frac{1+\cos x}{2},\\
+  \tan(x/2)&=\frac{\sin x}{1+\cos x}
+           =\frac{1-\cos x}{\sin x}.
+\end{aligned}
+\]
+Square-root versions require a sign chosen from the quadrant of $x/2$.
+Use identities only where their original expressions are defined.
+
+\medskip
+\textbf{Proof format}
+
+Write a chain of equivalent expressions starting with the left-hand side.
+Numerical checks alone do not prove an identity.
+\end{multicols}
+
+\newpage
+\begin{center}{\large\textbf{Section 2: Practice}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,series=chapterSeven]
+  \item Evaluate:
+  \[
+    \arcsin(-\sqrt3/2),\qquad \arccos(-\sqrt2/2),\qquad \arctan(-1).
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Evaluate:
+  \[
+    \arcsin(\sin(5\pi/6)),\quad
+    \arccos(\cos(7\pi/6)),\quad
+    \arctan(\tan(3\pi/4)).
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Evaluate exactly:
+  \[
+    \sin(\arccos(5/13)),\quad
+    \tan(\arcsin(-3/5)),\quad
+    \cos(2\arctan 2).
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Solve on $0\le x<2\pi$:
+  \[
+    2\sin^2x-3\sin x+1=0.
+  \]
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 2 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterSeven]
+  \item Solve on $0\le x<2\pi$:
+  \[
+    2\cos^2x+3\sin x=0.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Give all real solutions of each equation:
+  \[
+    \tan(2x)=\sqrt3,\qquad \cos(3x)=\cos x.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Prove:
+  \[
+    \frac{1-\cos(2x)}{\sin(2x)}=\tan x.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Prove:
+  \[
+    \sin(x+y)+\sin(x-y)=2\sin x\cos y.
+  \]
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 2 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterSeven]
+  \item Prove:
+  \[
+    \frac{\cos(\pi/2+x)+\sin(-x)}{\sin(\pi/2-x)}=-2\tan x.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Suppose $\sin\alpha=3/5$ with $\alpha$ in Quadrant II, and
+  $\cos\beta=-5/13$ with $\beta$ in Quadrant III.
+  Find $\sin(\alpha+\beta)$ and $\cos(\alpha-\beta)$.
+  \par\vspace{\stretch{1}}
+
+  \item Suppose $\cos\theta=-7/25$ and $\pi<\theta<3\pi/2$.
+  Find $\sin(2\theta)$, $\cos(2\theta)$, and $\tan(\theta/2)$.
+  \par\vspace{\stretch{1}}
+
+  \item Solve $\sin(2x)=\cos x$ on $0\le x<2\pi$.
+  Which solutions would be lost by dividing both sides by $\cos x$?
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\Large\textbf{Section 3: Polar, Complex Numbers, and Vectors}}\\[3pt]
+  Chapter 9 --- Reference and 12 Problems
+\end{center}
+\section*{Reference}
+\begin{multicols}{2}
+\small
+\textbf{Polar coordinates and curves}
+\[
+  x=r\cos\theta,\quad y=r\sin\theta,\quad r^2=x^2+y^2.
+\]
+For polar points, signed radii are allowed:
+\[
+  (r,\theta)\equiv(r,\theta+2\pi k)\equiv(-r,\theta+\pi).
+\]
+When a positive radius is requested, choose the angle from the correct quadrant.
+If a conversion divides by $r$, check the origin separately.
+
+\medskip
+For a Cartesian curve, test symmetry using $(x,-y)$ for the $x$-axis,
+$(-x,y)$ for the $y$-axis, and $(-x,-y)$ for the origin. For a polar sketch,
+plot key angles and check where $r=0$ and where $|r|$ is largest.
+
+\medskip
+\textbf{Complex polar form and powers}
+
+For $z=a+bi\ne0$, the modulus is positive:
+\[
+  R=\sqrt{a^2+b^2},\qquad
+  z=R(\cos\phi+i\sin\phi)=Re^{i\phi}.
+\]
+\[
+  e^{i\phi}=\cos\phi+i\sin\phi,\qquad
+  (Re^{i\phi})^m=R^me^{im\phi}\quad(m\in\mathbb Z).
+\]
+Use $0\le\phi<2\pi$ for final complex polar answers.
+
+\medskip
+\textbf{All $n$th roots of $Re^{i\phi}\ne0$}
+\[
+  z_k=R^{1/n}e^{i(\phi+2\pi k)/n},\qquad
+  k=0,1,\ldots,n-1.
+\]
+The roots are equally spaced on a circle of radius $R^{1/n}$.
+
+\columnbreak
+\textbf{Vector basics}
+
+If $P=(p_1,p_2)$ and $Q=(q_1,q_2)$,
+\[
+  \overrightarrow{PQ}=\langle q_1-p_1,q_2-p_2\rangle.
+\]
+For $\mathbf u=\langle u_1,u_2\rangle\ne\mathbf0$,
+\[
+  |\mathbf u|=\sqrt{u_1^2+u_2^2},\qquad
+  \widehat{\mathbf u}=\frac{\mathbf u}{|\mathbf u|}.
+\]
+A vector of magnitude $M$ and direction angle $\theta$ has components
+$\langle M\cos\theta,M\sin\theta\rangle$.
+
+\medskip
+\textbf{Dot product, angle, and projection}
+\[
+\begin{aligned}
+  \mathbf u\cdot\mathbf v&=u_1v_1+u_2v_2,\\
+  \cos\gamma&=\frac{\mathbf u\cdot\mathbf v}{|\mathbf u||\mathbf v|},\\
+  \operatorname{proj}_{\mathbf u}\mathbf w
+  &=\frac{\mathbf w\cdot\mathbf u}{\mathbf u\cdot\mathbf u}\mathbf u.
+\end{aligned}
+\]
+The angle formula requires nonzero vectors. Nonzero vectors are perpendicular
+exactly when their dot product is zero. The scalar component of $\mathbf F$
+along nonzero $\mathbf d$ is $(\mathbf F\cdot\mathbf d)/|\mathbf d|$.
+
+\medskip
+\textbf{Applications}
+\[
+  W=\mathbf F\cdot\mathbf d,\qquad
+  \mathbf v_{\rm ground}=\mathbf v_{\rm air}+\mathbf v_{\rm wind}.
+\]
+Constant-velocity displacement over time $t$ is $t\mathbf v$.
+\end{multicols}
+
+\newpage
+\begin{center}{\large\textbf{Section 3: Practice}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,series=chapterNine]
+  \item Convert the polar point $(-6,5\pi/6)$ to Cartesian coordinates.
+  Convert $(-3,-3\sqrt3)$ to polar coordinates with $r>0$ and
+  $0\le\theta<2\pi$.
+  \par\vspace{\stretch{1}}
+
+  \item Convert $r=4\cos\theta-6\sin\theta$ to Cartesian form and state
+  the center and radius. Convert $(x-2)^2+y^2=4$ to a polar equation
+  with $r$ isolated. Check that the origin is represented.
+  \par\vspace{\stretch{1}}
+
+  \item Convert $r^2=8\sin(2\theta)$ to Cartesian form.
+  Determine whether the curve is symmetric about the $x$-axis, $y$-axis,
+  and origin. Justify your decisions using the Cartesian equation.
+  \par\vspace{\stretch{1}}
+
+  \item Sketch $r=3-3\cos\theta$. Label the points for
+  $\theta=0,\pi/2,\pi,3\pi/2$ and determine whether the curve is symmetric
+  about the polar axis.
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 3 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterNine]
+  \item Write $z=-2+2\sqrt3\,i$ in trigonometric polar form and exponential
+  form. State its modulus and argument in $[0,2\pi)$.
+  \par\vspace{\stretch{1}}
+
+  \item Evaluate exactly in rectangular form:
+  \[
+    (\sqrt3+i)^8.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Find all fourth roots of $-16$. Give every root in exponential
+  and rectangular form.
+  \par\vspace{\stretch{1}}
+
+  \item Let $P=(-2,5)$, $Q=(4,-3)$, $\mathbf u=\overrightarrow{PQ}$, and
+  $\mathbf v=\langle-3,4\rangle$. Find $\mathbf u$, $|\mathbf u|$, a unit
+  vector in the direction of $\mathbf u$, and $2\mathbf u-3\mathbf v$.
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 3 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterNine]
+  \item Vector $\mathbf v$ has magnitude $12$ and direction angle $5\pi/6$.
+  Vector $\mathbf w$ has magnitude $5$ and direction angle $7\pi/6$.
+  Find their component forms, $\mathbf v+\mathbf w$, and $|\mathbf v+\mathbf w|$.
+  \par\vspace{\stretch{1}}
+
+  \item Let $\mathbf u=\langle2,-1\rangle$, $\mathbf v=\langle1,2\rangle$,
+  and $\mathbf w=\langle3,4\rangle$. Find $\mathbf u\cdot\mathbf v$, the angle
+  between $\mathbf u$ and $\mathbf v$, and
+  $\operatorname{proj}_{\mathbf u}\mathbf w$.
+  \par\vspace{\stretch{1}}
+
+  \item A constant force $\mathbf F=\langle6,-2\rangle$ newtons acts through
+  displacement $\mathbf d=\langle3,4\rangle$ meters. Find the work done and
+  the scalar component of the force along the displacement.
+  \par\vspace{\stretch{1}}
+
+  \item Use east as the positive $x$-direction and north as the positive
+  $y$-direction. A plane's air velocity is $\langle180,0\rangle$ mph and the
+  wind velocity is $\langle-20,30\rangle$ mph. Find the ground velocity,
+  ground speed, direction angle north of east, and displacement after
+  $2$ hours. Give the direction as an exact inverse-trig expression.
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}
+  {\Large\textbf{Section 4: Matrices and Linear Systems}}\\[3pt]
+  Chapter 11 --- Reference and 12 Problems
+\end{center}
+\section*{Reference}
+\begin{multicols}{2}
+\small
+\textbf{Matrix operations and dimensions}
+
+Matrices can be added only when their dimensions match. If $A$ is $m\times n$
+and $B$ is $n\times p$, then $AB$ is $m\times p$, with entries
+\[
+  (AB)_{ij}=\sum_{k=1}^{n}a_{ik}b_{kj}.
+\]
+In general, $AB\ne BA$. Reversing the order may even make a product undefined.
+
+\medskip
+\textbf{Determinants}
+\[
+  \det\begin{pmatrix}a&b\\c&d\end{pmatrix}=ad-bc.
+\]
+\[
+\begin{aligned}
+  \det\begin{pmatrix}a&b&c\\d&e&f\\g&h&i\end{pmatrix}
+  &=a(ei-fh)-b(di-fg)\\
+  &\quad+c(dh-eg).
+\end{aligned}
+\]
+A square matrix is invertible exactly when its determinant is nonzero.
+
+\medskip
+\textbf{Inverses}
+\[
+  \begin{pmatrix}a&b\\c&d\end{pmatrix}^{-1}
+  =\frac1{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
+\]
+For a larger square matrix, row-reduce $[A\mid I]$ to $[I\mid A^{-1}]$,
+if possible. Check an inverse by multiplying to obtain $I$.
+
+\columnbreak
+\textbf{Matrix equations}
+
+A linear system can be written $A\mathbf x=\mathbf b$. If $A$ is invertible,
+\[
+  \mathbf x=A^{-1}\mathbf b.
+\]
+For $AX=B$, multiply on the left by $A^{-1}$:
+\[
+  X=A^{-1}B.
+\]
+Order matters.
+
+\medskip
+\textbf{Cramer's rule}
+
+For a square system with $D=\det A\ne0$,
+\[
+  x_j=\frac{D_j}{D},
+\]
+where $D_j$ is the determinant obtained by replacing column $j$ of $A$ with
+$\mathbf b$.
+
+\medskip
+\textbf{Row reduction and consistency}
+
+Allowed row operations: swap two rows, multiply a row by a nonzero number,
+or add a multiple of one row to another.
+\begin{itemize}[leftmargin=*,itemsep=0.3em]
+  \item A row $[0\ \cdots\ 0\mid c]$ with $c\ne0$ means no solution.
+  \item A consistent system with a pivot for every unknown has one solution.
+  \item A consistent system with a free variable has infinitely many solutions.
+\end{itemize}
+For a square system, a zero determinant alone does not distinguish no
+solutions from infinitely many solutions.
+\end{multicols}
+
+\newpage
+\begin{center}{\large\textbf{Section 4: Practice}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,series=chapterEleven]
+  \item Let
+  \[
+    A=\begin{pmatrix}1&-2\\3&4\end{pmatrix},\qquad
+    B=\begin{pmatrix}0&5\\-1&2\end{pmatrix}.
+  \]
+  Find $2A-B$, $AB$, and $BA$. Do $A$ and $B$ commute?
+  \par\vspace{\stretch{1}}
+
+  \item Suppose $A$ is $2\times3$, $B$ is $3\times2$, and $C$ is $2\times2$.
+  For each expression, state its dimensions or explain why it is undefined:
+  \[
+    AB,\qquad BA,\qquad CA,\qquad AC,\qquad AB+C.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Evaluate the determinant:
+  \[
+    \det\begin{pmatrix}1&2&-1\\0&3&4\\2&-1&1\end{pmatrix}.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Find $A^{-1}$ and use it to solve the matrix equation:
+  \[
+    A=\begin{pmatrix}2&3\\1&2\end{pmatrix},\qquad
+    A\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}7\\4\end{pmatrix}.
+  \]
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 4 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterEleven]
+  \item Determine all real $k$ for which
+  $A=\begin{pmatrix}k&2\\3&k-1\end{pmatrix}$ is invertible.
+  When $k=3$, determine the value of $b$ for which
+  \[
+    A\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}b\\6\end{pmatrix}
+  \]
+  is consistent, and state how many solutions it then has.
+  \par\vspace{\stretch{1}}
+
+  \item Use Cramer's rule to solve, showing the determinants:
+  \[
+    2x-3y=7,\qquad 4x+y=7.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Solve using an augmented matrix and row operations:
+  \[
+    \begin{cases}
+      x+y+z=6,\\
+      2x-y+z=3,\\
+      x+2y-z=2.
+    \end{cases}
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Classify the number of solutions for every real $t$.
+  When solutions exist, give the complete solution set.
+  \[
+    \begin{cases}
+      x+y+z=2,\\
+      2x+2y+2z=t,\\
+      x-y+z=0.
+    \end{cases}
+  \]
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\newpage
+\begin{center}{\large\textbf{Section 4 --- Continued}}\end{center}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,resume=chapterEleven]
+  \item Find $A^{-1}$ using an augmented matrix, then solve for $\mathbf x$:
+  \[
+    A=\begin{pmatrix}1&1&0\\0&1&1\\0&0&1\end{pmatrix},\qquad
+    A\mathbf x=\begin{pmatrix}3\\5\\2\end{pmatrix}.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item Solve the matrix equation $AX=B$:
+  \[
+    A=\begin{pmatrix}1&2\\3&5\end{pmatrix},\qquad
+    B=\begin{pmatrix}4&1\\11&3\end{pmatrix}.
+  \]
+  \par\vspace{\stretch{1}}
+
+  \item A performance sells $180$ tickets. Adult tickets cost \$12 and
+  student tickets cost \$8. Total ticket revenue is \$1,824.
+  Write a matrix system and solve for the number of each type of ticket sold.
+  \par\vspace{\stretch{1}}
+
+  \item Three stores sell two products. Rows of $Q$ give each store's unit
+  sales; columns correspond to products 1 and 2:
+  \[
+    Q=\begin{pmatrix}12&8\\5&15\\10&6\end{pmatrix},\quad
+    \mathbf p=\begin{pmatrix}25\\40\end{pmatrix},\quad
+    \mathbf c=\begin{pmatrix}18\\28\end{pmatrix}.
+  \]
+  Here $\mathbf p$ and $\mathbf c$ are selling prices and unit costs in dollars.
+  Find each store's revenue and gross profit using matrix products.
+  Explain why $\mathbf pQ$ is not an alternative revenue calculation.
+  \par\vspace*{\stretch{1}}
+\end{enumerate}
+
+\end{document}
