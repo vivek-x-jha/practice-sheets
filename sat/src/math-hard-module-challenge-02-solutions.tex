@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\geometry{margin=0.8in}
+
+\begin{document}
+\begin{center}
+  {\Large SAT Math: Hard-Module Challenge 2}\\[0.4em]
+  {\large Answer Key and Worked Solutions}
+\end{center}
+
+\noindent\textit{Five questions; suggested time: 20 minutes. Original, unofficial practice, not an officially calibrated SAT module.}
+
+\section*{Answer Key}
+\begin{center}
+\begin{tabular}{ccl}
+\textbf{Question} & \textbf{Choice} & \textbf{Value or range} \\\hline
+1 & B & $81/8$ \\
+2 & D & $2/5$ \\
+3 & B & $1{,}152$ \\
+4 & C & $592\pi$ \\
+5 & A & $-25/4<k\le -6$
+\end{tabular}
+\end{center}
+
+\section*{Worked Solutions}
+\begin{enumerate}[leftmargin=*,itemsep=1em]
+  \item \textbf{B: $\dfrac{81}{8}$.} Since $f(2)=f(10)$, the axis of symmetry is $x=6$. Therefore
+  \[
+    f(x)=a(x-6)^2-17,\qquad 16a-17=15,
+  \]
+  so $a=2$. Substituting $2x-1$ for the input gives
+  \[
+    g(x)=2(2x-7)^2-17=8x^2-56x+81.
+  \]
+  The product of the roots of a quadratic is its constant term divided by its leading coefficient, so the requested product is $\boxed{81/8}$. Its discriminant is $56^2-4(8)(81)=544>0$, confirming two real roots.
+
+  \vfill
+  \item \textbf{D: $\dfrac25$.} Let the original set sizes be $a$ and $b$. The combined mean gives
+  \[
+    72a+90b=84(a+b)\quad\Longrightarrow\quad b=2a.
+  \]
+  Let $n$ values be removed from each set. Since each individual mean is unchanged, the new combined mean gives
+  \begin{align*}
+    72(a-n)+90(2a-n)&=86(3a-2n),\\
+    252a-162n&=258a-172n,\\
+    n&=\frac35a.
+  \end{align*}
+  A total of $2n$ values was removed from the original $3a$ values, so the requested fraction is $2n/(3a)=\boxed{2/5}$. The value $3/5$ describes the fraction removed from set A alone.
+
+  \vfill
+  \newpage
+  \item \textbf{B: $1{,}152$.} Write $r=p/100$, so $0<r<1$. The equality after two hours is
+  \[
+    400(1+r)^2=900(1-r)^2.
+  \]
+  Both growth factors are positive. Taking positive square roots gives
+  \[
+    20(1+r)=30(1-r)\quad\Longrightarrow\quad r=\frac15.
+  \]
+  Thus the total after three hours is
+  \[
+    400\left(\frac65\right)^3+900\left(\frac45\right)^3
+    =\frac{86{,}400+57{,}600}{125}=\boxed{1{,}152}.
+  \]
+  The equal populations after two hours are 576 each; 576 is not the requested total after three hours.
+
+  \vfill
+  \item \textbf{C: $592\pi$.} A circle tangent to both axes with center in the first quadrant has center $(r,r)$ and radius $r>0$. Its distance from the center to the line must equal its radius:
+  \[
+    \frac{|3r+4r-48|}{\sqrt{3^2+4^2}}=r
+    \quad\Longrightarrow\quad |7r-48|=5r.
+  \]
+  Considering both signs gives
+  \[
+    7r-48=5r\ \Longrightarrow\ r=24,
+    \qquad
+    7r-48=-5r\ \Longrightarrow\ r=4.
+  \]
+  Both radii are positive and satisfy all three tangency conditions. Their areas sum to
+  \[
+    \pi(24^2+4^2)=\boxed{592\pi}.
+  \]
+  Squaring the sum of the radii instead would incorrectly give $784\pi$.
+
+  \vfill
+  \item \textbf{A: $-\dfrac{25}{4}<k\le -6$.} Set $u=\sqrt{x+6}$, so $u\ge0$ and $x=u^2-6$. The original equation is equivalent to
+  \[
+    u^2-u-(k+6)=0,\qquad u\ge0.
+  \]
+  Its roots are
+  \[
+    u=\frac{1\pm\sqrt{4k+25}}{2}.
+  \]
+  Two distinct real roots require $4k+25>0$. Both roots are nonnegative exactly when $\sqrt{4k+25}\le1$. Combining these conditions gives
+  \[
+    0<4k+25\le1\quad\Longrightarrow\quad
+    \boxed{-\frac{25}{4}<k\le-6}.
+  \]
+  Distinct nonnegative $u$ give distinct $x=u^2-6$. At $k=-25/4$ there is only one root. At $k=-6$, both $u=0$ and $u=1$ are valid, giving $x=-6$ and $x=-5$; the upper endpoint must be included.
+  \vfill
+\end{enumerate}
+
+\end{document}
